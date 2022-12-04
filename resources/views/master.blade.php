@@ -142,24 +142,6 @@
         ::-moz-placeholder {  /* Firefox 19+ */
             font-size: 1.25rem!important;
         }
-
-        /*@media (min-width: 992px) and (max-width: 1199.98px) { ... }*/
-
-        /*!* If the screen size is 1200px wide or more, set the font-size to 80px *!*/
-        /*@media (min-width: 1200px) {*/
-        /*    .font-menu {*/
-        /*        font-size: 1.2vw;*/
-        /*    }*/
-        /*    .responsive-font-example {*/
-        /*        font-size: 5vw;*/
-        /*    }*/
-        /*}*/
-        /*!* If the screen size is smaller than 1200px, set the font-size to 80px *!*/
-        /*@media (max-width: 1199.98px) {*/
-        /*    .responsive-font-example {*/
-        /*        font-size: 5vw;*/
-        /*    }*/
-        /*}*/
     </style>
 </head>
 <body>
@@ -267,7 +249,7 @@
 
     <nav class="navbar navbar-expand my-lg-4" style="background-color: #ffffff;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ route('main') }}">
                 <img src="/images/logo.png" class="img d-xl-none" height="60"  alt="">
                 <img src="/images/logo.png" class="img-fluid d-none d-xl-block"  alt="">
             </a>
