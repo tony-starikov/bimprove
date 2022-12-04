@@ -289,7 +289,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="#">
+                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="{{ route('blog') }}">
                             <p class="h5 fw-bold">BLOG</p>
                         </a>
                     </li>

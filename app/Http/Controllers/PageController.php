@@ -12,4 +12,11 @@ class PageController extends Controller
 
         return view('main', compact('page_info'));
     }
+
+    public function blog()
+    {
+        $page_info = Page::where('name', 'blog')->first();
+
+        return view('blog', compact('page_info'));
+    }
 }

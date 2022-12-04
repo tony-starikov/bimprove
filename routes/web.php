@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'main'])->name('main');
+Route::get('/blog', [PageController::class, 'blog'])->name('blog');
