@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             PageSeeder::class,
+            ItemTypeSeeder::class,
+            PostSeeder::class,
+            PostItemSeeder::class,
+            PluginSeeder::class,
+            FamilySeeder::class,
         ]);
     }
 }

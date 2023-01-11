@@ -61,58 +61,49 @@
         </div>
     </div>
 
-    <div class="container-fluid my-5 py-5">
+    <div class="container-fluid">
         <div class="container py-5">
-            @foreach($posts as $post)
-                <div class="row pb-5 pb-sm-0 py-sm-5 ">
-                    <div class="col-sm-6 col-md-5">
-                        <a href="{{ route('post', $post) }}">
-                            <img class="img-fluid w-100" src="/images/600.png" alt="">
-                        </a>
+            <div class="row pb-5">
+                <div class="col-9">
+                    <div class="d-md-none">
+                        <h1 class="text-dark display-6 fw-bold mt-0">
+                            SUBSCRIBE AND BECOME A PART OF THE BIG BIMPROVE FAMILY
+                        </h1>
                     </div>
-                    <div class="col-sm-6 col-md-7 px-lg-5">
-                        <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
-                                <h6 class="d-xl-none display-6 fw-bold">
-                                    {{ $post->title_en }}
-                                </h6>
-                            </a>
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
-                                <h6 class="d-none d-xl-block display-3 fw-bold">
-                                    {{ $post->title_en }}
-                                </h6>
-                            </a>
-                        </div>
-                        <div class="row mb-sm-5">
-                            <h6 class="d-md-none text-secondary">
-                                Month, Day, Year - Time
-                            </h6>
-                            <h4 class="d-none d-md-block text-secondary">
-                                Month, Day, Year - Time
-                            </h4>
-                        </div>
-                        <div class="row mt-sm-5">
-                            <div class="col-12 col-lg-7">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb" href="{{ route('post', $post) }}" role="button">
-                                    <span class="fw-bold h4 d-block my-2 mx-4">READ MORE</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex justify-content-center mt-5 py-5">
-                        {{ $posts->links('vendor.pagination.custom') }}
+                    <div class="d-none d-md-block">
+                        <h1 class="text-dark display-2 fw-bold mt-5 pt-md-0 pt-lg-5">
+                            SUBSCRIBE AND BECOME A PART OF THE BIG BIMPROVE FAMILY
+                        </h1>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row pb-5">
+                <div class="col-12 col-lg-6">
+                    <form class="text-white subscribe-form" action="post">
+                        <div class="row mb-5">
+                            <div class="col-6">
+                                <input type="text" name="name" class="form-control fw-bold shadow-none border-0 border-bottom border-3 rounded-0" id="exampleFormControlInput1" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="last_name" class="form-control fw-bold shadow-none border-0 border-bottom border-3 rounded-0" id="exampleFormControlInput1" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <input type="email" name="email" class="form-control fw-bold shadow-none border-0 border-bottom border-3 rounded-0" id="exampleFormControlInput2" placeholder="Email">
+                        </div>
 
+                        <button type="submit" class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold d-lg-none" style="background-color: #6bdcdb">
+                            <span class="fw-bold h6 d-block my-1">SUBMIT</span>
+                        </button>
+
+                        <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold d-none d-lg-block" style="background-color: #6bdcdb">
+                            <span class="fw-bold h4 d-block my-1">SUBMIT</span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 @endsection

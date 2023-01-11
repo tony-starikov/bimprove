@@ -36,112 +36,83 @@
         .small-text {
             font-size: 0.72em;
         }
-        input::-webkit-input-placeholder { /* WebKit browsers */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
+        .page-link:hover {
+            background-color: #ffffff;
+        }
+        form.footer-form input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent !important;
+        }
+        form.footer-form input::placeholder {
+            opacity: 1 !important; /* Firefox */
+            color: #ffffff !important;
+            font-size: 1.25rem !important;
             padding-left: 0 !important;
         }
-        input::-webkit-input-placeholder:focus { /* WebKit browsers */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            border: 0;
-            outline: none !important;
-            padding-left: 0 !important;
-        }
-        input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            padding-left: 0 !important;
-        }
-        input:-moz-placeholder:focus { /* Mozilla Firefox 4 to 18 */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            border: 0;
-            outline: none !important;
-            padding-left: 0 !important;
-        }
-        input::-moz-placeholder { /* Mozilla Firefox 19+ */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            padding-left: 0 !important;
-        }
-        input::-moz-placeholder:focus { /* Mozilla Firefox 19+ */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            border: 0;
-            outline: none !important;
-            padding-left: 0 !important;
-        }
-        input:-ms-input-placeholder { /* Internet Explorer 10+ */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            padding-left: 0 !important;
-        }
-        input:-ms-input-placeholder:focus { /* Internet Explorer 10+ */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            border: 0;
-            outline: none !important;
-            padding-left: 0 !important;
-        }
-        input:-ms-input-placeholder:focus { /* Internet Explorer 10+ */
-            color:    #fff !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            border: 0;
-            outline: none !important;
-            padding-left: 0 !important;
-        }
-        input[placeholder], [placeholder], *[placeholder] {
-            color: white !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            padding-left: 0 !important;
-        }
-        input[placeholder]:focus, [placeholder]:focus, *[placeholder]:focus {
-            color: white !important;
-            opacity: 1 !important;
-            background-color: #b0c0c3;
-            font-size: 1em;
-            outline: none !important;
-            padding-left: 0 !important;
-        }
-        input:focus::placeholder {
-            color: white !important;
-            background-color: #b0c0c3 !important;
-            border: 0;
-            outline: none !important;
+        form.footer-form input[placeholder] {
+            opacity: 1 !important; /* Firefox */
+            color: #ffffff !important;
+            font-size: 1.25rem !important;
             padding-left: 0 !important;
         }
 
-        ::-webkit-input-placeholder {
-            font-size: 1.25rem!important;
+        form.subscribe-form input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent !important;
+        }
+        form.subscribe-form input::placeholder {
+            opacity: 1 !important; /* Firefox */
+            color: #9a9a9a !important;
+            border-color: #9a9a9a !important;
+            font-size: 1.25rem !important;
+            padding-left: 0 !important;
+        }
+        form.subscribe-form input[placeholder] {
+            opacity: 1 !important; /* Firefox */
+            color: #9a9a9a !important;
+            border-color: #9a9a9a !important;
+            font-size: 1.25rem !important;
+            padding-left: 0 !important;
         }
 
-        :-moz-placeholder { /* Firefox 18- */
-            font-size: 1.25rem!important;
+        form.donate-form input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff !important;
         }
-        ::-moz-placeholder {  /* Firefox 19+ */
-            font-size: 1.25rem!important;
+        form.donate-form input::placeholder {
+            opacity: 1 !important; /* Firefox */
+            color: #9a9a9a !important;
+            border-color: #fff !important;
+            font-size: 1.4rem !important;
+            padding: 10 !important;
         }
+        form.donate-form input[placeholder] {
+            opacity: 1 !important; /* Firefox */
+            color: #9a9a9a !important;
+            border-color: #fff !important;
+            font-size: 1.4rem !important;
+            padding: 10 !important;
+        }
+
+        /*input[placeholder]:focus {*/
+        /*    opacity: 1 !important; !* Firefox *!*/
+        /*    color: transparent !important;*/
+        /*    font-size: 1.25rem !important;*/
+        /*    padding-left: 0 !important;*/
+        /*}*/
+
+        /*input:focus::placeholder {*/
+        /*    opacity: 1 !important; !* Firefox *!*/
+        /*    color: transparent !important;*/
+        /*    font-size: 1.25rem !important;*/
+        /*    padding-left: 0 !important;*/
+        /*}*/
     </style>
 </head>
 <body>
@@ -230,10 +201,10 @@
                             </button>
                         </div>
                         <div class="col-12 my-2">
-                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">SCRIPTS</button>
+                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">PRODUCTS</button>
                             <button type="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
                                 <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    SCRIPTS
+                                    PRODUCTS
                                 </span>
                             </button>
                         </div>
@@ -281,8 +252,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="#">
-                            <p class="h5 fw-bold">SCRIPTS</p>
+                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="{{ route('products') }}">
+                            <p class="h5 fw-bold">PRODUCTS</p>
                         </a>
                     </li>
                 </ul>
@@ -312,7 +283,137 @@
 
 <main role="main" class="w-100">
     @yield('main')
+
+    <div class="container-fluid" style="background-color: #b0c0c3">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-12 col-lg-6">
+
+                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">CONTACT US</h2>
+                    <h2 class="text-white display-5 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">CONTACT US</h2>
+
+                    {{--                    <h2 class="text-white display-6 fw-bold mt-5">CONTACT US</h2>--}}
+                    <form class="text-white footer-form" action="post">
+                        <div class="row mb-5">
+                            <div class="col-6">
+                                <input type="text" name="name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput1" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="last_name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <input type="email" name="email" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput3" placeholder="Email">
+                        </div>
+                        <div class="mb-5">
+                            <input type="text" name="phone" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput4" placeholder="Phone">
+                        </div>
+                        <div class="mb-5">
+                            <input type="text" name="company" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput5" placeholder="Company">
+                        </div>
+                        <div class="mb-5">
+                            <input type="text" name="message" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput6" placeholder="Message">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold d-lg-none" style="background-color: #6bdcdb">
+                            <span class="fw-bold h6 d-block my-1">SUBMIT</span>
+                        </button>
+
+                        <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold d-none d-lg-block" style="background-color: #6bdcdb">
+                            <span class="fw-bold h4 d-block my-1">SUBMIT</span>
+                        </button>
+
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-6 d-none d-lg-block ps-5">
+
+                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">SOCIAL MEDIA</h2>
+                    <h2 class="text-white display-5 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">SOCIAL MEDIA</h2>
+
+                    {{--                    <h2 class="text-white display-6 fw-bold mt-5">SOCIAL MEDIA</h2>--}}
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row mb-3">
+                            <div class="col-2"><i class="lab la-2x la-linkedin-in"></i></div>
+                            <div class="col-10 px-0 pt-3"><h4 class="fw-bold mb-0 me-0 ms-2">BIMprove LLC</h4></div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row mb-3">
+                            <div class="col-2"><i class="lab la-2x la-instagram"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">@bimprove</h5></div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row">
+                            <div class="col-2"><i class="lab la-2x la-facebook-f"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ">@bimproveworld</h5></div>
+                        </div>
+                    </a>
+
+                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">CONTACTS</h2>
+                    <h2 class="text-white display-5 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">CONTACTS</h2>
+
+                    {{--                    <h2 class="text-white display-6 fw-bold mt-5">CONTACTS</h2>--}}
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row mb-3">
+                            <div class="col-2"><i class="las la-2x la-phone"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">+380668901648</h5></div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row">
+                            <div class="col-2"><i class="las la-2x la-envelope"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ms-md-1">es@bim-prove.com</h5></div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-md-6 d-lg-none">
+                    <h2 class="text-white display-6 fw-bold mt-5">SOCIAL MEDIA</h2>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row mb-3">
+                            <div class="col-2"><i class="lab la-2x la-linkedin-in"></i></div>
+                            <div class="col-10 px-0 pt-3"><h4 class="fw-bold mb-0 me-0 ms-2">BIMprove LLC</h4></div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row mb-3">
+                            <div class="col-2"><i class="lab la-2x la-instagram"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">@bimprove</h5></div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row">
+                            <div class="col-2"><i class="lab la-2x la-facebook-f"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ">@bimproveworld</h5></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 d-lg-none ps-md-4">
+                    <h2 class="text-white display-6 fw-bold mt-5">CONTACTS</h2>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row mb-3">
+                            <div class="col-2"><i class="las la-2x la-phone"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">+380668901648</h5></div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-white h4 text-decoration-none">
+                        <div class="row">
+                            <div class="col-2"><i class="las la-2x la-envelope"></i></div>
+                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ms-md-1">es@bim-prove.com</h5></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </main>
+
+
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
