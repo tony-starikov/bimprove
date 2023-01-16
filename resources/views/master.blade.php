@@ -85,19 +85,32 @@
             appearance: none;
             background-color: #fff !important;
         }
+        form.donate-form select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff !important;
+        }
         form.donate-form input::placeholder {
             opacity: 1 !important; /* Firefox */
             color: #9a9a9a !important;
             border-color: #fff !important;
             font-size: 1.4rem !important;
-            padding: 10 !important;
+            padding: 10px !important;
+        }
+        form.donate-form select {
+            opacity: 1 !important; /* Firefox */
+            color: #9a9a9a !important;
+            border-color: #fff !important;
+            font-size: 1.4rem !important;
+            padding: 10px !important;
         }
         form.donate-form input[placeholder] {
             opacity: 1 !important; /* Firefox */
             color: #9a9a9a !important;
             border-color: #fff !important;
             font-size: 1.4rem !important;
-            padding: 10 !important;
+            padding: 10px !important;
         }
 
         /*input[placeholder]:focus {*/
@@ -216,7 +229,7 @@
 </div>
 <!-- Modal END -->
 
-<div class="container">
+<div class="container px-xxl-5">
 
     <nav class="navbar navbar-expand my-lg-4" style="background-color: #ffffff;">
         <div class="container-fluid">
@@ -285,7 +298,7 @@
     @yield('main')
 
     <div class="container-fluid" style="background-color: #b0c0c3">
-        <div class="container">
+        <div class="container px-xxl-5">
             <div class="row pb-5">
                 <div class="col-12 col-lg-6">
 
@@ -409,7 +422,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </main>
 

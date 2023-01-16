@@ -143,24 +143,28 @@
                     <form class="donate-form w-75 mt-5" method="post" action="{{ route('donate') }}">
                         @csrf
                         <div class="mb-5">
-                            <input type="text" name="donation" class="form-control fw-bold shadow-none border-3" id="exampleFormControlInput2" placeholder="Select or insert an amount">
+                            <input type="text" name="donate" class="form-control fw-bold shadow-none border-3" id="exampleFormControlInput2" placeholder="Select or insert an amount">
                         </div>
 
                         <div class="row pb-5">
                             <div class="col-3">
-                                <input type="checkbox" class="btn-check" id="btn-check1" autocomplete="off">
+                                <input name="donate10" value="0" type="hidden">
+                                <input name="donate10" value="1" type="checkbox" class="btn-check" id="btn-check1" autocomplete="off">
                                 <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check1">$10</label>
                             </div>
                             <div class="col-3">
-                                <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                                <input name="donate20" value="0" type="hidden">
+                                <input name="donate20" value="1" type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
                                 <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check2">$20</label>
                             </div>
                             <div class="col-3">
-                                <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                                <input name="donate50" value="0" type="hidden">
+                                <input name="donate50" value="1" type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
                                 <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check3">$50</label>
                             </div>
                             <div class="col-3">
-                                <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">
+                                <input name="donate100" value="0" type="hidden">
+                                <input name="donate100" value="1" type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">
                                 <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check4">$100</label>
                             </div>
                         </div>

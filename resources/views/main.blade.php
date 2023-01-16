@@ -8,7 +8,7 @@
 
     <div class="container-fluid" style="background-color: #68d1d3">
 
-        <div class="container">
+        <div class="container px-xxl-5">
             <div class="row pb-5">
                 <div class="col-12 order-first">
                     <div class="d-md-none">
@@ -139,8 +139,8 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid mt-4">
+        <div class="container px-xxl-5">
             <div class="row">
                 <h2 class="display-6 fw-bold mt-5 d-lg-none">ACHIEVEMENTS</h2>
                 <h2 class="display-5 fw-bold pb-2 pt-5 my-5 d-none d-lg-block">ACHIEVEMENTS</h2>
@@ -149,63 +149,50 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row justify-content-evenly">
-            <div class="col-2 d-none d-md-block" style="background-image: url('images/1.png');  background-repeat: no-repeat; background-size: contain; background-position: center;">
+        <div class="container px-xxl-5">
+            <div class="row">
 
-            </div>
+                <div class="col-12 col-sm-3 col-md-4 text-center p-5">
+                    <img src="images/achievement1.png" class="img-fluid mb-2 d-md-none">
+                    <img src="images/achievement1.png" class="img-fluid w-75 mb-2 mt-4 d-none d-md-block mx-auto">
+                    <h6 class="fw-bold display-6 m-0">130</h6>
+                    <h6 class="card-title text-dark fw-bold small d-md-none">
+                        COMPLETED PROJECTS
+                    </h6>
+                    <h6 class="card-title text-dark fw-bold d-none d-md-block">
+                        COMPLETED PROJECTS
+                    </h6>
+                </div>
 
-            <div class="col-12 col-sm-3 col-md-2 text-center p-3">
-                <img src="images/achievement1.png" class="img-fluid mb-2 d-md-none">
-                <img src="images/achievement1.png" class="img-fluid w-100 mb-2 mt-4 d-none d-md-block mx-auto">
-                <h6 class="fw-bold display-6 m-0">130</h6>
-                <h6 class="card-title text-dark fw-bold small d-md-none">
-                    COMPLETED PROJECTS
-                </h6>
-                <h6 class="card-title text-dark fw-bold d-none d-md-block">
-                    COMPLETED PROJECTS
-                </h6>
-            </div>
+                <div class="col-12 col-sm-3 col-md-4 text-center p-5">
+                    <img src="images/achievement1.png" class="img-fluid mb-2 d-md-none">
+                    <img src="images/achievement1.png" class="img-fluid w-75 mb-2 mt-4 d-none d-md-block mx-auto">
+                    <h6 class="fw-bold display-6 m-0">130</h6>
+                    <h6 class="card-title text-dark fw-bold small d-md-none">
+                        COMPLETED PROJECTS
+                    </h6>
+                    <h6 class="card-title text-dark fw-bold d-none d-md-block">
+                        COMPLETED PROJECTS
+                    </h6>
+                </div>
 
-            <div class="col-1 d-none d-md-block" style="background-image: url('images/2.png');  background-repeat: no-repeat; background-size: contain; background-position: center;">
-
-            </div>
-
-            <div class="col-12 col-sm-3 col-md-2 text-center p-3">
-                <img src="images/achievement1.png" class="img-fluid mb-2 d-md-none">
-                <img src="images/achievement1.png" class="img-fluid w-100 mb-2 mt-4 d-none d-md-block mx-auto">
-                <h6 class="fw-bold display-6 m-0">130</h6>
-                <h6 class="card-title text-dark fw-bold small d-md-none">
-                    COMPLETED PROJECTS
-                </h6>
-                <h6 class="card-title text-dark fw-bold d-none d-md-block">
-                    COMPLETED PROJECTS
-                </h6>
-            </div>
-
-            <div class="col-1 d-none d-md-block" style="background-image: url('images/3.png');  background-repeat: no-repeat; background-size: contain; background-position: center;">
-
-            </div>
-
-            <div class="col-12 col-sm-3 col-md-2 text-center p-3">
-                <img src="images/achievement1.png" class="img-fluid mb-2 d-md-none">
-                <img src="images/achievement1.png" class="img-fluid w-100 mb-2 mt-4 d-none d-md-block mx-auto">
-                <h6 class="fw-bold display-6 m-0">130</h6>
-                <h6 class="card-title text-dark fw-bold small d-md-none">
-                    COMPLETED PROJECTS
-                </h6>
-                <h6 class="card-title text-dark fw-bold d-none d-md-block">
-                    COMPLETED PROJECTS
-                </h6>
-            </div>
-
-            <div class="col-2 d-none d-md-block" style="background-image: url('images/4.png');  background-repeat: no-repeat; background-size: contain; background-position: center;">
-
+                <div class="col-12 col-sm-3 col-md-4 text-center p-5">
+                    <img src="images/achievement1.png" class="img-fluid mb-2 d-md-none">
+                    <img src="images/achievement1.png" class="img-fluid w-75 mb-2 mt-4 d-none d-md-block mx-auto">
+                    <h6 class="fw-bold display-6 m-0">130</h6>
+                    <h6 class="card-title text-dark fw-bold small d-md-none">
+                        COMPLETED PROJECTS
+                    </h6>
+                    <h6 class="card-title text-dark fw-bold d-none d-md-block">
+                        COMPLETED PROJECTS
+                    </h6>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid mt-4">
+        <div class="container px-xxl-5">
             <div class="row">
                 <h2 class="display-6 fw-bold mt-5 d-lg-none">SERVICES</h2>
                 <h2 class="display-5 fw-bold pb-2 pt-5 my-5 d-none d-lg-block">SERVICES</h2>
@@ -214,7 +201,7 @@
     </div>
 
     <div class="container-fluid">
-        <div class="container">
+        <div class="container px-xxl-5">
             <div class="row">
 
                 @for($l = 1; $l < 7; $l++)
@@ -238,11 +225,10 @@
 
             </div>
         </div>
-
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid mt-4">
+        <div class="container px-xxl-5">
             <div class="row">
                 <h2 class="display-6 fw-bold mt-5 d-lg-none">MODELS</h2>
                 <h2 class="display-5 fw-bold pb-2 pt-5 my-5 d-none d-lg-block">MODELS</h2>
@@ -251,7 +237,7 @@
     </div>
 
     <div class="container-fluid px-0 d-lg-none" style="background-color: #acbcbf">
-        <div class="container">
+        <div class="container px-xxl-5">
             <div class="row">
                 <div class="col-12 px-0">
                     <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
@@ -522,8 +508,8 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid mt-4">
+        <div class="container px-xxl-5">
             <div class="row">
                 <h2 class="display-6 fw-bold mt-5 d-lg-none">PARTNERS</h2>
                 <h2 class="display-5 fw-bold pb-2 pt-5 my-5 d-none d-lg-block">PARTNERS</h2>
@@ -534,7 +520,7 @@
     <div class="container-fluid">
         <div class="row py-5" style="background-color: #d4fffb">
             <div class="col-12">
-                <div class="container">
+                <div class="container px-xxl-5">
                     <div class="row">
                         <div class="col-12">
                             <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
@@ -671,8 +657,8 @@
 
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid mt-4">
+        <div class="container px-xxl-5">
             <div class="row">
                 <h2 class="display-6 fw-bold mt-5 d-lg-none">PORTFOLIO</h2>
                 <h2 class="display-5 fw-bold pb-2 pt-5 my-5 d-none d-lg-block">PORTFOLIO</h2>
@@ -766,7 +752,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-lg-block px-0 pb-5">
+    <div class="container-fluid d-none d-lg-block px-0 pb-5 mb-5">
         <div class="glide1 mb-3">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -784,10 +770,6 @@
                     </li>
                 </ul>
             </div>
-{{--            <div class="glide__arrows" data-glide-el="controls">--}}
-{{--                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>--}}
-{{--                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>--}}
-{{--            </div>--}}
         </div>
 
         <div class="glide2">
@@ -814,8 +796,8 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color: #d4fffb">
-        <div class="container">
+    <div class="container-fluid mt-5" style="background-color: #d4fffb">
+        <div class="container px-xxl-5">
             <div class="row">
                 <h2 class="display-6 fw-bold mt-5 d-lg-none">TEAM</h2>
                 <h2 class="display-5 fw-bold pb-2 pt-5 my-5 d-none d-lg-block">TEAM</h2>
