@@ -407,102 +407,82 @@
     </div>
 
     <div class="container-fluid d-none d-xl-block" style="background-color: #b6c7ca">
-        <div class="container" style="background-color: #b6c7ca">
+        <div class="container px-xxl-5" style="background-color: #b6c7ca">
             <div class="row py-5" style="background-color: #b6c7ca">
-                <div class="col-12">
-                    <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            @for ($i = 1; $i < 5; $i++)
-                                <div class="carousel-item @if($i == 1) active @endif">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="row py-5">
-                                                <div class="col-2 d-flex align-items-center">
-                                                    <img class="img-fluid" src="images/circle2.png" alt="">
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h4 class="text-white fw-bold mb-0">
-                                                        ARCHITECTURE
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-2 d-flex align-items-center">
-                                                    <img class="img-fluid" src="images/circle1.png" alt="">
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h1 class="text-white fw-bold mb-0">
-                                                        STRUCTURE
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-2">
-                                                </div>
-                                                <div class="col-10">
-                                                    <p class="text-white fw-bold mt-2 h4">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quam.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-2">
-                                                </div>
-                                                <div class="col-10">
-                                                    <button class="btn btn-sm btn-primary border-0 rounded-4 w-50 my-2" style="background-color: #6bdcdb"type="button">
-                                                    <span class="h5 fw-bold d-block mx-3 my-1">
-                                                        DOWNLOAD<br>MODEL
-                                                    </span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="row py-5">
-                                                <div class="col-2 d-flex align-items-center">
-                                                    <img class="img-fluid" src="images/circle2.png" alt="">
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h4 class="text-white fw-bold mb-0">
-                                                        PLUMBING
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                            <div class="row py-5">
-                                                <div class="col-2 d-flex align-items-center">
-                                                    <img class="img-fluid" src="images/circle2.png" alt="">
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h4 class="text-white fw-bold mb-0">
-                                                        HEATING
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                            <div class="row py-5">
-                                                <div class="col-2 d-flex align-items-center">
-                                                    <img class="img-fluid" src="images/circle2.png" alt="">
-                                                </div>
-                                                <div class="col-10 d-flex align-items-center">
-                                                    <h4 class="text-white fw-bold mb-0">
-                                                        ELECTRICAL
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 d-flex align-items-center">
-                                            <img class="img-fluid" src="images/model_lg.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            @endfor
+                <div class="col-6">
+                    <div class="row py-5">
+                        <div class="col-2 d-flex align-items-center">
+                            <img class="img-fluid" src="images/circle2.png" alt="">
                         </div>
-                        <button class="carousel-control-prev" style="width: 30px" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" style="width: 30px" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="col-10 d-flex align-items-center">
+                            <h4 class="text-white fw-bold mb-0">
+                                ARCHITECTURE
+                            </h4>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-2 d-flex align-items-center">
+                            <img class="img-fluid" src="images/circle1.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex align-items-center">
+                            <h1 class="text-white fw-bold mb-0">
+                                STRUCTURE
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                        </div>
+                        <div class="col-10">
+                            <p class="text-white fw-bold mt-2 h4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quam.
+                            </p>
+                        </div>
+                    </div>
+{{--                    <div class="row">--}}
+{{--                        <div class="col-2">--}}
+{{--                        </div>--}}
+{{--                        <div class="col-10">--}}
+{{--                            <button class="btn btn-sm btn-primary border-0 rounded-4 w-50 my-2" style="background-color: #6bdcdb"type="button">--}}
+{{--                                                    <span class="h5 fw-bold d-block mx-3 my-1">--}}
+{{--                                                        DOWNLOAD<br>MODEL--}}
+{{--                                                    </span>--}}
+{{--                            </button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+                    <div class="row py-5">
+                        <div class="col-2 d-flex align-items-center">
+                            <img class="img-fluid" src="images/circle2.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex align-items-center">
+                            <h4 class="text-white fw-bold mb-0">
+                                PLUMBING
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-2 d-flex align-items-center">
+                            <img class="img-fluid" src="images/circle2.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex align-items-center">
+                            <h4 class="text-white fw-bold mb-0">
+                                HEATING
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-2 d-flex align-items-center">
+                            <img class="img-fluid" src="images/circle2.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex align-items-center">
+                            <h4 class="text-white fw-bold mb-0">
+                                ELECTRICAL
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <img class="img-fluid" src="images/model_lg.png" alt="">
                 </div>
             </div>
         </div>
@@ -520,7 +500,7 @@
     <div class="container-fluid">
         <div class="row py-5" style="background-color: #d4fffb">
             <div class="col-12">
-                <div class="container px-xxl-5">
+                <div class="container my-5 px-xxl-5">
                     <div class="row">
                         <div class="col-12">
                             <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
@@ -528,7 +508,6 @@
                                     @for ($i = 1; $i < 5; $i++)
                                         <div class="carousel-item @if($i == 1) active @endif">
                                             <div class="cards-wrapper">
-
                                                 <div class="row d-flex d-lg-none">
                                                     <div class="col-12">
                                                         <div class="card p-2 rounded-5 d-block d-lg-none" @if($i%2 == 0) style="background-color: #6bdcdb" @else style="background-color: #c4c4c4" @endif >
@@ -566,17 +545,13 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row d-none d-lg-flex">
+                                                <div class="row d-none d-lg-flex px-5">
                                                     <div class="col-6 px-3">
-                                                        <div class="card p-2 rounded-5" @if($i%2 == 0) style="background-color: #6bdcdb" @else style="background-color: #c4c4c4" @endif >
+                                                        <div class="card p-3 rounded-5 border-0" style="background-color: #c4c4c4">
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col-4">
-                                                                        @if($i%2 == 0)
-                                                                            <img class="img w-100" src="images/partner.png" alt="">
-                                                                        @else
-                                                                            <img class="img w-100" src="images/partner2.png" alt="">
-                                                                        @endif
+                                                                        <img class="img w-100" src="images/partner2.png" alt="">
                                                                     </div>
 
                                                                     <div class="col-8 d-flex align-items-center">
@@ -592,25 +567,21 @@
                                                                 <div class="row">
                                                                     <div class="col-12">
                                                                         <p class="card-text text-white h4 mt-2">
-                                                                            Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.
+                                                                            Some quick example text to build on the card title and make up the bulk of the card's content.
                                                                         </p>
-                                                                        <h5 class="card-title text-white fw-bold h5">Name Surname</h5>
-                                                                        <h5 class="card-title text-white h5">CEO of Organization</h5>
+{{--                                                                        <h5 class="card-title text-white fw-bold h5">Name Surname</h5>--}}
+{{--                                                                        <h5 class="card-title text-white h5">CEO of Organization</h5>--}}
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-6 px-3">
-                                                        <div class="card p-2 rounded-5" @if($i%2 == 0) style="background-color: #6bdcdb" @else style="background-color: #c4c4c4" @endif >
+                                                        <div class="card p-3 rounded-5 border-0" style="background-color: #6bdcdb">
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col-4">
-                                                                        @if($i%2 == 0)
-                                                                            <img class="img w-100" src="images/partner.png" alt="">
-                                                                        @else
-                                                                            <img class="img w-100" src="images/partner2.png" alt="">
-                                                                        @endif
+                                                                        <img class="img w-100" src="images/partner.png" alt="">
                                                                     </div>
 
                                                                     <div class="col-8 d-flex align-items-center">
@@ -626,10 +597,10 @@
                                                                 <div class="row">
                                                                     <div class="col-12">
                                                                         <p class="card-text text-white h4 mt-2">
-                                                                            Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.
+                                                                            Some quick example text to build on the card title and make up the bulk of the card's content.
                                                                         </p>
-                                                                        <h5 class="card-title text-white fw-bold h5">Name Surname</h5>
-                                                                        <h5 class="card-title text-white h5">CEO of Organization</h5>
+{{--                                                                        <h5 class="card-title text-white fw-bold h5">Name Surname</h5>--}}
+{{--                                                                        <h5 class="card-title text-white h5">CEO of Organization</h5>--}}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -752,7 +723,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-lg-block px-0 pb-5 mb-5">
+    <div class="container-fluid d-none d-lg-block px-0 pb-5">
         <div class="glide1 mb-3">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -772,7 +743,7 @@
             </div>
         </div>
 
-        <div class="glide2">
+        <div class="glide2 mb-5">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
@@ -794,6 +765,8 @@
 {{--                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>--}}
 {{--            </div>--}}
         </div>
+
+        <div class="row p-4"></div>
     </div>
 
     <div class="container-fluid mt-5" style="background-color: #d4fffb">
