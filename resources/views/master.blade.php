@@ -19,8 +19,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.6.0/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,6 +110,34 @@
             border-color: #fff !important;
             font-size: 1.4rem !important;
             padding: 10px !important;
+        }
+
+        .portfolio-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #6bdddb;
+            overflow: hidden;
+            width: 100%;
+            height:0;
+            transition: .5s ease;
+        }
+
+        .portfolio-container:hover .overlay {
+            bottom: 0;
+            height: 100%;
         }
 
         /*input[placeholder]:focus {*/
@@ -231,70 +258,145 @@
 
 <div class="container px-xxl-5">
 
-    <nav class="navbar navbar-expand my-lg-4" style="background-color: #ffffff;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('main') }}">
-                <img src="/images/logo.png" class="img d-xl-none" height="60"  alt="">
-                <img src="/images/logo.png" class="img-fluid d-none d-xl-block"  alt="">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-none d-lg-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="#">
-                            <p class="h5 fw-bold">SERVICES</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="#">
-                            <p class="h5 fw-bold">PORTFOLIO</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="#">
-                            <p class="h5 fw-bold">ABOUT</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="{{ route('blog') }}">
-                            <p class="h5 fw-bold">BLOG</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="#">
-                            <p class="h5 fw-bold">CONTACTS</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark mx-lg-0 mx-xl-3" aria-current="page" href="{{ route('products') }}">
-                            <p class="h5 fw-bold">PRODUCTS</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link text-dark" aria-current="page" href="#">
-                            <p class="h5 fw-bold">EN/UA</p>
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex d-lg-none align-items-center">
-                        <a class="ms-4 nav-link text-dark d-flex align-items-center" aria-current="page" href="#">
-                            <p class="h6 fw-bold mt-3 d-block d-lg-none">EN/UA</p>
-                        </a>
-                    </li>
-                    <li class="nav-item  d-flex align-items-center d-lg-none">
-                        <a class="nav-link text-dark px-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">
-                        </a>
-                    </li>
-                </ul>
+    <nav class="navbar fixed-top navbar-expand" style="background-color: #ffffff;">
+        <div class="container px-xxl-5">
+            <div class="row w-100 px-5">
+                <div class="col-1 p-0 d-flex justify-content-start align-items-center">
+                    <img src="/images/logo.png" class="img ms-1" height="70"  alt="">
+                </div>
+                <div class="col-10 p-0 d-flex justify-content-center align-items-center">
+                    <ul class="nav">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="h6 fw-bold">SERVICES</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">
+                                <p class="h6 fw-bold">PORTFOLIO</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">
+                                <p class="h6 fw-bold">ABOUT</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="{{ route('blog') }}">
+                                <p class="h6 fw-bold">BLOG</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">
+                                <p class="h6 fw-bold">CONTACTS</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="h6 fw-bold">PRODUCTS</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+{{--                        <li class="nav-item">--}}
+{{--                            <a class="nav-link text-dark" aria-current="page" href="{{ route('products') }}">--}}
+{{--                                <p class="h6 fw-bold">PRODUCTS</p>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">
+                                <p class="h6 fw-bold">CAREER</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-1 p-0 d-flex justify-content-end align-items-center">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark p-0" aria-current="page" href="#">
+                                <p class="h6 fw-bold">EN/UA</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+{{--            <a class="navbar-brand ms-5" href="{{ route('main') }}">--}}
+{{--                <img src="/images/logo.png" class="img" height="60"  alt="">--}}
+{{--                --}}{{--                <img src="/images/logo.png" class="img-fluid d-none d-xl-block"  alt="">--}}
+{{--            </a>--}}
+{{--            <div class="collapse navbar-collapse" id="navbarSupportedContent">--}}
+{{--                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-none d-lg-flex">--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link text-dark" aria-current="page" href="#">--}}
+{{--                            <p class="h6 fw-bold">SERVICES</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link text-dark" aria-current="page" href="#">--}}
+{{--                            <p class="h6 fw-bold">PORTFOLIO</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link text-dark" aria-current="page" href="#">--}}
+{{--                            <p class="h6 fw-bold">ABOUT</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link text-dark" aria-current="page" href="{{ route('blog') }}">--}}
+{{--                            <p class="h6 fw-bold">BLOG</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link text-dark" aria-current="page" href="#">--}}
+{{--                            <p class="h6 fw-bold">CONTACTS</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link text-dark" aria-current="page" href="{{ route('products') }}">--}}
+{{--                            <p class="h6 fw-bold">PRODUCTS</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">--}}
+{{--                    <li class="nav-item d-none d-lg-block">--}}
+{{--                        <a class="nav-link text-dark me-5" aria-current="page" href="#">--}}
+{{--                            <p class="h6 fw-bold">EN/UA</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item d-flex d-lg-none align-items-center">--}}
+{{--                        <a class="ms-4 nav-link text-dark d-flex align-items-center" aria-current="page" href="#">--}}
+{{--                            <p class="h6 fw-bold mt-3 d-block d-lg-none">EN/UA</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item  d-flex align-items-center d-lg-none">--}}
+{{--                        <a class="nav-link text-dark px-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">--}}
+{{--                            <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </div>--}}
         </div>
     </nav>
 
 </div>
 
 
-<main role="main" class="w-100">
+<main role="main">
     @yield('main')
 
     <div class="container-fluid" style="background-color: #b0c0c3">
@@ -429,27 +531,29 @@
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
-    const config1 = {
-        type: 'carousel',
-        perView: 2,
-        peek: {
-            before: 150,
-            after: 150,
-        }
-    }
-    const config2 = {
-        type: 'carousel',
-        perView: 2,
-        peek: {
-            before: 100,
-            after: 200,
-        }
-    }
 
-    new Glide('.glide1', config1).mount();
-    new Glide('.glide2', config2).mount();
+    let elms = document.getElementsByClassName( 'splide' );
+
+    let configs = [
+        {
+            type   : 'loop',
+            perPage: 2,
+            padding: { left: '20%', right: '20%' },
+            arrows: boolean = true,
+        },
+        {
+            type   : 'loop',
+            perPage: 2,
+            padding: { left: '15%', right: '25%' },
+            arrows: boolean = true,
+        }
+    ];
+
+    for ( let i = 0; i < elms.length; i++ ) {
+        new Splide( elms[ i ], configs[ i ] ).mount();
+    }
 </script>
 </body>
 </html>
