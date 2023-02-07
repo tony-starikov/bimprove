@@ -262,7 +262,9 @@
         <div class="container px-xxl-5">
             <div class="row w-100 px-5">
                 <div class="col-1 p-0 d-flex justify-content-start align-items-center">
-                    <img src="/images/logo.png" class="img ms-1" height="70"  alt="">
+                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
+                        <img src="/images/logo.png" class="img" height="70"  alt="">
+                    </a>
                 </div>
                 <div class="col-10 p-0 d-flex justify-content-center align-items-center">
                     <ul class="nav">

@@ -206,19 +206,34 @@
 
                 @for($l = 1; $l < 7; $l++)
                     <div class="col-12 col-sm-6 col-lg-4 my-3">
-                        <div class="card h-100 p-2 pb-3 text-center" style="border: 4px solid #6bdcdb; border-radius: 0;">
-                            <div class="card-body p-0">
-                                <img src="images/card.png" class="img-fluid" style="max-width: 100%; max-height: 60%;" >
-                                <h6 class="fw-bold h3">BIM management</h6>
-                                <h5 class="text-secondary px-lg-2 px-xl-3 px-xl-5">
+                        <div class="card p-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold ps-3" style="position: relative; bottom: 25px;">BIM management</h5>
+                                    </div>
+                                    <div class="col-5 p-0 ps-2">
+                                        <img src="/images/service.png" class="img-fluid w-100 bg-transparent position-relative" style="position: relative; bottom: 25px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer p-0 border-0 d-flex align-items-center" style="background-color: #ffffff">
+                                <h6 class="text-secondary px-3 pb-5">
                                     Project development from scratch using BIM technologies on all stages of production
-                                </h5>
+                                </h6>
                             </div>
-                            <div class="card-footer border-0" style="background-color: #ffffff">
-                                <button class="btn btn-primary btn-lg border-0 rounded-4 w-75 mx-auto" style="background-color: #6bdcdb"type="button">
-                                    <span class="fw-bold h6 d-block my-1">MORE INFO</span>
-                                </button>
-                            </div>
+{{--                            <div class="card-body p-0">--}}
+{{--                                <img src="images/card.png" class="img-fluid" style="max-width: 100%; max-height: 60%;" >--}}
+{{--                                <h6 class="fw-bold h3">BIM management</h6>--}}
+{{--                                <h5 class="text-secondary px-lg-2 px-xl-3 px-xl-5">--}}
+{{--                                    Project development from scratch using BIM technologies on all stages of production--}}
+{{--                                </h5>--}}
+{{--                            </div>--}}
+{{--                            <div class="card-footer border-0" style="background-color: #ffffff">--}}
+{{--                                <button class="btn btn-primary btn-lg border-0 rounded-4 w-75 mx-auto" style="background-color: #6bdcdb"type="button">--}}
+{{--                                    <span class="fw-bold h6 d-block my-1">MORE INFO</span>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 @endfor
