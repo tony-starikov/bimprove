@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Page;
 use App\Models\Post;
+use App\Models\Service;
 
 class PageController extends Controller
 {
@@ -11,6 +12,8 @@ class PageController extends Controller
     {
         $page_info = Page::where('name', 'main')->first();
 
-        return view('main', compact('page_info'));
+        $services = Service::all();
+
+        return view('main', compact('page_info', 'services'));
     }
 }

@@ -316,6 +316,16 @@ return [
             'url'         => 'admin/services',
             'icon'        => 'far fa-fw fa-file',
         ],
+        [
+            'text'        => 'Teammates',
+            'url'         => 'admin/teammates',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Testimonials',
+            'url'         => 'admin/testimonials',
+            'icon'        => 'far fa-fw fa-file',
+        ],
 //        [
 //            'text'        => 'pages',
 //            'url'         => 'admin/pages',

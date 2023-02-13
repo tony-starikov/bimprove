@@ -23,7 +23,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
 
     <style>
         body {
@@ -140,6 +142,41 @@
             height: 100%;
         }
 
+        .service-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #6de1df;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .service-container:hover .service-overlay {
+            bottom: 0;
+            height: 50%;
+        }
+
+        .service-container {
+            position: relative;
+        }
+
+        /*video {*/
+        /*    width: 100vw;*/
+        /*    height: 100vh;*/
+        /*    max-width: 100vw;*/
+        /*    max-height: 100vh;*/
+        /*    object-fit: cover;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    bottom: 0;*/
+        /*    z-index: -100;*/
+        /*}*/
+
         /*input[placeholder]:focus {*/
         /*    opacity: 1 !important; !* Firefox *!*/
         /*    color: transparent !important;*/
@@ -156,7 +193,6 @@
     </style>
 </head>
 <body>
-
 
 <!-- Modal START -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -256,19 +292,19 @@
 </div>
 <!-- Modal END -->
 
-<div class="container px-xxl-5">
+<div class="container px-5">
 
-    <nav class="navbar fixed-top navbar-expand" style="background-color: #ffffff;">
-        <div class="container px-xxl-5">
-            <div class="row w-100 px-5">
-                <div class="col-1 p-0 d-flex justify-content-start align-items-center">
+    <nav class="shadow-lg fixed-top" style="background-color: #ffffff;">
+        <div class="container px-5">
+
+            <div class="row py-2 px-5">
+                <div class="col-1 px-0 d-flex justify-content-start align-items-center">
                     <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/logo.png" class="img" height="70"  alt="">
+                        <img src="/images/logo.png" class="img-fluid"  alt="">
                     </a>
                 </div>
-                <div class="col-10 p-0 d-flex justify-content-center align-items-center">
+                <div class="col-10 px-0 d-flex justify-content-center align-items-center">
                     <ul class="nav">
-
                         <li class="nav-item dropdown">
                             <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="h6 fw-bold">SERVICES</span>
@@ -283,22 +319,22 @@
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-current="page" href="#">
-                                <p class="h6 fw-bold">PORTFOLIO</p>
+                                <span class="h6 fw-bold">PORTFOLIO</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-current="page" href="#">
-                                <p class="h6 fw-bold">ABOUT</p>
+                                <span class="h6 fw-bold">ABOUT</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-current="page" href="{{ route('blog') }}">
-                                <p class="h6 fw-bold">BLOG</p>
+                                <span class="h6 fw-bold">BLOG</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-current="page" href="#">
-                                <p class="h6 fw-bold">CONTACTS</p>
+                                <span class="h6 fw-bold">CONTACTS</span>
                             </a>
                         </li>
 
@@ -314,32 +350,35 @@
                             </ul>
                         </li>
 
-{{--                        <li class="nav-item">--}}
-{{--                            <a class="nav-link text-dark" aria-current="page" href="{{ route('products') }}">--}}
-{{--                                <p class="h6 fw-bold">PRODUCTS</p>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="{{ route('products') }}">
+                                <span class="h6 fw-bold">PRODUCTS</span>
+                            </a>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" aria-current="page" href="#">
-                                <p class="h6 fw-bold">CAREER</p>
+                                <span class="h6 fw-bold">CAREER</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-1 p-0 d-flex justify-content-end align-items-center">
+                <div class="col-1 px-0 d-flex justify-content-end align-items-center">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link text-dark p-0" aria-current="page" href="#">
-                                <p class="h6 fw-bold">EN/UA</p>
+                                <span class="h6 fw-bold">EN/UA</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+
+
+
 {{--            <a class="navbar-brand ms-5" href="{{ route('main') }}">--}}
 {{--                <img src="/images/logo.png" class="img" height="60"  alt="">--}}
-{{--                --}}{{--                <img src="/images/logo.png" class="img-fluid d-none d-xl-block"  alt="">--}}
+{{--                                <img src="/images/logo.png" class="img-fluid d-none d-xl-block"  alt="">--}}
 {{--            </a>--}}
 {{--            <div class="collapse navbar-collapse" id="navbarSupportedContent">--}}
 {{--                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-none d-lg-flex">--}}
@@ -397,132 +436,122 @@
 
 </div>
 
+{{--<video poster="poster.jpg" autoplay playsinline muted loop>--}}
+{{--<video autoplay playsinline muted loop>--}}
+{{--    <source src="/images/video.webm" type="video/webm">--}}
+{{--    <source src="/images/video.mp4" type="video/mp4">--}}
+{{--</video>--}}
 
 <main role="main">
     @yield('main')
 
-    <div class="container-fluid" style="background-color: #b0c0c3">
+    <div class="container-fluid" style="background-color: #9a9a9a">
         <div class="container px-xxl-5">
-            <div class="row pb-5">
+            <div class="row px-5 pb-5">
                 <div class="col-12 col-lg-6">
+                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">SOCIAL MEDIA</h2>
+                    <h2 class="text-white display-5 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">SOCIAL MEDIA</h2>
 
-                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">CONTACT US</h2>
-                    <h2 class="text-white display-5 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">CONTACT US</h2>
+                    <div class="row w-75">
+                        <div class="col-3">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <i class="lab la-2x la-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <i class="lab la-2x la-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <i class="lab la-2x la-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <i class="lab la-2x la-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
 
-                    {{--                    <h2 class="text-white display-6 fw-bold mt-5">CONTACT US</h2>--}}
-                    <form class="text-white footer-form" action="post">
-                        <div class="row mb-5">
-                            <div class="col-6">
-                                <input type="text" name="name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput1" placeholder="Name">
-                            </div>
-                            <div class="col-6">
-                                <input type="text" name="last_name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">
-                            </div>
-                        </div>
-                        <div class="mb-5">
-                            <input type="email" name="email" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput3" placeholder="Email">
-                        </div>
-                        <div class="mb-5">
-                            <input type="text" name="phone" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput4" placeholder="Phone">
-                        </div>
-                        <div class="mb-5">
-                            <input type="text" name="company" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput5" placeholder="Company">
-                        </div>
-                        <div class="mb-5">
-                            <input type="text" name="message" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput6" placeholder="Message">
-                        </div>
+{{--                    <form class="text-white footer-form" action="post">--}}
+{{--                        <div class="row mb-5">--}}
+{{--                            <div class="col-6">--}}
+{{--                                <input type="text" name="name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput1" placeholder="Name">--}}
+{{--                            </div>--}}
+{{--                            <div class="col-6">--}}
+{{--                                <input type="text" name="last_name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="mb-5">--}}
+{{--                            <input type="email" name="email" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput3" placeholder="Email">--}}
+{{--                        </div>--}}
+{{--                        <div class="mb-5">--}}
+{{--                            <input type="text" name="phone" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput4" placeholder="Phone">--}}
+{{--                        </div>--}}
+{{--                        <div class="mb-5">--}}
+{{--                            <input type="text" name="company" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput5" placeholder="Company">--}}
+{{--                        </div>--}}
+{{--                        <div class="mb-5">--}}
+{{--                            <input type="text" name="message" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput6" placeholder="Message">--}}
+{{--                        </div>--}}
 
-                        <button type="submit" class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold d-lg-none" style="background-color: #6bdcdb">
-                            <span class="fw-bold h6 d-block my-1">SUBMIT</span>
-                        </button>
+{{--                        <button type="submit" class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold d-lg-none" style="background-color: #6bdcdb">--}}
+{{--                            <span class="fw-bold h6 d-block my-1">SUBMIT</span>--}}
+{{--                        </button>--}}
 
-                        <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold d-none d-lg-block" style="background-color: #6bdcdb">
-                            <span class="fw-bold h4 d-block my-1">SUBMIT</span>
-                        </button>
+{{--                        <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold d-none d-lg-block" style="background-color: #6bdcdb">--}}
+{{--                            <span class="fw-bold h4 d-block my-1">SUBMIT</span>--}}
+{{--                        </button>--}}
 
-                    </form>
+{{--                    </form>--}}
                 </div>
 
                 <div class="col-12 col-md-6 d-none d-lg-block ps-5">
 
-                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">SOCIAL MEDIA</h2>
-                    <h2 class="text-white display-5 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">SOCIAL MEDIA</h2>
-
-                    {{--                    <h2 class="text-white display-6 fw-bold mt-5">SOCIAL MEDIA</h2>--}}
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row mb-3">
-                            <div class="col-2"><i class="lab la-2x la-linkedin-in"></i></div>
-                            <div class="col-10 px-0 pt-3"><h4 class="fw-bold mb-0 me-0 ms-2">BIMprove LLC</h4></div>
-                        </div>
-                    </a>
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row mb-3">
-                            <div class="col-2"><i class="lab la-2x la-instagram"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">@bimprove</h5></div>
-                        </div>
-                    </a>
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row">
-                            <div class="col-2"><i class="lab la-2x la-facebook-f"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ">@bimproveworld</h5></div>
-                        </div>
-                    </a>
-
                     <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">CONTACTS</h2>
                     <h2 class="text-white display-5 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">CONTACTS</h2>
-
-                    {{--                    <h2 class="text-white display-6 fw-bold mt-5">CONTACTS</h2>--}}
                     <a href="#" class="text-white h4 text-decoration-none">
                         <div class="row mb-3">
                             <div class="col-2"><i class="las la-2x la-phone"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">+380668901648</h5></div>
+                            <div class="col-10 px-0 pt-1"><h3 class="fw-semibold mb-0 me-0 ms-2">+380668901648</h3></div>
                         </div>
                     </a>
                     <a href="#" class="text-white h4 text-decoration-none">
                         <div class="row">
                             <div class="col-2"><i class="las la-2x la-envelope"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ms-md-1">es@bim-prove.com</h5></div>
+                            <div class="col-10 px-0 pt-1"><h3 class="fw-semibold mb-0 me-0 ms-2 ms-md-1">es@bim-prove.com</h3></div>
                         </div>
                     </a>
 
                 </div>
 
-                <div class="col-12 col-md-6 d-lg-none">
-                    <h2 class="text-white display-6 fw-bold mt-5">SOCIAL MEDIA</h2>
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row mb-3">
-                            <div class="col-2"><i class="lab la-2x la-linkedin-in"></i></div>
-                            <div class="col-10 px-0 pt-3"><h4 class="fw-bold mb-0 me-0 ms-2">BIMprove LLC</h4></div>
-                        </div>
-                    </a>
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row mb-3">
-                            <div class="col-2"><i class="lab la-2x la-instagram"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">@bimprove</h5></div>
-                        </div>
-                    </a>
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row">
-                            <div class="col-2"><i class="lab la-2x la-facebook-f"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ">@bimproveworld</h5></div>
-                        </div>
-                    </a>
-                </div>
+            </div>
 
-                <div class="col-12 col-md-6 d-lg-none ps-md-4">
-                    <h2 class="text-white display-6 fw-bold mt-5">CONTACTS</h2>
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row mb-3">
-                            <div class="col-2"><i class="las la-2x la-phone"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2">+380668901648</h5></div>
-                        </div>
-                    </a>
-                    <a href="#" class="text-white h4 text-decoration-none">
-                        <div class="row">
-                            <div class="col-2"><i class="las la-2x la-envelope"></i></div>
-                            <div class="col-10 px-0 pt-3"><h5 class="fw-bold mb-0 me-0 ms-2 ms-md-1">es@bim-prove.com</h5></div>
-                        </div>
-                    </a>
+            <div class="row px-5">
+                <div class="col-12 d-flex justify-content-between">
+                    <h4 class="fw-semibold d-inline-block text-white">SERVICES</h4>
+                    <h4 class="fw-semibold d-inline-block text-white">PORTFOLIO</h4>
+                    <h4 class="fw-semibold d-inline-block text-white">ABOUT</h4>
+                    <h4 class="fw-semibold d-inline-block text-white">BLOG</h4>
+                    <h4 class="fw-semibold d-inline-block text-white">PRODUCTS</h4>
+                    <h4 class="fw-semibold d-inline-block text-white">CAREER</h4>
+                    <h4 class="fw-semibold d-inline-block text-white">DONATIONS</h4>
+                </div>
+            </div>
+            <div class="row px-5">
+                <div class="col-12 px-4">
+                    <div class="row border-bottom border-white border-2">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-12 text-center">
+                    <p class="card-text text-white fw-bold h6">
+                        &copy; Copyright BIMprove company LLC. All rights reserved 2022.
+                    </p>
                 </div>
             </div>
         </div>
@@ -541,6 +570,12 @@
     let configs = [
         {
             type   : 'loop',
+            perPage: 3,
+            padding: { left: '10%', right: '10%' },
+            arrows: boolean = true,
+        },
+        {
+            type   : 'loop',
             perPage: 2,
             padding: { left: '20%', right: '20%' },
             arrows: boolean = true,
@@ -550,7 +585,12 @@
             perPage: 2,
             padding: { left: '15%', right: '25%' },
             arrows: boolean = true,
-        }
+        },
+        {
+            type   : 'loop',
+            perPage: 4,
+            arrows: boolean = true,
+        },
     ];
 
     for ( let i = 0; i < elms.length; i++ ) {

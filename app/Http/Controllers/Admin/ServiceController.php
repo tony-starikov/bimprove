@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Service;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ServiceController extends Controller
 {
@@ -37,18 +38,29 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.services.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        //
+        $parameters = $request->all();
+
+        unset($parameters['image']);
+
+        if ($request->has('image')) {
+            $path = Storage::disk('public')->putFile('services', $request->file('image'), 'public');
+            $parameters['image'] = $path;
+        }
+
+        Service::create($parameters);
+
+        return redirect()->route('services.index');
     }
 
     /**
@@ -70,7 +82,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        //
+        return view('admin.services.edit', compact('service'));
     }
 
     /**
@@ -82,7 +94,17 @@ class ServiceController extends Controller
      */
     public function update(Request $request, Service $service)
     {
-        //
+        $parameters = $request->all();
+
+        if ($request->has('image')) {
+            Storage::disk('public')->delete($service->image);
+            $path = Storage::disk('public')->putFile('services', $request->file('image'), 'public');
+            $parameters['image'] = $path;
+        }
+
+        $service->update($parameters);
+
+        return redirect()->route('services.index');
     }
 
     /**
@@ -93,6 +115,10 @@ class ServiceController extends Controller
      */
     public function destroy(Service $service)
     {
-        //
+        Storage::disk('public')->delete($service->image);
+
+        $service->delete();
+
+        return redirect()->route('services.index');
     }
 }
