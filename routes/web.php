@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'main'])->name('main');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/blog/subscribe', [PostController::class, 'subscribe'])->name('subscribe');
 Route::get('/post/{post}', [PostController::class, 'show'])->name('post');

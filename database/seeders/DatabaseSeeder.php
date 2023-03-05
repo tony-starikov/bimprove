@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
             PostItemSeeder::class,
             PluginSeeder::class,
             FamilySeeder::class,
+            AchievementSeeder::class,
+            StarSeeder::class,
+            TeammateSeeder::class,
         ]);
     }
 }
