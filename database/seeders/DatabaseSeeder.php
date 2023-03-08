@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             AchievementSeeder::class,
             StarSeeder::class,
             TeammateSeeder::class,
+            MenuItemSeeder::class,
         ]);
     }
 }

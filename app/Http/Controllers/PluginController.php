@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Plugin;
 use App\Models\Service;
@@ -22,6 +23,8 @@ class PluginController extends Controller
 
         $services = Service::all();
 
-        return view('products', compact('page_info', 'plugins', 'services'));
+        $menuItems = MenuItem::all();
+
+        return view('products', compact('page_info', 'plugins', 'services', 'menuItems'));
     }
 }

@@ -236,54 +236,105 @@
                     </div>
 
                     <div class="row mt-3">
-                        <div class="col-12 my-2">
-                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">SERVICES</button>
-                            <button type="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    SERVICES
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-12 my-2">
-                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">PORTFOLIO</button>
-                            <button type="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    PORTFOLIO
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-12 my-2">
-                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">ABOUT</button>
-                            <button type="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    ABOUT
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-12 my-2">
-                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">BLOG</button>
-                            <button type="button" class="btn btn-primary border-0 w-25 mx-auto fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    BLOG
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-12 my-2">
-                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">CONTACTS</button>
-                            <button type="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    CONTACTS
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-12 my-2">
-                            <button type="button" class="btn btn-primary border-0 w-100 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">PRODUCTS</button>
-                            <button type="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    PRODUCTS
-                                </span>
-                            </button>
-                        </div>
+
+                        @foreach($menuItems as $menuItem)
+                            @if($menuItem->show_status === 1)
+
+                                @switch($menuItem->item_name)
+                                    @case('Home')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            HOME
+                                        </a>
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                HOME
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
+
+{{--                                    @case('Services')--}}
+{{--                                    <li class="nav-item dropdown">--}}
+{{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                            <span class="h6 fw-bold small">SERVICES</span>--}}
+{{--                                        </a>--}}
+{{--                                        <ul class="dropdown-menu">--}}
+{{--                                            @foreach($services as $service)--}}
+{{--                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
+{{--                                            @endforeach--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    @break--}}
+
+                                    @case('Portfolio')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            PORTFOLIO
+                                        </a>
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                PORTFOLIO
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
+
+                                    @case('About')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            ABOUT
+                                        </a>
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                ABOUT
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
+
+                                    @case('Blog')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            BLOG
+                                        </a>
+                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                BLOG
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
+
+{{--                                    @case('Products')--}}
+{{--                                    <li class="nav-item dropdown">--}}
+{{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                            <span class="h6 fw-bold small">PRODUCTS</span>--}}
+{{--                                        </a>--}}
+{{--                                        <ul class="dropdown-menu">--}}
+{{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('products') }}">PLUGINS</a></li>--}}
+{{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('families') }}">FAMILIES</a></li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    @break--}}
+
+                                    @case('Career')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="#" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            CAREER
+                                        </a>
+                                        <a href="#" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                CAREER
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
+                                @endswitch
+
+                            @endif
+                        @endforeach
+
                     </div>
                 </div>
             </div>
@@ -366,51 +417,78 @@
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
                     <ul class="nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="{{ route('main') }}">
-                                <span class="h6 fw-bold">HOME</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="h6 fw-bold">SERVICES</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                @foreach($services as $service)
-                                    <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
-                                @endforeach
-                            </ul>
-                        </li>
+                        @foreach($menuItems as $menuItem)
+                            @if($menuItem->show_status === 1)
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">
-                                <span class="h6 fw-bold">PORTFOLIO</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">
-                                <span class="h6 fw-bold">ABOUT</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="{{ route('blog') }}">
-                                <span class="h6 fw-bold">BLOG</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="h6 fw-bold">PRODUCTS</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('products') }}">PLUGINS</a></li>
-                                <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('families') }}">FAMILIES</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">
-                                <span class="h6 fw-bold">CAREER</span>
-                            </a>
-                        </li>
+                                @switch($menuItem->item_name)
+                                    @case('Home')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="{{ route('main') }}">
+                                            <span class="h6 fw-bold">HOME</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Services')
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="h6 fw-bold">SERVICES</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            @foreach($services as $service)
+                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Portfolio')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="#">
+                                            <span class="h6 fw-bold">PORTFOLIO</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('About')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="#">
+                                            <span class="h6 fw-bold">ABOUT</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Blog')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="{{ route('blog') }}">
+                                            <span class="h6 fw-bold">BLOG</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Products')
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="h6 fw-bold">PRODUCTS</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('products') }}">PLUGINS</a></li>
+                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('families') }}">FAMILIES</a></li>
+                                        </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Career')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="#">
+                                            <span class="h6 fw-bold">CAREER</span>
+                                        </a>
+                                    </li>
+                                    @break
+                                @endswitch
+
+                            @endif
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
@@ -439,51 +517,78 @@
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
                     <ul class="nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('main') }}">
-                                <span class="h6 fw-bold">HOME</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="h6 fw-bold">SERVICES</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                @foreach($services as $service)
-                                    <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
-                                @endforeach
-                            </ul>
-                        </li>
+                        @foreach($menuItems as $menuItem)
+                            @if($menuItem->show_status === 1)
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-2" aria-current="page" href="#">
-                                <span class="h6 fw-bold">PORTFOLIO</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('contact') }}">
-                                <span class="h6 fw-bold">ABOUT</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('blog') }}">
-                                <span class="h6 fw-bold">BLOG</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="h6 fw-bold">PRODUCTS</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('products') }}">PLUGINS</a></li>
-                                <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('families') }}">FAMILIES</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-2" aria-current="page" href="#">
-                                <span class="h6 fw-bold">CAREER</span>
-                            </a>
-                        </li>
+                                @switch($menuItem->item_name)
+                                    @case('Home')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('main') }}">
+                                            <span class="h6 fw-bold">HOME</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Services')
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="h6 fw-bold">SERVICES</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            @foreach($services as $service)
+                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Portfolio')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                            <span class="h6 fw-bold">PORTFOLIO</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('About')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                            <span class="h6 fw-bold">ABOUT</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Blog')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('blog') }}">
+                                            <span class="h6 fw-bold">BLOG</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Products')
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="h6 fw-bold">PRODUCTS</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('products') }}">PLUGINS</a></li>
+                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('families') }}">FAMILIES</a></li>
+                                        </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Career')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                            <span class="h6 fw-bold">CAREER</span>
+                                        </a>
+                                    </li>
+                                    @break
+                                @endswitch
+
+                            @endif
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
@@ -512,51 +617,78 @@
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
                     <ul class="nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('main') }}">
-                                <span class="h6 fw-bold small">HOME</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="h6 fw-bold small">SERVICES</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                @foreach($services as $service)
-                                    <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
-                                @endforeach
-                            </ul>
-                        </li>
+                        @foreach($menuItems as $menuItem)
+                            @if($menuItem->show_status === 1)
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-1" aria-current="page" href="#">
-                                <span class="h6 fw-bold small">PORTFOLIO</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('contact') }}">
-                                <span class="h6 fw-bold small">ABOUT</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('blog') }}">
-                                <span class="h6 fw-bold small">BLOG</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="h6 fw-bold small">PRODUCTS</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('products') }}">PLUGINS</a></li>
-                                <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('families') }}">FAMILIES</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark px-1" aria-current="page" href="#">
-                                <span class="h6 fw-bold small">CAREER</span>
-                            </a>
-                        </li>
+                                @switch($menuItem->item_name)
+                                    @case('Home')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('main') }}">
+                                            <span class="h6 fw-bold small">HOME</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Services')
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="h6 fw-bold small">SERVICES</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            @foreach($services as $service)
+                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Portfolio')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
+                                            <span class="h6 fw-bold small">PORTFOLIO</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('About')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
+                                            <span class="h6 fw-bold small">ABOUT</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Blog')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('blog') }}">
+                                            <span class="h6 fw-bold small">BLOG</span>
+                                        </a>
+                                    </li>
+                                    @break
+
+                                    @case('Products')
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="h6 fw-bold small">PRODUCTS</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('products') }}">PLUGINS</a></li>
+                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('families') }}">FAMILIES</a></li>
+                                        </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Career')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
+                                            <span class="h6 fw-bold small">CAREER</span>
+                                        </a>
+                                    </li>
+                                    @break
+                                @endswitch
+
+                            @endif
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">

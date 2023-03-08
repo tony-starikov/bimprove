@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Achievement;
+use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
@@ -15,6 +16,8 @@ class PageController extends Controller
     {
         $page_info = Page::where('name', 'main')->first();
 
+        $menuItems = MenuItem::all();
+
         $services = Service::all();
 
         $achievements = Achievement::all();
@@ -23,15 +26,6 @@ class PageController extends Controller
 
         $teammates = Teammate::all();
 
-        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates'));
-    }
-
-    public function contact()
-    {
-        $page_info = Page::where('name', 'main')->first();
-
-        $services = Service::all();
-
-        return view('contact', compact('page_info', 'services'));
+        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems'));
     }
 }

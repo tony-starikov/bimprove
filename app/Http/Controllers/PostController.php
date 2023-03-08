@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
@@ -48,6 +49,8 @@ class PostController extends Controller
 //        $page_info = Page::where('name', 'blog')->first();
         $services = Service::all();
 
-        return view('subscribe', compact ('services'));
+        $menuItems = MenuItem::all();
+
+        return view('subscribe', compact ('services', 'menuItems'));
     }
 }

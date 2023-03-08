@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MenuItem;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,8 @@ class ServiceController extends Controller
 
         $service = Service::where('slug', $slug)->first();
 
-        return view('service', compact('service', 'services'));
+        $menuItems = MenuItem::all();
+
+        return view('service', compact('service', 'services', 'menuItems'));
     }
 }

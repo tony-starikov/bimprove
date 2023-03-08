@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Family;
+use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -22,6 +23,8 @@ class FamilyController extends Controller
 
         $services = Service::all();
 
-        return view('families', compact('page_info', 'families', 'services'));
+        $menuItems = MenuItem::all();
+
+        return view('families', compact('page_info', 'families', 'services', 'menuItems'));
     }
 }
