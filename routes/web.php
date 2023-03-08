@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminServiceController;
 use App\Http\Controllers\Admin\HomeController;
-use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\DonateController;
 use App\Http\Controllers\FamilyController;
 use App\Http\Controllers\PageController;
@@ -29,6 +30,7 @@ Route::get('/post/{post}', [PostController::class, 'show'])->name('post');
 Route::get('/products', [PluginController::class, 'index'])->name('products');
 Route::get('/families', [FamilyController::class, 'index'])->name('families');
 Route::post('/donate', [DonateController::class, 'index'])->name('donate');
+Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('service');
 
 Auth::routes([
     'register' => false,
@@ -45,6 +47,6 @@ Route::middleware('auth')->group(function () {
     ], function () {
         Route::get('home', [HomeController::class, 'index'])->name('adminHome');
 
-        Route::resource('services', ServiceController::class);
+        Route::resource('services', AdminServiceController::class);
     });
 });

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Family;
 use App\Models\Page;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class FamilyController extends Controller
@@ -19,6 +20,8 @@ class FamilyController extends Controller
 
         $families = Family::paginate(6);
 
-        return view('families', compact('page_info', 'families'));
+        $services = Service::all();
+
+        return view('families', compact('page_info', 'families', 'services'));
     }
 }

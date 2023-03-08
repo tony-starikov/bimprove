@@ -6,6 +6,8 @@
     <h1>Edit the service</h1>
 @stop
 
+@section('plugins.Summernote', true)
+
 @section('content')
     <div class="container-fluid">
 
@@ -28,13 +30,6 @@
                         <input value="{{ $service->title_en }}" type="text" name="title_en" id="title_en" class="form-control" placeholder="REQUIRED" aria-describedby="addon-wrapping" required>
                     </div>
 
-{{--                    <div class="input-group flex-nowrap mb-3">--}}
-{{--                        <div class="input-group-prepend">--}}
-{{--                            <span class="input-group-text" id="addon-wrapping">SLUG</span>--}}
-{{--                        </div>--}}
-{{--                        <input type="text" name="slug" id="slug" class="form-control" placeholder="SLUG" aria-describedby="addon-wrapping" required>--}}
-{{--                    </div>--}}
-
                     <div class="input-group flex-nowrap mb-3">
                         <span class="input-group-text">DESCRIPTION EN</span>
                         <textarea name="description_en" id="description_en" class="form-control" aria-label="description_en">{{ $service->description_en }}</textarea>
@@ -42,8 +37,10 @@
 
                     <div class="input-group flex-nowrap mb-3">
                         <span class="input-group-text">IMAGE</span>
-                        <input class="form-control" type="file" name="image" id="image">
+                        <input class="form-control" type="file" name="image_small" id="image_small">
                     </div>
+
+                    <x-adminlte-text-editor name="content">{!! $service->content !!}</x-adminlte-text-editor>
 
                     <button type="submit" class="btn btn-success">EDIT</button>
                 </form>

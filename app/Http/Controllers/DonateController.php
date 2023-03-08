@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Page;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class DonateController extends Controller
@@ -33,6 +34,8 @@ class DonateController extends Controller
 
         $page_info = Page::where('name', 'donate')->first();
 
-        return view('donate', compact('page_info', 'donate', 'countries'));
+        $services = Service::all();
+
+        return view('donate', compact('page_info', 'donate', 'countries', 'services'));
     }
 }

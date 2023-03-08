@@ -21,6 +21,7 @@ class ServicesSeeder extends Seeder
                 'description_ua' => 'Projects development from scratch using BIM technologies on all stages of production.',
                 'description_en' => 'Projects development from scratch using BIM technologies on all stages of production.',
                 'image_small' => 'service1.png',
+                'slug' => 'mep_coordination',
             ],
             [
                 'title_ua' => 'Telecom Design',
@@ -28,6 +29,7 @@ class ServicesSeeder extends Seeder
                 'description_ua' => 'Creation of 3D projects, drawings design, detail development.',
                 'description_en' => 'Creation of 3D projects, drawings design, detail development.',
                 'image_small' => 'service1.png',
+                'slug' => 'telecom_design',
             ],
             [
                 'title_ua' => 'Scan to BIM',
@@ -35,6 +37,7 @@ class ServicesSeeder extends Seeder
                 'description_ua' => 'Creation of quality BIM model by the point clouds according to customers requirements.',
                 'description_en' => 'Creation of quality BIM model by the point clouds according to customers requirements.',
                 'image_small' => 'service1.png',
+                'slug' => 'scan_to_bim',
             ],
             [
                 'title_ua' => 'BIM modeling',
@@ -42,6 +45,7 @@ class ServicesSeeder extends Seeder
                 'description_ua' => 'Development of BIM models and visualizations, providing of project documentation.',
                 'description_en' => 'Development of BIM models and visualizations, providing of project documentation.',
                 'image_small' => 'service1.png',
+                'slug' => 'bim_modeling',
             ],
             [
                 'title_ua' => 'BIM content creation',
@@ -49,6 +53,7 @@ class ServicesSeeder extends Seeder
                 'description_ua' => 'Development of unique parametric Revit families.',
                 'description_en' => 'Development of unique parametric Revit families.',
                 'image_small' => 'service1.png',
+                'slug' => 'bim_content_creation',
             ],
             [
                 'title_ua' => 'Software development',
@@ -56,6 +61,7 @@ class ServicesSeeder extends Seeder
                 'description_ua' => 'Projects development from scratch. using BIM technologies on all stages of production.',
                 'description_en' => 'Projects development from scratch. using BIM technologies on all stages of production.',
                 'image_small' => 'service1.png',
+                'slug' => 'software_development',
             ],
         ]);
     }

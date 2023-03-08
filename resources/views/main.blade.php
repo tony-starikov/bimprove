@@ -944,9 +944,11 @@
                                 </div>
                                 <div class="service-overlay">
                                     <div class="d-flex align-self-center h-100 px-5" style="background-color: #6de1df">
-                                        <button class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center" style="background-color: #43aeb6" type="button">
-                                            <span class="fw-bold h4 d-block my-2">MORE INFO</span>
-                                        </button>
+                                        <a class="text-decoration-none w-100 align-self-center" href="{{ route('service', [$service->slug]) }}">
+                                            <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                <span class="fw-bold h4 d-block my-2">MORE INFO</span>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -3102,137 +3104,6 @@
                         </ul>
                     </div>
                 </section>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container-fluid d-none d-xxl-block" style="background-color: #adbec1">
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-6">
-                    <h2 class="text-white fw-bold display-5 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h1 fw-semibold mt-4">
-                        <small>
-                            Sign up for a meeting now a convenient time for you!
-                        </small>
-                    </h2>
-                    <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-50 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-6 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-color: #adbec1">
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-6">
-                    <h2 class="text-white fw-bold display-5 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h1 fw-semibold mt-4">
-                        <small>
-                            Sign up for a meeting now a convenient time for you!
-                        </small>
-                    </h2>
-                    <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-6 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-lg-block d-xl-none" style="background-color: #adbec1">
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-6">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h1 fw-semibold mt-4">
-                        <small>
-                            Sign up for a meeting now a convenient time for you!
-                        </small>
-                    </h2>
-                    <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-6 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #adbec1">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-8">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold mt-4">
-                        Sign up for a meeting now a convenient time for you!
-                    </h2>
-                    <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-sm-block d-md-none" style="background-color: #adbec1">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-8">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold mt-4">
-                        Sign up for a meeting now a convenient time for you!
-                    </h2>
-                    <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-sm-none" style="background-color: #adbec1">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-12">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold mt-4">
-                        Sign up for a meeting now a convenient time for you!
-                    </h2>
-                    <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
             </div>
         </div>
     </div>

@@ -6,6 +6,8 @@
     <h1>Add new service</h1>
 @stop
 
+@section('plugins.Summernote', true)
+
 @section('content')
     <div class="container-fluid">
 
@@ -27,12 +29,12 @@
                         <input type="text" name="title_en" id="title_en" class="form-control" placeholder="REQUIRED" aria-describedby="addon-wrapping" required>
                     </div>
 
-{{--                    <div class="input-group flex-nowrap mb-3">--}}
-{{--                        <div class="input-group-prepend">--}}
-{{--                            <span class="input-group-text" id="addon-wrapping">SLUG</span>--}}
-{{--                        </div>--}}
-{{--                        <input type="text" name="slug" id="slug" class="form-control" placeholder="SLUG" aria-describedby="addon-wrapping" required>--}}
-{{--                    </div>--}}
+                    <div class="input-group flex-nowrap mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="addon-wrapping">SLUG</span>
+                        </div>
+                        <input type="text" name="slug" id="slug" class="form-control" placeholder="SLUG" aria-describedby="addon-wrapping" required>
+                    </div>
 
                     <div class="input-group flex-nowrap mb-3">
                         <span class="input-group-text">DESCRIPTION EN</span>
@@ -41,8 +43,10 @@
 
                     <div class="input-group flex-nowrap mb-3">
                         <span class="input-group-text">IMAGE</span>
-                        <input class="form-control" type="file" name="image" id="image">
+                        <input class="form-control" type="file" name="image_small" id="image_small">
                     </div>
+
+                    <x-adminlte-text-editor name="content"></x-adminlte-text-editor>
 
                     <button type="submit" class="btn btn-success">ADD</button>
                 </form>
