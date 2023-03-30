@@ -25,7 +25,7 @@
 
                     <input type="hidden" name="show_status" value="0">
                     <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="show_status" id="show_status" value="1" @if($menuItem->show_status === 1) checked @endif >
+                        <input class="form-check-input" type="checkbox" name="show_status" id="show_status" value="1" @if($menuItem->show_status === '1') checked @endif >
                         <label class="form-check-label" for="show_status">
                             DISPLAY
                         </label>

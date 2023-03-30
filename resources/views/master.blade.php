@@ -213,7 +213,7 @@
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
                     <ul class="nav mx-auto">
                         @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status === 1)
+                            @if($menuItem->show_status === '1')
 
                                 @switch($menuItem->item_name)
                                     @case('Home')

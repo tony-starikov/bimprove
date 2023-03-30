@@ -16,7 +16,7 @@ class CreateMenuItemsTable extends Migration
         Schema::create('menu_items', function (Blueprint $table) {
             $table->id();
             $table->text('item_name')->nullable();
-            $table->integer('show_status')->default(1);
+            $table->string('show_status')->default('1');
             $table->timestamps();
         });
     }

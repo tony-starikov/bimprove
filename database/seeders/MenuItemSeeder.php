@@ -17,31 +17,31 @@ class MenuItemSeeder extends Seeder
         DB::table('menu_items')->insert([
             [
                 'item_name' => 'Home',
-                'show_status' => 1,
+                'show_status' => '1',
             ],
             [
                 'item_name' => 'Services',
-                'show_status' => 1,
+                'show_status' => '1',
             ],
             [
                 'item_name' => 'Portfolio',
-                'show_status' => 1,
+                'show_status' => '1',
             ],
             [
                 'item_name' => 'About',
-                'show_status' => 1,
+                'show_status' => '1',
             ],
             [
                 'item_name' => 'Blog',
-                'show_status' => 1,
+                'show_status' => '1',
             ],
             [
                 'item_name' => 'Products',
-                'show_status' => 1,
+                'show_status' => '1',
             ],
             [
                 'item_name' => 'Career',
-                'show_status' => 0,
+                'show_status' => '0',
             ],
         ]);
     }
