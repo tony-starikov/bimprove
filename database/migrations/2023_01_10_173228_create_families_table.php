@@ -20,6 +20,7 @@ class CreateFamiliesTable extends Migration
             $table->text('description_en')->nullable();
             $table->text('description_ua')->nullable();
             $table->text('image')->nullable();
+            $table->text('file')->nullable();
             $table->integer('show_status')->default(1);
             $table->integer('recommend')->default(0);
             $table->timestamps();

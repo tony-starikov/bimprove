@@ -322,13 +322,48 @@ return [
             'icon'        => 'far fa-fw fa-file',
         ],
         [
-            'text'        => 'Teammates',
-            'url'         => 'admin/teammates',
+            'text'        => 'Achievements',
+            'url'         => 'admin/achievements',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Stars',
+            'url'         => 'admin/stars',
             'icon'        => 'far fa-fw fa-file',
         ],
         [
             'text'        => 'Testimonials',
             'url'         => 'admin/testimonials',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Works',
+            'url'         => 'admin/works',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Teammates',
+            'url'         => 'admin/teammates',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Families',
+            'url'         => 'admin/families',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Plugins',
+            'url'         => 'admin/plugins',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Posts',
+            'url'         => 'admin/posts',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Main Page Settings',
+            'url'         => 'admin/mainPageItems',
             'icon'        => 'far fa-fw fa-file',
         ],
 //        [

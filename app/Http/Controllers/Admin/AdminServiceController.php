@@ -64,17 +64,6 @@ class AdminServiceController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Service  $service
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Service $service)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Service  $service
@@ -100,6 +89,12 @@ class AdminServiceController extends Controller
             Storage::disk('public')->delete($service->image);
             $path = Storage::disk('public')->putFile('services', $request->file('image'), 'public');
             $parameters['image'] = $path;
+        }
+
+        if ($request->has('presentation')) {
+            Storage::disk('public')->delete($service->presentation);
+            $path = Storage::disk('public')->putFile('presentations', $request->file('presentation'), 'public');
+            $parameters['presentation'] = $path;
         }
 
         $service->update($parameters);

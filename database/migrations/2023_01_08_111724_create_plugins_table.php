@@ -19,7 +19,10 @@ class CreatePluginsTable extends Migration
             $table->text('title_ua')->nullable();
             $table->text('description_en')->nullable();
             $table->text('description_ua')->nullable();
+            $table->text('slug')->nullable();
+            $table->text('video_url')->nullable();
             $table->text('image')->nullable();
+            $table->text('file')->nullable();
             $table->text('logo')->nullable();
             $table->integer('show_status')->default(1);
             $table->integer('recommend')->default(0);

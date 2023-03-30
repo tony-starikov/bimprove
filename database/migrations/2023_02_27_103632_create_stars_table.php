@@ -20,6 +20,7 @@ class CreateStarsTable extends Migration
             $table->text('description_ua')->nullable();
             $table->text('description_en')->nullable();
             $table->text('image')->nullable();
+            $table->text('image_small')->nullable();
             $table->timestamps();
         });
     }

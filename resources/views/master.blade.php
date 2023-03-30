@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -177,6 +179,11 @@
             z-index: -100;
         }
 
+        .video {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+        }
+
         /*input[placeholder]:focus {*/
         /*    opacity: 1 !important; !* Firefox *!*/
         /*    color: transparent !important;*/
@@ -193,218 +200,6 @@
     </style>
 </head>
 <body>
-
-<!-- Modal START -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <div class="modal-body p-0">
-                <div class="container-fluid h-100">
-                    <div class="container">
-                        <nav class="navbar navbar-expand my-lg-4" style="background-color: #ffffff;">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">
-                                    <img src="/images/logo.png" class="img" height="60"  alt="">
-                                </a>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                        <li class="nav-item d-flex d-lg-none align-items-center">
-                                            <a class="ms-4 nav-link text-dark d-flex align-items-center" aria-current="page" href="#">
-                                                <p class="h6 fw-bold mt-3 d-block d-lg-none">EN/UA</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item  d-flex align-items-center d-lg-none">
-                                            <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                                <img src="/images/menu-close.png" class="img pt-2" width="60" alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-
-                    <div class="row" style="background-color: #68d1d3">
-                        <div class="col-12">
-                            <h6 class="text-white text-center display-2 fw-bold my-5 d-md-none">
-                                GENERAL MENU
-                            </h6>
-                            <h6 class="text-white text-center display-4 fw-bold my-5 d-none d-md-block">
-                                GENERAL MENU
-                            </h6>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-
-                        @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status === 1)
-
-                                @switch($menuItem->item_name)
-                                    @case('Home')
-                                    <div class="col-12 text-center my-2">
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            HOME
-                                        </a>
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                HOME
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-{{--                                    @case('Services')--}}
-{{--                                    <li class="nav-item dropdown">--}}
-{{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                                            <span class="h6 fw-bold small">SERVICES</span>--}}
-{{--                                        </a>--}}
-{{--                                        <ul class="dropdown-menu">--}}
-{{--                                            @foreach($services as $service)--}}
-{{--                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
-{{--                                            @endforeach--}}
-{{--                                        </ul>--}}
-{{--                                    </li>--}}
-{{--                                    @break--}}
-
-                                    @case('Portfolio')
-                                    <div class="col-12 text-center my-2">
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            PORTFOLIO
-                                        </a>
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                PORTFOLIO
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('About')
-                                    <div class="col-12 text-center my-2">
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            ABOUT
-                                        </a>
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                ABOUT
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('Blog')
-                                    <div class="col-12 text-center my-2">
-                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            BLOG
-                                        </a>
-                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                BLOG
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-{{--                                    @case('Products')--}}
-{{--                                    <li class="nav-item dropdown">--}}
-{{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                                            <span class="h6 fw-bold small">PRODUCTS</span>--}}
-{{--                                        </a>--}}
-{{--                                        <ul class="dropdown-menu">--}}
-{{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('products') }}">PLUGINS</a></li>--}}
-{{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('families') }}">FAMILIES</a></li>--}}
-{{--                                        </ul>--}}
-{{--                                    </li>--}}
-{{--                                    @break--}}
-
-                                    @case('Career')
-                                    <div class="col-12 text-center my-2">
-                                        <a href="#" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            CAREER
-                                        </a>
-                                        <a href="#" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                CAREER
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-                                @endswitch
-
-                            @endif
-                        @endforeach
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal END -->
-
-<!-- Modal START -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content h-100" style="background-color: #b5c5c8;">
-            <div class="modal-body p-0">
-                <div class="container h-100">
-                    <div class="row mt-1 d-flex justify-content-end">
-                        <div class="col-1">
-                            <button type="button" class="btn border-0" style="width: 70px" data-bs-dismiss="modal">
-                                <i class="las la-3x la-times text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-5">
-                            <h2 class="text-white display-4 fw-bold pb-2 d-none d-lg-block">CONTACT US</h2>
-
-                            <form class="text-white footer-form" action="post">
-                                <div class="row mb-5">
-                                    <div class="col-6">
-                                        <input type="text" name="name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput1" placeholder="Name">
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="text" name="last_name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">
-                                    </div>
-                                </div>
-                                <div class="mb-5">
-                                    <input type="email" name="email" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput3" placeholder="Email">
-                                </div>
-                                <div class="mb-5">
-                                    <input type="text" name="phone" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput4" placeholder="Phone">
-                                </div>
-                                <div class="mb-5">
-                                    <input type="text" name="company" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput5" placeholder="Company">
-                                </div>
-                                <div class="mb-5">
-                                    <input type="text" name="message" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput6" placeholder="Message">
-                                </div>
-
-                                <button type="submit" class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold d-lg-none" style="background-color: #6bdcdb">
-                                    <span class="fw-bold h6 d-block my-1">SUBMIT</span>
-                                </button>
-
-                                <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold d-none d-lg-block" style="background-color: #6bdcdb">
-                                    <span class="fw-bold h4 d-block my-1">SUBMIT</span>
-                                </button>
-
-                            </form>
-                        </div>
-                        <div class="col-5">
-                            <!-- Calendly inline widget begin -->
-                            <div class="calendly-inline-widget w-100" data-url="https://calendly.com/tony-starikov-1992/30min" style="width:450px;height:95vh;"></div>
-                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                            <!-- Calendly inline widget end -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal END -->
 
 <div class="container-fluid d-none d-xxl-block px-5">
     <nav class="shadow-lg fixed-top" style="background-color: #ffffff;">
@@ -430,15 +225,20 @@
                                     @break
 
                                     @case('Services')
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+{{--                                    <li class="nav-item dropdown">--}}
+{{--                                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                            <span class="h6 fw-bold">SERVICES</span>--}}
+{{--                                        </a>--}}
+{{--                                        <ul class="dropdown-menu">--}}
+{{--                                            @foreach($services as $service)--}}
+{{--                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
+{{--                                            @endforeach--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="#">
                                             <span class="h6 fw-bold">SERVICES</span>
                                         </a>
-                                        <ul class="dropdown-menu">
-                                            @foreach($services as $service)
-                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
-                                            @endforeach
-                                        </ul>
                                     </li>
                                     @break
 
@@ -472,8 +272,8 @@
                                             <span class="h6 fw-bold">PRODUCTS</span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('products') }}">PLUGINS</a></li>
-                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('families') }}">FAMILIES</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="{{ route('products') }}">PLUGINS</a></li>
+                                            <li><a class="dropdown-item fw-semibold" href="{{ route('families') }}">FAMILIES</a></li>
                                         </ul>
                                     </li>
                                     @break
@@ -492,9 +292,9 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-primary btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
                         <span class="fw-bold h6 d-block m-0">CONTACT&nbsp;US</span>
-                    </button>
+                    </a>
                     <div class="d-flex d-lg-none justify-content-end align-items-center">
                         <a class="nav-link text-dark p-0 m-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">
@@ -729,142 +529,6 @@
 
 <main role="main">
     @yield('main')
-
-    <div class="container-fluid d-none d-xxl-block" style="background-color: #adbec1">
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-6">
-                    <h2 class="text-white fw-bold display-5 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h1 fw-semibold mt-4">
-                        <small>
-                            Sign up for a meeting now a convenient time for you!
-                        </small>
-                    </h2>
-                    <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-50 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-6 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-color: #adbec1">
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-6">
-                    <h2 class="text-white fw-bold display-5 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h1 fw-semibold mt-4">
-                        <small>
-                            Sign up for a meeting now a convenient time for you!
-                        </small>
-                    </h2>
-                    <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-6 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-lg-block d-xl-none" style="background-color: #adbec1">
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-6">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h1 fw-semibold mt-4">
-                        <small>
-                            Sign up for a meeting now a convenient time for you!
-                        </small>
-                    </h2>
-                    <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-6 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #adbec1">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-8">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold mt-4">
-                        Sign up for a meeting now a convenient time for you!
-                    </h2>
-                    <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-sm-block d-md-none" style="background-color: #adbec1">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-8">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold mt-4">
-                        Sign up for a meeting now a convenient time for you!
-                    </h2>
-                    <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-                <div class="col-4 d-flex align-items-center">
-                    <img src="/images/mail.png" class="img-fluid w-100" alt="mail_photo">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-sm-none" style="background-color: #adbec1">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-12">
-                    <h2 class="text-white fw-bold h1 w-100">
-                        UNLOCK THE FULL POTENTIAL OF OUR SERVICES.
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold mt-4">
-                        Sign up for a meeting now a convenient time for you!
-                    </h2>
-                    <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
 
     <div class="container-fluid d-none d-xxl-block px-5" style="background-color: #9a9a9a">
         <div class="container px-xxl-5">
@@ -1187,149 +851,217 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script>
 
-    let elms = document.getElementsByClassName( 'splide' );
+@yield('js')
 
-    let configs = [
-        {
-            type   : 'loop',
-            perPage: 3,
-            padding: { left: '10%', right: '10%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '10%', right: '10%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '5%', right: '5%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 1,
-            padding: { left: '15%', right: '15%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 1,
-            padding: { left: '15%', right: '15%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 1,
-            arrows: boolean = true,
-        },
 
-        // port
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '20%', right: '20%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '15%', right: '25%' },
-            arrows: boolean = true,
-        },
 
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '10%', right: '10%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '5%', right: '15%' },
-            arrows: boolean = true,
-        },
+@foreach($services as $service)
+    @if($service->video_url)
+        <!-- Modal -->
+        <div class="modal fade" id="{{ $service->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body w-100 border-0">
+                        <iframe id="{{ $service->slug }}_video" class="video w-100" src="{{ $service->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+@endforeach
 
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '10%', right: '10%' },
-            arrows: boolean = true,
-        },
-        {
-            type   : 'loop',
-            perPage: 2,
-            padding: { left: '5%', right: '15%' },
-            arrows: boolean = true,
-        },
+<!-- Modal START -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="container-fluid h-100">
+                    <div class="container">
+                        <nav class="navbar navbar-expand my-lg-4" style="background-color: #ffffff;">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">
+                                    <img src="/images/logo.png" class="img" height="60"  alt="">
+                                </a>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                        <li class="nav-item  d-flex align-items-center d-lg-none">
+                                            <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
+                                                <img src="/images/menu-close.png" class="img pt-2" width="60" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
 
-        {
-            type   : 'loop',
-            perPage: 1,
-            padding: { left: '20%', right: '20%' },
-            arrows: boolean = true,
-        },
+                    <div class="row" style="background-color: #68d1d3">
+                        <div class="col-12">
+                            <h6 class="text-white text-center display-2 fw-bold my-5 d-md-none">
+                                GENERAL MENU
+                            </h6>
+                            <h6 class="text-white text-center display-4 fw-bold my-5 d-none d-md-block">
+                                GENERAL MENU
+                            </h6>
+                        </div>
+                    </div>
 
-        {
-            type   : 'loop',
-            perPage: 1,
-            padding: { left: '10%', right: '10%' },
-            arrows: boolean = true,
-        },
+                    <div class="row mt-3">
 
-        {
-            type   : 'loop',
-            perPage: 1,
-            arrows: boolean = true,
-        },
+                        @foreach($menuItems as $menuItem)
+                            @if($menuItem->show_status === 1)
 
-        //team
+                                @switch($menuItem->item_name)
+                                    @case('Home')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            HOME
+                                        </a>
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                HOME
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
 
-        {
-            type   : 'loop',
-            perPage: 4,
-            arrows: boolean = true,
-        },
+                                    {{--                                    @case('Services')--}}
+                                    {{--                                    <li class="nav-item dropdown">--}}
+                                    {{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+                                    {{--                                            <span class="h6 fw-bold small">SERVICES</span>--}}
+                                    {{--                                        </a>--}}
+                                    {{--                                        <ul class="dropdown-menu">--}}
+                                    {{--                                            @foreach($services as $service)--}}
+                                    {{--                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
+                                    {{--                                            @endforeach--}}
+                                    {{--                                        </ul>--}}
+                                    {{--                                    </li>--}}
+                                    {{--                                    @break--}}
 
-        {
-            type   : 'loop',
-            perPage: 4,
-            arrows: boolean = true,
-        },
+                                    @case('Portfolio')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            PORTFOLIO
+                                        </a>
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                PORTFOLIO
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
 
-        {
-            type   : 'loop',
-            perPage: 3,
-            arrows: boolean = true,
-        },
+                                    @case('About')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            ABOUT
+                                        </a>
+                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                ABOUT
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
 
-        {
-            type   : 'loop',
-            perPage: 3,
-            arrows: boolean = true,
-        },
+                                    @case('Blog')
+                                    <div class="col-12 text-center my-2">
+                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            BLOG
+                                        </a>
+                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                BLOG
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
 
-        {
-            type   : 'loop',
-            perPage: 2,
-            arrows: boolean = true,
-        },
+                                    {{--                                    @case('Products')--}}
+                                    {{--                                    <li class="nav-item dropdown">--}}
+                                    {{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+                                    {{--                                            <span class="h6 fw-bold small">PRODUCTS</span>--}}
+                                    {{--                                        </a>--}}
+                                    {{--                                        <ul class="dropdown-menu">--}}
+                                    {{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('products') }}">PLUGINS</a></li>--}}
+                                    {{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('families') }}">FAMILIES</a></li>--}}
+                                    {{--                                        </ul>--}}
+                                    {{--                                    </li>--}}
+                                    {{--                                    @break--}}
 
-        {
-            type   : 'loop',
-            perPage: 1,
-            arrows: boolean = true,
-        },
-    ];
+                                    {{--                                    @case('Career')--}}
+                                    {{--                                    <div class="col-12 text-center my-2">--}}
+                                    {{--                                        <a href="#" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">--}}
+                                    {{--                                            CAREER--}}
+                                    {{--                                        </a>--}}
+                                    {{--                                        <a href="#" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">--}}
+                                    {{--                                            <span class="my-1 mx-0 h5 fw-bold d-block">--}}
+                                    {{--                                                CAREER--}}
+                                    {{--                                            </span>--}}
+                                    {{--                                        </a>--}}
+                                    {{--                                    </div>--}}
+                                    {{--                                    @break--}}
+                                @endswitch
 
-    for ( let i = 0; i < elms.length; i++ ) {
-        new Splide( elms[ i ], configs[ i ] ).mount();
-    }
-</script>
+                            @endif
+                        @endforeach
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal END -->
+
+<!-- Modal START -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content h-100" style="background-color: #b5c5c8;">
+            <div class="modal-body h-100 p-0">
+                <div class="container-fluid min-vh-100">
+                    <div class="row">
+                        <div class="col-10 col-lg-10 col-xl-11"></div>
+                        <div class="col-2 col-lg-2 col-xl-1">
+                            <button type="button" class="btn border-0" data-bs-dismiss="modal">
+                                <i class="las la-3x la-times text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row p-5 py-0">
+                        <div class="col-12 col-xl-6 align-self-stretch">
+                            <h4 class="fw-bold text-white display-5 w-100 lh-1">
+                                Meet at a time that is convenient for you.
+                            </h4>
+                            <h4 class="h2 lh-1 text-white fw-semibold">
+                                <small>
+                                    Book a date and time that is convenient for you to discuss how we can help you.
+                                </small>
+                            </h4>
+                            <img src="/images/main_page/calendar_image.png" class="img-fluid w-100 p-5 my-5 d-none d-xl-block" alt="mail_photo">
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <!-- Calendly inline widget begin -->
+                            <div class="calendly-inline-widget w-100" data-url="https://calendly.com/tony-starikov-1992/30min" style="height: 800px;"></div>
+                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                            <!-- Calendly inline widget end -->
+                        </div>
+                    </div>
+                    <div class="row p-5 pt-2 text-center">
+                        <h4 class="h4 lh-1 text-white fw-semibold">
+                            <small>
+                                If you have a proposal, fill out the form with your information and we'll get back to you.
+                            </small>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal END -->
+
+
 </body>
 </html>

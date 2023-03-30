@@ -20,7 +20,9 @@ class CreateServicesTable extends Migration
             $table->text('description_ua')->nullable();
             $table->text('description_en')->nullable();
             $table->text('slug')->nullable();
-            $table->text('image_small')->nullable();
+            $table->text('presentation')->nullable();
+            $table->text('video_url')->nullable();
+            $table->text('image')->nullable();
             $table->text('image_slider')->nullable();
             $table->text('image_background')->nullable();
             $table->text('image_big')->nullable();

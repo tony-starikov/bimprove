@@ -19,13 +19,15 @@ class DatabaseSeeder extends Seeder
             PageSeeder::class,
             ItemTypeSeeder::class,
             PostSeeder::class,
-            PostItemSeeder::class,
             PluginSeeder::class,
             FamilySeeder::class,
             AchievementSeeder::class,
             StarSeeder::class,
             TeammateSeeder::class,
             MenuItemSeeder::class,
+            PageItemSeeder::class,
+            TestimonialSeeder::class,
+            WorkSeeder::class,
         ]);
     }
 }

@@ -19,12 +19,22 @@ class FamilyController extends Controller
     {
         $page_info = Page::where('name', 'families')->first();
 
-        $families = Family::paginate(6);
+        $families = Family::orderBy('id', 'desc')->paginate(6);
 
         $services = Service::all();
 
         $menuItems = MenuItem::all();
 
         return view('families', compact('page_info', 'families', 'services', 'menuItems'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function downloadFamily(Family $family)
+    {
+        return response()->download('images/' . $family->file);
     }
 }

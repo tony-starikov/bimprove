@@ -10,4 +10,9 @@ class Page extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function pageItems()
+    {
+        return $this->hasMany(PageItem::class);
+    }
 }

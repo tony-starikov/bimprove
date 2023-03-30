@@ -36,11 +36,21 @@
                     </div>
 
                     <div class="input-group flex-nowrap mb-3">
-                        <span class="input-group-text">IMAGE</span>
-                        <input class="form-control" type="file" name="image_small" id="image_small">
+                        <span class="input-group-text">YOUTUBE URL</span>
+                        <textarea name="video_url" id="video_url" class="form-control" aria-label="video_url">{{ $service->video_url }}</textarea>
                     </div>
 
-                    <x-adminlte-text-editor name="content">{!! $service->content !!}</x-adminlte-text-editor>
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text">IMAGE</span>
+                        <input class="form-control" type="file" name="image" id="image">
+                    </div>
+
+                    <div class="input-group flex-nowrap mb-3">
+                        <span class="input-group-text">PRESENTATION</span>
+                        <input class="form-control" type="file" name="presentation" id="presentation">
+                    </div>
+
+{{--                    <x-adminlte-text-editor name="content">{!! $service->content !!}</x-adminlte-text-editor>--}}
 
                     <button type="submit" class="btn btn-success">EDIT</button>
                 </form>

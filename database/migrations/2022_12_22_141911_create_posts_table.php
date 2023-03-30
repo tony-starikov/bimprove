@@ -17,10 +17,13 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->text('title_en')->nullable();
             $table->text('title_ua')->nullable();
-            $table->string('slug')->unique();
+            $table->string('slug')->nullable();
             $table->text('image')->nullable();
             $table->integer('show_status')->default(1);
             $table->integer('recommend')->default(0);
+            $table->text('content')->nullable();
+            $table->text('files')->nullable();
+            $table->text('notes_images')->nullable();
             $table->timestamps();
         });
     }

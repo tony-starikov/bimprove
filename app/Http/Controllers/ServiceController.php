@@ -18,4 +18,19 @@ class ServiceController extends Controller
 
         return view('service', compact('service', 'services', 'menuItems'));
     }
+
+    public function downloadService($slug)
+    {
+        $service = Service::where('slug', $slug)->first();
+
+        $myFile = 'images/' . $service->presentation;
+
+        $headers = ['Content-Type: application/pdf'];
+
+        $newName = $slug . '.pdf';
+
+//        return response()->file($pathToFile, $headers);
+
+        return response()->file($myFile, $headers);
+    }
 }

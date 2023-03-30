@@ -19,11 +19,13 @@ class PostController extends Controller
     {
         $page_info = Page::where('name', 'blog')->first();
 
-        $posts = Post::paginate(6);
+        $posts = Post::orderBy('id', 'desc')->paginate(6);
+
+        $menuItems = MenuItem::all();
 
         $services = Service::all();
 
-        return view('blog', compact('page_info', 'posts', 'services'));
+        return view('blog', compact('page_info', 'posts', 'services', 'menuItems'));
     }
 
     /**
@@ -36,7 +38,9 @@ class PostController extends Controller
     {
         $services = Service::all();
 
-        return view('post', compact('post', 'services'));
+        $menuItems = MenuItem::all();
+
+        return view('post', compact('post', 'services', 'menuItems'));
     }
 
     /**

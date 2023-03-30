@@ -1,7 +1,16 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminAchievementController;
+use App\Http\Controllers\Admin\AdminFamilyController;
+use App\Http\Controllers\Admin\AdminMainPageItemController;
 use App\Http\Controllers\Admin\AdminMenuItemController;
+use App\Http\Controllers\Admin\AdminPluginController;
+use App\Http\Controllers\Admin\AdminPostController;
 use App\Http\Controllers\Admin\AdminServiceController;
+use App\Http\Controllers\Admin\AdminStarController;
+use App\Http\Controllers\Admin\AdminTeammateController;
+use App\Http\Controllers\Admin\AdminTestimonialController;
+use App\Http\Controllers\Admin\AdminWorkController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\DonateController;
@@ -24,14 +33,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'main'])->name('main');
-//Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/blog/subscribe', [PostController::class, 'subscribe'])->name('subscribe');
 Route::get('/post/{post}', [PostController::class, 'show'])->name('post');
+
 Route::get('/products', [PluginController::class, 'index'])->name('products');
+Route::get('/get-plugin/{plugin}', [PluginController::class, 'downloadPlugin'])->name('downloadPlugin');
+
 Route::get('/families', [FamilyController::class, 'index'])->name('families');
+Route::get('/get-family/{family}', [FamilyController::class, 'downloadFamily'])->name('downloadFamily');
+
 Route::post('/donate', [DonateController::class, 'index'])->name('donate');
+
 Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('service');
+Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
 
 Auth::routes([
     'register' => false,
@@ -50,6 +66,24 @@ Route::middleware('auth')->group(function () {
 
         Route::resource('services', AdminServiceController::class);
 
+        Route::resource('achievements', AdminAchievementController::class);
+
+        Route::resource('stars', AdminStarController::class);
+
+        Route::resource('testimonials', AdminTestimonialController::class);
+
+        Route::resource('works', AdminWorkController::class);
+
+        Route::resource('teammates', AdminTeammateController::class);
+
         Route::resource('menu-items', AdminMenuItemController::class);
+
+        Route::resource('plugins', AdminPluginController::class);
+
+        Route::resource('families', AdminFamilyController::class);
+
+        Route::resource('posts', AdminPostController::class);
+
+        Route::resource('mainPageItems', AdminMainPageItemController::class);
     });
 });
