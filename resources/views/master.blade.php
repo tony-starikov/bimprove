@@ -236,7 +236,7 @@
 {{--                                        </ul>--}}
 {{--                                    </li>--}}
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#">
+                                        <a class="nav-link text-dark" aria-current="page" href="#services">
                                             <span class="h6 fw-bold">SERVICES</span>
                                         </a>
                                     </li>
@@ -244,7 +244,7 @@
 
                                     @case('Portfolio')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#">
+                                        <a class="nav-link text-dark" aria-current="page" href="#portfolio">
                                             <span class="h6 fw-bold">PORTFOLIO</span>
                                         </a>
                                     </li>
@@ -252,7 +252,7 @@
 
                                     @case('About')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#">
+                                        <a class="nav-link text-dark" aria-current="page" href="#about">
                                             <span class="h6 fw-bold">ABOUT</span>
                                         </a>
                                     </li>
@@ -275,6 +275,14 @@
                                             <li><a class="dropdown-item fw-semibold" href="{{ route('products') }}">PLUGINS</a></li>
                                             <li><a class="dropdown-item fw-semibold" href="{{ route('families') }}">FAMILIES</a></li>
                                         </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Achievements')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="#achivements">
+                                            <span class="h6 fw-bold">ACHIEVEMENTS</span>
+                                        </a>
                                     </li>
                                     @break
 
@@ -318,34 +326,42 @@
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
                     <ul class="nav mx-auto">
                         @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status === 1)
+                            @if($menuItem->show_status === '1')
 
                                 @switch($menuItem->item_name)
                                     @case('Home')
                                     <li class="nav-item">
                                         <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('main') }}">
-                                            <span class="h6 fw-bold">HOME</span>
+                                            <span class="h6 small fw-bold">HOME</span>
                                         </a>
                                     </li>
                                     @break
 
                                     @case('Services')
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span class="h6 fw-bold">SERVICES</span>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                            <span class="h6 small fw-bold">SERVICES</span>
                                         </a>
-                                        <ul class="dropdown-menu">
-                                            @foreach($services as $service)
-                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
-                                            @endforeach
-                                        </ul>
                                     </li>
                                     @break
+
+{{--                                    @case('Services')--}}
+{{--                                    <li class="nav-item dropdown">--}}
+{{--                                        <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                            <span class="h6 small fw-bold">SERVICES</span>--}}
+{{--                                        </a>--}}
+{{--                                        <ul class="dropdown-menu">--}}
+{{--                                            @foreach($services as $service)--}}
+{{--                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
+{{--                                            @endforeach--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    @break--}}
 
                                     @case('Portfolio')
                                     <li class="nav-item">
                                         <a class="nav-link text-dark px-2" aria-current="page" href="#">
-                                            <span class="h6 fw-bold">PORTFOLIO</span>
+                                            <span class="h6 small fw-bold">PORTFOLIO</span>
                                         </a>
                                     </li>
                                     @break
@@ -353,7 +369,7 @@
                                     @case('About')
                                     <li class="nav-item">
                                         <a class="nav-link text-dark px-2" aria-current="page" href="#">
-                                            <span class="h6 fw-bold">ABOUT</span>
+                                            <span class="h6 small fw-bold">ABOUT</span>
                                         </a>
                                     </li>
                                     @break
@@ -361,7 +377,7 @@
                                     @case('Blog')
                                     <li class="nav-item">
                                         <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('blog') }}">
-                                            <span class="h6 fw-bold">BLOG</span>
+                                            <span class="h6 small fw-bold">BLOG</span>
                                         </a>
                                     </li>
                                     @break
@@ -369,19 +385,27 @@
                                     @case('Products')
                                     <li class="nav-item dropdown">
                                         <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span class="h6 fw-bold">PRODUCTS</span>
+                                            <span class="h6 small fw-bold">PRODUCTS</span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('products') }}">PLUGINS</a></li>
-                                            <li><a class="dropdown-item fw-bold text-center px-0" href="{{ route('families') }}">FAMILIES</a></li>
+                                            <li><a class="dropdown-item fw-bold text-center px-0 small" href="{{ route('products') }}">PLUGINS</a></li>
+                                            <li><a class="dropdown-item fw-bold text-center px-0 small" href="{{ route('families') }}">FAMILIES</a></li>
                                         </ul>
+                                    </li>
+                                    @break
+
+                                    @case('Achievements')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                            <span class="h6 small fw-bold">ACHIEVEMENTS</span>
+                                        </a>
                                     </li>
                                     @break
 
                                     @case('Career')
                                     <li class="nav-item">
                                         <a class="nav-link text-dark px-2" aria-current="page" href="#">
-                                            <span class="h6 fw-bold">CAREER</span>
+                                            <span class="h6 small fw-bold">CAREER</span>
                                         </a>
                                     </li>
                                     @break
@@ -392,9 +416,12 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-primary btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold h6 d-block m-0">CONTACT&nbsp;US</span>
-                    </button>
+{{--                    <a class="btn btn-primary small btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">--}}
+{{--                        <span class="fw-bold h6 small d-block m-0">CONTACT&nbsp;US</span>--}}
+{{--                    </a>--}}
+                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
+                        <span class="fw-bold h6 small text-white d-block m-2">CONTACT&nbsp;US</span>
+                    </a>
                     <div class="d-flex d-lg-none justify-content-end align-items-center">
                         <a class="nav-link text-dark p-0 m-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">
@@ -418,7 +445,7 @@
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
                     <ul class="nav mx-auto">
                         @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status === 1)
+                            @if($menuItem->show_status == 1)
 
                                 @switch($menuItem->item_name)
                                     @case('Home')
@@ -430,17 +457,25 @@
                                     @break
 
                                     @case('Services')
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('main') }}">
                                             <span class="h6 fw-bold small">SERVICES</span>
                                         </a>
-                                        <ul class="dropdown-menu">
-                                            @foreach($services as $service)
-                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>
-                                            @endforeach
-                                        </ul>
                                     </li>
                                     @break
+
+{{--                                    @case('Services')--}}
+{{--                                    <li class="nav-item dropdown">--}}
+{{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                            <span class="h6 fw-bold small">SERVICES</span>--}}
+{{--                                        </a>--}}
+{{--                                        <ul class="dropdown-menu">--}}
+{{--                                            @foreach($services as $service)--}}
+{{--                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
+{{--                                            @endforeach--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    @break--}}
 
                                     @case('Portfolio')
                                     <li class="nav-item">
@@ -478,6 +513,14 @@
                                     </li>
                                     @break
 
+                                    @case('Achievements')
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
+                                            <span class="h6 fw-bold small">ACHIEVEMENTS</span>
+                                        </a>
+                                    </li>
+                                    @break
+
                                     @case('Career')
                                     <li class="nav-item">
                                         <a class="nav-link text-dark px-1" aria-current="page" href="#">
@@ -492,9 +535,12 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-primary btn shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
-                    </button>
+{{--                    <button class="btn btn-primary btn shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">--}}
+{{--                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>--}}
+{{--                    </button>--}}
+                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
+                        <span class="fw-bold small text-white d-block m-1">CONTACT&nbsp;US</span>
+                    </a>
                     <div class="d-flex d-lg-none justify-content-end align-items-center">
                         <a class="nav-link text-dark p-0 m-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">
@@ -1031,10 +1077,10 @@
                     </div>
                     <div class="row p-5 py-0">
                         <div class="col-12 col-xl-6 align-self-stretch">
-                            <h4 class="fw-bold text-white display-5 w-100 lh-1">
+                            <h4 class="fw-bold text-white display-6 w-100 lh-1">
                                 Meet at a time that is convenient for you.
                             </h4>
-                            <h4 class="h2 lh-1 text-white fw-semibold">
+                            <h4 class="h2 lh-1 mt-3 text-white fw-semibold">
                                 <small>
                                     Book a date and time that is convenient for you to discuss how we can help you.
                                 </small>
@@ -1048,12 +1094,19 @@
                             <!-- Calendly inline widget end -->
                         </div>
                     </div>
-                    <div class="row p-5 pt-2 text-center">
+                    <div class="row p-3 pt-2 text-center d-flex align-items-center">
                         <h4 class="h4 lh-1 text-white fw-semibold">
                             <small>
                                 If you have a proposal, fill out the form with your information and we'll get back to you.
                             </small>
                         </h4>
+                    </div>
+                    <div class="row pb-3 d-flex justify-content-center">
+                        <div class="col-4">
+                            <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100 mx-auto" style="background-color: #43aeb6">
+                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@
 {{--@section('description', $page_info->description)--}}
 
 @section('main')
-    <div class="container-fluid d-none d-xxl-block" style="background-color: #bacacd">
+    <div class="container-fluid" style="background-color: #bacacd">
         <div class="container p-5">
             <div class="row px-5 my-5">
                 <div class="col-6 mt-5">
