@@ -280,8 +280,8 @@
 
                                     @case('Achievements')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#achivements">
-                                            <span class="h6 fw-bold">ACHIEVEMENTS</span>
+                                        <a class="nav-link text-dark" aria-current="page" href="#team">
+                                            <span class="h6 fw-bold">TEAM</span>
                                         </a>
                                     </li>
                                     @break
@@ -396,8 +396,8 @@
 
                                     @case('Achievements')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
-                                            <span class="h6 small fw-bold">ACHIEVEMENTS</span>
+                                        <a class="nav-link text-dark px-2" aria-current="page" href="#team">
+                                            <span class="h6 small fw-bold">TEAM</span>
                                         </a>
                                     </li>
                                     @break
@@ -515,8 +515,8 @@
 
                                     @case('Achievements')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
-                                            <span class="h6 fw-bold small">ACHIEVEMENTS</span>
+                                        <a class="nav-link text-dark px-1" aria-current="page" href="#team">
+                                            <span class="h6 fw-bold small">TEAM</span>
                                         </a>
                                     </li>
                                     @break
@@ -539,7 +539,7 @@
 {{--                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>--}}
 {{--                    </button>--}}
                     <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
-                        <span class="fw-bold small text-white d-block m-1">CONTACT&nbsp;US</span>
+                        <span class="fw-bold small text-white d-block m-1 mx-2">CONTACT&nbsp;US</span>
                     </a>
                     <div class="d-flex d-lg-none justify-content-end align-items-center">
                         <a class="nav-link text-dark p-0 m-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">

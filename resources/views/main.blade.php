@@ -2200,18 +2200,12 @@
                                                         <div class="col-12">
                                                             <div class="row justify-content-between">
                                                                 <div class="col-6">
-                                                                    {{--                                                                <h5 class="card-title h2 fw-bold">{{ $work->title }}</h5>--}}
-                                                                    {{--                                                                <p class="card-text h5 fw-bold">{{ $work->subtitle }}</p>--}}
-                                                                    {{--                                                                <h4>{{ $work->parameter_1 }}</h4>--}}
-                                                                    {{--                                                                <h4>{{ $work->parameter_2 }}</h4>--}}
                                                                     <h4 class="fw-bold">Residential</h4>
                                                                     <h4 class="fw-bold">Building</h4>
                                                                 </div>
                                                                 <div class="col-6">
                                                                     <h4>LOD: 300</h4>
                                                                     <h4>Area: 38950m2</h4>
-                                                                    {{--                                                                <h4>{{ $work->parameter_3 }}</h4>--}}
-                                                                    {{--                                                                <h4>{{ $work->parameter_4 }}</h4>--}}
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -2264,18 +2258,12 @@
                                                         <div class="col-12">
                                                             <div class="row justify-content-between">
                                                                 <div class="col-6">
-                                                                    {{--                                                                <h5 class="card-title h2 fw-bold">{{ $work->title }}</h5>--}}
-                                                                    {{--                                                                <p class="card-text h5 fw-bold">{{ $work->subtitle }}</p>--}}
-                                                                    {{--                                                                <h4>{{ $work->parameter_1 }}</h4>--}}
-                                                                    {{--                                                                <h4>{{ $work->parameter_2 }}</h4>--}}
-                                                                    <h4 class="fw-bold">Residential</h4>
+                                                                   <h4 class="fw-bold">Residential</h4>
                                                                     <h4 class="fw-bold">Building</h4>
                                                                 </div>
                                                                 <div class="col-6">
                                                                     <h4>LOD: 300</h4>
                                                                     <h4>Area: 38950m2</h4>
-                                                                    {{--                                                                <h4>{{ $work->parameter_3 }}</h4>--}}
-                                                                    {{--                                                                <h4>{{ $work->parameter_4 }}</h4>--}}
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -2772,7 +2760,9 @@
         <div class="container-fluid d-none d-xl-block d-xxl-none pt-5 px-0" style="background-color: #d4fffb">
             <div class="container px-5">
                 <div class="row p-5">
-                    <h2 class="display-5 fw-bold pb-0">TEAM</h2>
+                    <h2 class="display-5 fw-bold pb-0">
+                        {{ $page_info->pageItems->where('name', 'team_header')->first()->value }}
+                    </h2>
                 </div>
             </div>
 
