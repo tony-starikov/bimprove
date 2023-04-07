@@ -129,7 +129,7 @@
 
         .overlay {
             position: absolute;
-            bottom: 100%;
+            bottom: 0;
             left: 0;
             right: 0;
             background-color: #6bdddb;
@@ -823,22 +823,22 @@
                     <h2 class="text-white h4 fw-bold pb-2">SOCIAL MEDIA</h2>
 
                     <div class="row w-75">
-                        <div class="col-6">
+                        <div class="col-3">
                             <a href="#" class="text-white h4 text-decoration-none">
                                 <i class="lab la-2x la-linkedin-in"></i>
                             </a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-3">
                             <a href="#" class="text-white h4 text-decoration-none">
                                 <i class="lab la-2x la-instagram"></i>
                             </a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-3">
                             <a href="#" class="text-white h4 text-decoration-none">
                                 <i class="lab la-2x la-facebook-f"></i>
                             </a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-3">
                             <a href="#" class="text-white h4 text-decoration-none">
                                 <i class="lab la-2x la-youtube"></i>
                             </a>
@@ -851,16 +851,9 @@
                     <h2 class="text-white h4 fw-bold pb-2">CONTACTS</h2>
                     <div class="row">
                         <div class="col-12">
-                            <div class="row">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h6">+380668901648</span>
-                                </a>
-                            </div>
-                            <div class="row mt-3">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h6">es@bim-prove.com</span>
-                                </a>
-                            </div>
+                            <span style="font-size: 2.2vw;" class="fw-semibold text-white d-sm-none">+380668901648 | es@bim-prove.com</span>
+                            <span style="font-size: 2vw;" class="fw-semibold text-white d-none d-sm-block d-md-none">+380668901648 | es@bim-prove.com</span>
+                            <span style="font-size: 1.8vw;" class="fw-semibold text-white d-none d-md-block">+380668901648 | es@bim-prove.com</span>
                         </div>
                     </div>
                 </div>

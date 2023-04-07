@@ -523,7 +523,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-color: #d4fffc">
+        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-12">
@@ -548,7 +548,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-lg-block d-xl-none" style="background-color: #d4fffc">
+        <div class="container-fluid d-none d-lg-block d-xl-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container p-5">
                 <div class="row px-5 py-4">
                     <div class="col-12">
@@ -579,7 +579,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #d4fffc">
+        <div class="container-fluid d-none d-md-block d-lg-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12">
@@ -610,7 +610,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-md-none" style="background-color: #d4fffc">
+        <div class="container-fluid d-md-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12">
@@ -1422,8 +1422,8 @@
                                                     </small>
                                                 </h5>
                                             </div>
-                                            <div class="col-5 p-0 ps-2">
-                                                <img src="/images/{{ $star->image }}" class="img-fluid bg-transparent">
+                                            <div class="col-5 p-2">
+                                                <img src="/images/{{ $star->image }}" class="img-fluid  bg-transparent">
                                             </div>
                                         </div>
                                     </div>
@@ -1616,23 +1616,23 @@
                             </div>
                         @else
                             <div class="col-12 my-3">
-                                <div class="card p-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
+                                <div class="card p-3 pb-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-7 px-0 d-flex align-items-center">
-                                                <h5 class="fw-bold ps-3">
+                                            <div class="col-8 d-flex align-items-center">
+                                                <h5 class="fw-bold">
                                                     <small>
                                                         {{ $star->title_en }}
                                                     </small>
                                                 </h5>
                                             </div>
-                                            <div class="col-5 p-0 ps-2">
-                                                <img src="/images/{{ $star->image }}" class="img-fluid bg-transparent">
+                                            <div class="col-4">
+                                                <img src="/images/{{ $star->image }}" class="img-fluid w-100 bg-transparent">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-footer p-0 border-0 d-flex align-items-center" style="background-color: #ffffff">
-                                        <h6 class="text-secondary px-3 pb-3 pt-1">
+                                    <div class="card-footer border-0 d-flex align-items-center" style="background-color: #ffffff">
+                                        <h6 class="text-secondary py-4">
                                             {{ $star->description_en }}
                                         </h6>
                                     </div>
@@ -1667,8 +1667,8 @@
                                 @foreach($testimonials as $testimonial)
                                     <li class="splide__slide">
                                         <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
-                                            <div class="card-body">
-                                                <div class="row">
+                                            <div class="card-header bg-transparent border-0">
+                                                <div class="row" style="min-height: 50%">
                                                     <div class="col-4">
                                                         <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
@@ -1678,10 +1678,12 @@
                                                         <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
                                                     </div>
                                                 </div>
+                                            </div>
 
+                                            <div class="card-body pt-0 d-flex align-items-center" style="min-height: 50%">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <p class="card-text text-white fw-semibold h6 mt-2">
+                                                        <p class="text-white fw-semibold h6">
                                                             {{ $testimonial->text }}
                                                         </p>
                                                     </div>
@@ -1711,78 +1713,34 @@
                     <section id="splide2" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="row d-none d-lg-flex px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #c4c4c4">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner2.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
+                                @foreach($testimonials as $testimonial)
+                                    <li class="splide__slide">
+                                        <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
+                                            <div class="card-header bg-transparent border-0">
+                                                <div class="row" style="min-height: 50%">
+                                                    <div class="col-4">
+                                                        <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
+                                                    <div class="col-8">
+                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0 d-flex align-items-center" style="min-height: 50%">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="text-white fw-semibold h6">
+                                                            {{ $testimonial->text }}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="row d-none d-lg-flex px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #6bdcdb">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <img class="img w-100" src="images/partner.png" alt="">
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -1804,78 +1762,34 @@
                     <section id="splide3" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="row d-none d-lg-flex px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #c4c4c4">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner2.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
+                                @foreach($testimonials as $testimonial)
+                                    <li class="splide__slide">
+                                        <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
+                                            <div class="card-header bg-transparent border-0">
+                                                <div class="row" style="min-height: 50%">
+                                                    <div class="col-4">
+                                                        <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
+                                                    <div class="col-8">
+                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0 d-flex align-items-center" style="min-height: 50%">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="text-white fw-semibold h6">
+                                                            {{ $testimonial->text }}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="row d-none d-lg-flex px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #6bdcdb">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -1897,80 +1811,34 @@
                     <section id="splide4" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="row px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #c4c4c4">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner2.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
+                                @foreach($testimonials as $testimonial)
+                                    <li class="splide__slide">
+                                        <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
+                                            <div class="card-header bg-transparent border-0">
+                                                <div class="row" style="min-height: 50%">
+                                                    <div class="col-4">
+                                                        <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
+                                                    <div class="col-8">
+                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0 d-flex align-items-center" style="min-height: 50%">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="text-white fw-semibold h6">
+                                                            {{ $testimonial->text }}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="row px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #6bdcdb">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -1987,83 +1855,39 @@
                     </h2>
                 </div>
             </div>
-            <div class="row w-100 px-0 pb-5">
-                <div class="col-12 w-100 px-0">
+            <div class="row mx-0 px-0 pb-5">
+                <div class="col-12 px-0">
                     <section id="splide5" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="row px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #c4c4c4">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner2.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
+                                @foreach($testimonials as $testimonial)
+                                    <li class="splide__slide p-3">
+                                        <div class="card h-100 p-2 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
+                                            <div class="card-header bg-transparent border-0">
+                                                <div class="row" style="min-height: 50%">
+                                                    <div class="col-4">
+                                                        <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
+                                                    <div class="col-8">
+                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0 d-flex align-items-center" style="min-height: 50%">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="text-white fw-semibold h6">
+                                                            {{ $testimonial->text }}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="row px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #6bdcdb">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2082,85 +1906,39 @@
                     </div>
                 </div>
             </div>
-            <div class="row w-100 px-0 pb-5">
-                <div class="col-12 w-100 px-0">
+            <div class="row mx-0 px-0 pb-5">
+                <div class="col-12 mx-0 px-0">
                     <section id="splide6" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="row px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #c4c4c4">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner2.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
+                                @foreach($testimonials as $testimonial)
+                                    <li class="splide__slide">
+                                        <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
+                                            <div class="card-header bg-transparent border-0">
+                                                <div class="row" style="min-height: 50%">
+                                                    <div class="col-4">
+                                                        <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
+                                                    <div class="col-8">
+                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0 d-flex align-items-center" style="min-height: 50%">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="text-white fw-semibold h6">
+                                                            {{ $testimonial->text }}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="row px-4">
-                                        <div class="col-12 px-3">
-                                            <div class="card p-3 rounded-5 border-0" style="background-color: #6bdcdb">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-4 d-flex align-items-center">
-                                                            <div class="w-100 align-self-center">
-                                                                <img class="img w-100" src="images/partner2.png" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-8 d-flex align-items-center">
-
-                                                            <div class="w-100 align-self-center">
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Organization</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Country</h6>
-
-                                                                <h6 class="text-white fw-bold h5 w-100 mb-0">Name Surname</h6>
-                                                                <h6 class="text-white fw-bold h5 w-100">Profession</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <p class="card-text text-white fw-bold h6 mt-2">
-                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque, eligendi et expedita impedit maxime numquam quae quos tenetur unde?
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2183,6 +1961,7 @@
                     </h2>
                 </div>
             </div>
+
             <div class="row w-100 px-0 m-0">
                 <div class="col-12 w-100 p-0">
                     <section id="splide7" class="splide" aria-label="Slide Container Example">
@@ -2196,34 +1975,36 @@
                                                     <img src="/images/{{ $work->image }}" class="card-img" alt="...">
                                                 </div>
                                                 <div class="overlay">
-                                                    <div class="row p-5 py-4 text-white">
-                                                        <div class="col-12">
+                                                    <div class="row m-0 text-white">
+                                                        <div class="col-12 p-2 px-4">
                                                             <div class="row justify-content-between">
-                                                                <div class="col-6">
-                                                                    <h4 class="fw-bold">Residential</h4>
-                                                                    <h4 class="fw-bold">Building</h4>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <h4>LOD: 300</h4>
-                                                                    <h4>Area: 38950m2</h4>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h5 class="text-dark fw-bold">Scan to bim</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row border-bottom border-3 border-white">
-                                                                <div class="col-12">
-                                                                    <h5 class="fw-bold">Arhitecture, Structure, MEPF</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-5 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" class="img-fluid w-75 mx-auto mt-2" alt="...">
-                                                                </div>
                                                                 <div class="col-7">
-                                                                    <h6 class="mt-2">
+{{--                                                                    <h4 style="font-size: 1.5vw" class="fw-bold">Residential</h4>--}}
+                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Residential</h4>
+                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Building</h4>
+                                                                    <h5 style="font-size: 1vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                                                </div>
+                                                                <div class="col-5 mt-2">
+                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">LOD: 300</h5>
+                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Area: 38950m2</h5>
+                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Time: 55h</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 style="font-size: 1vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row m-0 border-bottom border-3 border-white">
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex justify-content-center">
+                                                                    <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                                </div>
+                                                                <div class="col-8 px-0">
+                                                                    <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
                                                                         {{ $work->description }}
                                                                     </h6>
                                                                 </div>
@@ -2254,34 +2035,36 @@
                                                     <img src="/images/{{ $work->image }}" class="card-img" alt="...">
                                                 </div>
                                                 <div class="overlay">
-                                                    <div class="row p-5 py-4 text-white">
-                                                        <div class="col-12">
+                                                    <div class="row m-0 text-white">
+                                                        <div class="col-12 p-2 px-4">
                                                             <div class="row justify-content-between">
-                                                                <div class="col-6">
-                                                                   <h4 class="fw-bold">Residential</h4>
-                                                                    <h4 class="fw-bold">Building</h4>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <h4>LOD: 300</h4>
-                                                                    <h4>Area: 38950m2</h4>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h5 class="text-dark fw-bold">Scan to bim</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row border-bottom border-3 border-white">
-                                                                <div class="col-12">
-                                                                    <h5 class="fw-bold">Arhitecture, Structure, MEPF</h5>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-5 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" class="img-fluid w-75 mx-auto mt-2" alt="...">
-                                                                </div>
                                                                 <div class="col-7">
-                                                                    <h6 class="mt-2">
+                                                                    {{--                                                                    <h4 style="font-size: 1.5vw" class="fw-bold">Residential</h4>--}}
+                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Residential</h4>
+                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Building</h4>
+                                                                    <h5 style="font-size: 1vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                                                </div>
+                                                                <div class="col-5 mt-2">
+                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">LOD: 300</h5>
+                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Area: 38950m2</h5>
+                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Time: 55h</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 style="font-size: 1vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row m-0 border-bottom border-3 border-white">
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex justify-content-center">
+                                                                    <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                                </div>
+                                                                <div class="col-8 px-0">
+                                                                    <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
                                                                         {{ $work->description }}
                                                                     </h6>
                                                                 </div>
@@ -2313,47 +2096,54 @@
                     <section id="splide9" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide px-3">
-                                    <div class="splide__slide__container">
-                                        <div class="portfolio-container">
-                                            <div class="card border-0 text-bg-dark">
-                                                <img src="/images/building.png" class="card-img" alt="...">
-                                                <div class="card-img-overlay p-5 d-flex align-items-end">
-                                                    <div>
-                                                        <h5 class="card-title h2 fw-bold">Residential Building</h5>
-                                                        <p class="card-text h5 fw-bold">Scan to bim</p>
-                                                    </div>
+                                @foreach($works as $work)
+                                    <li class="splide__slide px-3">
+                                        <div class="splide__slide__container">
+                                            <div class="portfolio-container">
+                                                <div class="card border-0 text-bg-dark">
+                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
                                                 </div>
-                                            </div>
-                                            <div class="overlay">
-                                                <div class="row p-5 py-4 text-white">
-                                                    <div class="col-12">
-                                                        <div class="row border-bottom border-3 border-white justify-content-between">
-                                                            <div class="col-6">
-                                                                <h4>LOD: 300</h4>
-                                                                <h4>Time: 40h</h4>
+                                                <div class="overlay">
+                                                    <div class="row m-0 text-white">
+                                                        <div class="col-12 p-2 px-4">
+                                                            <div class="row justify-content-between">
+                                                                <div class="col-7">
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Residential</h4>
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Building</h4>
+                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                                                </div>
+                                                                <div class="col-5 mt-2">
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">LOD: 300</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Area: 38950m2</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Time: 55h</h5>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <h4>Precision: 15mm</h4>
-                                                                <h4>Success: 100%</h4>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 style="font-size: 1.3vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-5 d-flex justify-content-center align-items-center">
-                                                                <img src="/images/proj.png" class="img w-75 image mt-3 mx-auto" alt="...">
+
+                                                            <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
-                                                            <div class="col-7">
-                                                                <h5 class="mt-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero obcaecati quidem vitae voluptatem. Aperiam asperiores dignissimos eius repellat? Alias, quo!
-                                                                </h5>
+
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex justify-content-center">
+                                                                    <img src="/images/{{ $work->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
+                                                                </div>
+                                                                <div class="col-8 px-0">
+                                                                    <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
+                                                                        {{ $work->description }}
+                                                                    </h6>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2365,47 +2155,54 @@
                     <section id="splide10" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide px-3">
-                                    <div class="splide__slide__container">
-                                        <div class="portfolio-container">
-                                            <div class="card border-0 text-bg-dark">
-                                                <img src="/images/building.png" class="card-img" alt="...">
-                                                <div class="card-img-overlay p-5 d-flex align-items-end">
-                                                    <div>
-                                                        <h5 class="card-title h2 fw-bold">Residential Building</h5>
-                                                        <p class="card-text h5 fw-bold">Scan to bim</p>
-                                                    </div>
+                                @foreach($works as $work)
+                                    <li class="splide__slide px-3">
+                                        <div class="splide__slide__container">
+                                            <div class="portfolio-container">
+                                                <div class="card border-0 text-bg-dark">
+                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
                                                 </div>
-                                            </div>
-                                            <div class="overlay">
-                                                <div class="row p-5 py-4 text-white">
-                                                    <div class="col-12">
-                                                        <div class="row border-bottom border-3 border-white justify-content-between">
-                                                            <div class="col-6">
-                                                                <h4>LOD: 300</h4>
-                                                                <h4>Time: 40h</h4>
+                                                <div class="overlay">
+                                                    <div class="row m-0 text-white">
+                                                        <div class="col-12 p-2 px-4">
+                                                            <div class="row justify-content-between">
+                                                                <div class="col-7">
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Residential</h4>
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Building</h4>
+                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                                                </div>
+                                                                <div class="col-5 mt-2">
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">LOD: 300</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Area: 38950m2</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Time: 55h</h5>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <h4>Precision: 15mm</h4>
-                                                                <h4>Success: 100%</h4>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 style="font-size: 1.3vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-5 d-flex justify-content-center align-items-center">
-                                                                <img src="/images/proj.png" class="img w-75 image mt-3 mx-auto" alt="...">
+
+                                                            <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
-                                                            <div class="col-7">
-                                                                <h5 class="mt-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero obcaecati quidem vitae voluptatem. Aperiam asperiores dignissimos eius repellat? Alias, quo!
-                                                                </h5>
+
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex justify-content-center">
+                                                                    <img src="/images/{{ $work->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
+                                                                </div>
+                                                                <div class="col-8 px-0">
+                                                                    <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
+                                                                        {{ $work->description }}
+                                                                    </h6>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2421,104 +2218,118 @@
                     </h2>
                 </div>
             </div>
-            <div class="row w-100 px-0">
+            <div class="row w-100 mx-0 px-0">
                 <div class="col-12 w-100 p-0">
                     <section id="splide11" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide px-3">
-                                    <div class="splide__slide__container">
-                                        <div class="portfolio-container">
-                                            <div class="card border-0 text-bg-dark">
-                                                <img src="/images/building.png" class="card-img" alt="...">
-                                                <div class="card-img-overlay p-5 d-flex align-items-end">
-                                                    <div>
-                                                        <h5 class="card-title h2 fw-bold">Residential Building</h5>
-                                                        <p class="card-text h5 fw-bold">Scan to bim</p>
-                                                    </div>
+                                @foreach($works as $work)
+                                    <li class="splide__slide px-3">
+                                        <div class="splide__slide__container">
+                                            <div class="portfolio-container">
+                                                <div class="card border-0 text-bg-dark">
+                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
                                                 </div>
-                                            </div>
-                                            <div class="overlay">
-                                                <div class="row p-5 py-4 text-white">
-                                                    <div class="col-12">
-                                                        <div class="row border-bottom border-3 border-white justify-content-between">
-                                                            <div class="col-6">
-                                                                <h4>LOD: 300</h4>
-                                                                <h4>Time: 40h</h4>
+                                                <div class="overlay">
+                                                    <div class="row m-0 text-white">
+                                                        <div class="col-12 p-2 px-4">
+                                                            <div class="row justify-content-between">
+                                                                <div class="col-7">
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Residential</h4>
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Building</h4>
+                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
+                                                                </div>
+                                                                <div class="col-5 mt-2">
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">LOD: 300</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Time: 55h</h5>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <h4>Precision: 15mm</h4>
-                                                                <h4>Success: 100%</h4>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 style="font-size: 1.3vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-5 d-flex justify-content-center align-items-center">
-                                                                <img src="/images/proj.png" class="img w-75 image mt-3 mx-auto" alt="...">
+
+                                                            <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
-                                                            <div class="col-7">
-                                                                <h5 class="mt-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero obcaecati quidem vitae voluptatem. Aperiam asperiores dignissimos eius repellat? Alias, quo!
-                                                                </h5>
+
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex justify-content-center">
+                                                                    <img src="/images/{{ $work->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
+                                                                </div>
+                                                                <div class="col-8 ps-0">
+                                                                    <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
+                                                                        {{ $work->description }}
+                                                                    </h6>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
                 </div>
             </div>
 
-            <div class="row w-100 mt-4 px-0 pb-5">
+            <div class="row w-100 mx-0 mt-4 px-0 pb-5">
                 <div class="col-12 w-100 p-0">
                     <section id="splide12" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide px-3">
-                                    <div class="splide__slide__container">
-                                        <div class="portfolio-container">
-                                            <div class="card border-0 text-bg-dark">
-                                                <img src="/images/building.png" class="card-img" alt="...">
-                                                <div class="card-img-overlay p-5 d-flex align-items-end">
-                                                    <div>
-                                                        <h5 class="card-title h2 fw-bold">Residential Building</h5>
-                                                        <p class="card-text h5 fw-bold">Scan to bim</p>
-                                                    </div>
+                                @foreach($works as $work)
+                                    <li class="splide__slide px-3">
+                                        <div class="splide__slide__container">
+                                            <div class="portfolio-container">
+                                                <div class="card border-0 text-bg-dark">
+                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
                                                 </div>
-                                            </div>
-                                            <div class="overlay">
-                                                <div class="row p-5 py-4 text-white">
-                                                    <div class="col-12">
-                                                        <div class="row border-bottom border-3 border-white justify-content-between">
-                                                            <div class="col-6">
-                                                                <h4>LOD: 300</h4>
-                                                                <h4>Time: 40h</h4>
+                                                <div class="overlay">
+                                                    <div class="row m-0 text-white">
+                                                        <div class="col-12 p-2 px-4">
+                                                            <div class="row justify-content-between">
+                                                                <div class="col-7">
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Residential</h4>
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Building</h4>
+                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
+                                                                </div>
+                                                                <div class="col-5 mt-2">
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">LOD: 300</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Time: 55h</h5>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <h4>Precision: 15mm</h4>
-                                                                <h4>Success: 100%</h4>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <h5 style="font-size: 1.3vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-5 d-flex justify-content-center align-items-center">
-                                                                <img src="/images/proj.png" class="img w-75 image mt-3 mx-auto" alt="...">
+
+                                                            <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
-                                                            <div class="col-7">
-                                                                <h5 class="mt-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero obcaecati quidem vitae voluptatem. Aperiam asperiores dignissimos eius repellat? Alias, quo!
-                                                                </h5>
+
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex justify-content-center">
+                                                                    <img src="/images/{{ $work->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
+                                                                </div>
+                                                                <div class="col-8 ps-0">
+                                                                    <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
+                                                                        {{ $work->description }}
+                                                                    </h6>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2534,53 +2345,56 @@
                     </h2>
                 </div>
             </div>
-            <div class="row w-100 px-0">
+            <div class="row mx-0 px-0">
                 <div class="col-12 w-100 p-0">
                     <section id="splide13" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide px-3">
-                                    <div class="splide__slide__container">
-                                        <div class="portfolio-container">
-                                            <div class="card border-0 text-bg-dark">
-                                                <img src="/images/building.png" class="card-img" alt="...">
-                                                <div class="card-img-overlay p-5 d-flex align-items-end">
-                                                    <div>
-                                                        <h5 class="card-title h2 fw-bold">Residential Building</h5>
-                                                        <p class="card-text h5 fw-bold">Scan to bim</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                @foreach($works as $work)
+                                    <li class="splide__slide px-3">
+                                        <div class="splide__slide__container">
+                                            <div class="card border-0" style="background-color: #6bdddb;">
+                                                <img src="/images/{{ $work->image }}" class="card-img" alt="...">
 
-                                            <div class="card rounded-0 border-0" style="background-color: #6bdddb;">
-                                                <div class="row p-5 py-4 text-white">
-                                                    <div class="col-12">
-                                                        <div class="row border-bottom border-3 border-white justify-content-between">
-                                                            <div class="col-6">
-                                                                <h4>LOD: 300</h4>
-                                                                <h4>Time: 40h</h4>
+                                                <div class="row m-0 text-white">
+                                                    <div class="col-12 p-2 px-4">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-7">
+                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">Residential</h4>
+                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">Building</h4>
+                                                                <h5 style="font-size: 2vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <h4>Precision: 15mm</h4>
-                                                                <h4>Success: 100%</h4>
+                                                            <div class="col-5 mt-2">
+                                                                <h5 style="font-size: 2.2vw" class="fw-bold mb-1">LOD: 300</h5>
+                                                                <h5 style="font-size: 2.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
+                                                                <h5 style="font-size: 2.2vw" class="fw-bold mb-1">Time: 55h</h5>
                                                             </div>
                                                         </div>
                                                         <div class="row">
-                                                            <div class="col-5 d-flex justify-content-center align-items-center">
-                                                                <img src="/images/proj.png" class="img w-75 image mt-3 mx-auto" alt="...">
+                                                            <div class="col-12">
+                                                                <h5 style="font-size: 2vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
                                                             </div>
-                                                            <div class="col-7">
-                                                                <h5 class="mt-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero obcaecati quidem vitae voluptatem. Aperiam asperiores dignissimos eius repellat? Alias, quo!
-                                                                </h5>
+                                                        </div>
+
+                                                        <div class="row m-0 border-bottom border-3 border-white">
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-4 d-flex justify-content-center">
+                                                                <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
+                                                            </div>
+                                                            <div class="col-8 ps-0">
+                                                                <h6 style="font-size: 1.8vw" class="mt-2 text-secondary">
+                                                                    {{ $work->description }}
+                                                                </h6>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2596,53 +2410,56 @@
                     </h2>
                 </div>
             </div>
-            <div class="row w-100 px-0">
+            <div class="row mx-0 px-0">
                 <div class="col-12 w-100 p-0">
                     <section id="splide14" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide px-3">
-                                    <div class="splide__slide__container">
-                                        <div class="portfolio-container">
-                                            <div class="card border-0 text-bg-dark">
-                                                <img src="/images/building.png" class="card-img" alt="...">
-                                                <div class="card-img-overlay p-5 d-flex align-items-end">
-                                                    <div>
-                                                        <h5 class="card-title h2 fw-bold">Residential Building</h5>
-                                                        <p class="card-text h5 fw-bold">Scan to bim</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                @foreach($works as $work)
+                                    <li class="splide__slide px-3">
+                                        <div class="splide__slide__container">
+                                            <div class="card border-0" style="background-color: #6bdddb;">
+                                                <img src="/images/{{ $work->image }}" class="card-img" alt="...">
 
-                                            <div class="card rounded-0 border-0" style="background-color: #6bdddb;">
-                                                <div class="row p-5 py-4 text-white">
-                                                    <div class="col-12">
-                                                        <div class="row border-bottom border-3 border-white justify-content-between">
-                                                            <div class="col-6">
-                                                                <h4>LOD: 300</h4>
-                                                                <h4>Time: 40h</h4>
+                                                <div class="row m-0 text-white">
+                                                    <div class="col-12 p-2 px-4">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-7">
+                                                                <h4 style="font-size: 3.5vw" class="fw-bold mb-1">Residential</h4>
+                                                                <h4 style="font-size: 3.5vw" class="fw-bold mb-1">Building</h4>
+                                                                <h5 style="font-size: 3vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <h4>Precision: 15mm</h4>
-                                                                <h4>Success: 100%</h4>
+                                                            <div class="col-5 mt-2">
+                                                                <h5 style="font-size: 2.8vw" class="fw-bold mb-1">LOD: 300</h5>
+                                                                <h5 style="font-size: 2.8vw" class="fw-bold mb-1">Area: 38950m2</h5>
+                                                                <h5 style="font-size: 2.8vw" class="fw-bold mb-1">Time: 55h</h5>
                                                             </div>
                                                         </div>
                                                         <div class="row">
-                                                            <div class="col-5 d-flex justify-content-center align-items-center">
-                                                                <img src="/images/proj.png" class="img w-75 image mt-3 mx-auto" alt="...">
+                                                            <div class="col-12">
+                                                                <h5 style="font-size: 3vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
                                                             </div>
-                                                            <div class="col-7">
-                                                                <h5 class="mt-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero obcaecati quidem vitae voluptatem. Aperiam asperiores dignissimos eius repellat? Alias, quo!
-                                                                </h5>
+                                                        </div>
+
+                                                        <div class="row m-0 border-bottom border-3 border-white">
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-4 d-flex justify-content-center">
+                                                                <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
+                                                            </div>
+                                                            <div class="col-8 ps-0">
+                                                                <h6 style="font-size: 2.5vw" class="mt-2 text-secondary">
+                                                                    {{ $work->description }}
+                                                                </h6>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2658,53 +2475,57 @@
                     </h2>
                 </div>
             </div>
-            <div class="row w-100 px-0">
-                <div class="col-12 w-100 p-0">
+
+            <div class="row mx-0 w-100 px-0">
+                <div class="col-12 mx-0 w-100 p-0">
                     <section id="splide15" class="splide px-0" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide px-0">
-                                    <div class="splide__slide__container">
-                                        <div class="portfolio-container">
-                                            <div class="card border-0 text-bg-dark">
-                                                <img src="/images/building.png" class="card-img" alt="...">
-                                                <div class="card-img-overlay p-5 d-flex align-items-end">
-                                                    <div>
-                                                        <h5 class="card-title h2 fw-bold">Residential Building</h5>
-                                                        <p class="card-text h5 fw-bold">Scan to bim</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                @foreach($works as $work)
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <div class="card border-0" style="background-color: #6bdddb;">
+                                                <img src="/images/{{ $work->image }}" class="card-img" alt="...">
 
-                                            <div class="card border-0 rounded-0" style="background-color: #6bdddb;">
-                                                <div class="row p-5 py-4 text-white">
-                                                    <div class="col-12">
-                                                        <div class="row border-bottom border-3 border-white justify-content-between">
-                                                            <div class="col-6">
-                                                                <h4>LOD: 300</h4>
-                                                                <h4>Time: 40h</h4>
+                                                <div class="row m-0 text-white">
+                                                    <div class="col-12 p-2 px-4">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-7">
+                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">Residential</h4>
+                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">Building</h4>
+                                                                <h5 style="font-size: 3.8vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <h4>Precision: 15mm</h4>
-                                                                <h4>Success: 100%</h4>
+                                                            <div class="col-5 mt-2">
+                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">LOD: 300</h5>
+                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
+                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">Time: 55h</h5>
                                                             </div>
                                                         </div>
                                                         <div class="row">
-                                                            <div class="col-5 d-flex justify-content-center align-items-center">
-                                                                <img src="/images/proj.png" class="img w-75 image mt-3 mx-auto" alt="...">
+                                                            <div class="col-12">
+                                                                <h5 style="font-size: 3.8vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
                                                             </div>
-                                                            <div class="col-7">
-                                                                <h5 class="mt-3">
-                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam libero obcaecati quidem vitae voluptatem. Aperiam asperiores dignissimos eius repellat? Alias, quo!
-                                                                </h5>
+                                                        </div>
+
+                                                        <div class="row m-0 border-bottom border-3 border-white">
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-4 d-flex justify-content-center">
+                                                                <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
+                                                            </div>
+                                                            <div class="col-8 ps-0">
+                                                                <h6 style="font-size: 3vw" class="mt-2 text-secondary">
+                                                                    {{ $work->description }}
+                                                                </h6>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </section>
@@ -2776,7 +2597,7 @@
                                         <div class="splide__slide__container">
                                             <div class="card p-3 border-0 h-100" style="background-color: #d4fffb">
                                                 <div class="text-center p-2 pt-0">
-                                                    <img src="{{ $teammate->image }}" class="img-fluid w-100">
+                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
                                                 <div class="card-body pb-0">
                                                     <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
@@ -2815,7 +2636,7 @@
                                         <div class="splide__slide__container">
                                             <div class="card p-4 border-0 h-100" style="background-color: #d4fffb">
                                                 <div class="text-center p-2 pt-0">
-                                                    <img src="{{ $teammate->image }}" class="img-fluid w-100">
+                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
                                                 <div class="card-body pb-0">
                                                     <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
@@ -2854,7 +2675,7 @@
                                         <div class="splide__slide__container">
                                             <div class="card p-3 border-0 h-100" style="background-color: #d4fffb">
                                                 <div class="text-center p-2 pt-0">
-                                                    <img src="{{ $teammate->image }}" class="img-fluid w-100">
+                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
                                                 <div class="card-body pb-0">
                                                     <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
@@ -2893,7 +2714,7 @@
                                         <div class="splide__slide__container">
                                             <div class="card p-3 border-0 h-100" style="background-color: #d4fffb">
                                                 <div class="text-center p-2 pt-0">
-                                                    <img src="{{ $teammate->image }}" class="img-fluid w-100">
+                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
                                                 <div class="card-body pb-0">
                                                     <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
@@ -2922,8 +2743,8 @@
                 </div>
             </div>
 
-            <div class="row w-100 px-0">
-                <div class="col-12">
+            <div class="row mx-0 px-0">
+                <div class="col-12 mx-0">
                     <section id="splide21" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -2932,7 +2753,7 @@
                                         <div class="splide__slide__container">
                                             <div class="card p-5 border-0 h-100" style="background-color: #d4fffb">
                                                 <div class="text-center p-2 pt-0">
-                                                    <img src="{{ $teammate->image }}" class="img-fluid w-100">
+                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
                                                 <div class="card-body pb-0">
                                                     <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
