@@ -584,24 +584,24 @@
                     <h2 class="text-white display-6 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">SOCIAL MEDIA</h2>
 
                     <div class="row mt-5 w-75">
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-linkedin-in"></i>
+                                <img class="img-fluid" src="/images/social/linkedin.svg" alt="linkedin">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-instagram"></i>
+                                <img class="img-fluid" src="/images/social/instagram.svg" alt="instagram">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-facebook-f"></i>
+                                <img class="img-fluid" src="/images/social/facebook.svg" alt="facebook">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-youtube"></i>
+                                <img class="img-fluid" src="/images/social/youtube.svg" alt="youtube">
                             </a>
                         </div>
                     </div>
@@ -664,29 +664,29 @@
                 <div class="col-6">
                     <h2 class="text-white h1 fw-bold pb-2 pt-5 mt-5">SOCIAL MEDIA</h2>
 
+
                     <div class="row mt-5 w-75">
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-linkedin-in"></i>
+                                <img class="img-fluid" src="/images/social/linkedin.svg" alt="linkedin">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-instagram"></i>
+                                <img class="img-fluid" src="/images/social/instagram.svg" alt="instagram">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-facebook-f"></i>
+                                <img class="img-fluid" src="/images/social/facebook.svg" alt="facebook">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-youtube"></i>
+                                <img class="img-fluid" src="/images/social/youtube.svg" alt="youtube">
                             </a>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-6">
@@ -744,28 +744,27 @@
                     <h2 class="text-white h1 fw-bold pb-2 pt-5 mt-5">SOCIAL MEDIA</h2>
 
                     <div class="row mt-5 w-75">
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-linkedin-in"></i>
+                                <img class="img-fluid" src="/images/social/linkedin.svg" alt="linkedin">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-instagram"></i>
+                                <img class="img-fluid" src="/images/social/instagram.svg" alt="instagram">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-facebook-f"></i>
+                                <img class="img-fluid" src="/images/social/facebook.svg" alt="facebook">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-youtube"></i>
+                                <img class="img-fluid" src="/images/social/youtube.svg" alt="youtube">
                             </a>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-6">
@@ -823,24 +822,24 @@
                     <h2 class="text-white h4 fw-bold pb-2">SOCIAL MEDIA</h2>
 
                     <div class="row w-75">
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-linkedin-in"></i>
+                                <img class="img-fluid w-75" src="/images/social/linkedin.svg" alt="linkedin">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-instagram"></i>
+                                <img class="img-fluid w-75" src="/images/social/instagram.svg" alt="instagram">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-facebook-f"></i>
+                                <img class="img-fluid w-75" src="/images/social/facebook.svg" alt="facebook">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
-                                <i class="lab la-2x la-youtube"></i>
+                                <img class="img-fluid w-75" src="/images/social/youtube.svg" alt="youtube">
                             </a>
                         </div>
                     </div>
