@@ -821,7 +821,7 @@
                 <div class="col-6">
                     <h2 class="text-white h4 fw-bold pb-2">SOCIAL MEDIA</h2>
 
-                    <div class="row w-75">
+                    <div class="row w-100">
                         <div class="col-3 d-flex align-items-center">
                             <a href="#" class="text-white h4 text-decoration-none">
                                 <img class="img-fluid w-75" src="/images/social/linkedin.svg" alt="linkedin">

@@ -2852,7 +2852,7 @@
         <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #adbec1">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-8">
+                    <div class="col-7">
                         <h2 class="text-white fw-bold h1 w-100">
                             {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
                         </h2>
@@ -2863,7 +2863,7 @@
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
-                    <div class="col-4 d-flex align-items-center">
+                    <div class="col-5 d-flex align-items-center">
                         <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
@@ -2873,20 +2873,20 @@
         <div class="container-fluid d-none d-sm-block d-md-none" style="background-color: #adbec1">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-8">
-                        <h2 class="text-white fw-bold h1 w-100">
+                    <div class="col-12">
+                        <h2 class="text-white fw-bold h2 w-100">
                             {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
                         </h2>
                         <h2 class="text-white h4 fw-semibold mt-4">
                             {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
                         </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
-                    <div class="col-4 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
-                    </div>
+{{--                    <div class="col-4 d-flex align-items-center">--}}
+{{--                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
