@@ -1072,7 +1072,7 @@
                             <h4 class="fw-bold text-white display-6 w-100 lh-1">
                                 Meet at a time that is convenient for you.
                             </h4>
-                            <h4 class="h2 lh-1 mt-3 text-white fw-semibold">
+                            <h4 class="h2 lh-1 mt-3 mb-3 text-white fw-semibold">
                                 <small>
                                     Book a date and time that is convenient for you to discuss how we can help you.
                                 </small>
@@ -1094,9 +1094,9 @@
                         </h4>
                     </div>
                     <div class="row pb-3 d-flex justify-content-center">
-                        <div class="col-4">
+                        <div class="col-6 col-lg-3 col-xl-2 mb-2">
                             <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100 mx-auto" style="background-color: #43aeb6">
-                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                                <span class="fw-bold h6 d-block m-0">CONTACT US</span>
                             </a>
                         </div>
                     </div>

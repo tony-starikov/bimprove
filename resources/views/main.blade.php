@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-color: #68d1d3">
+    <div class="container-fluid d-none d-xl-block d-xxl-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
         <div class="container p-5">
             <div class="row px-5">
                 <div class="col-12 mt-5">
@@ -167,7 +167,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-lg-block d-xl-none" style="background-color: #68d1d3">
+    <div class="container-fluid d-none d-lg-block d-xl-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
         <div class="container p-5">
             <div class="row px-5">
                 <div class="col-12 mt-3">
@@ -248,7 +248,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #68d1d3">
+    <div class="container-fluid d-none d-md-block d-lg-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
         <div class="container pb-5">
             <div class="row mt-5">
                 <div class="col-12">
@@ -328,7 +328,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-sm-block d-md-none" style="background-color: #68d1d3">
+    <div class="container-fluid d-none d-sm-block d-md-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
         <div class="container pb-5">
             <div class="row mt-5">
                 <div class="col-12">
@@ -408,7 +408,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-sm-none" style="background-color: #68d1d3">
+    <div class="container-fluid d-sm-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
         <div class="container pb-4">
             <div class="row mt-5">
                 <div class="col-12">
@@ -494,7 +494,7 @@
 
 {{--    ABOUT--}}
     <div id="about">
-        <div class="container-fluid d-none d-xxl-block" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+        <div class="container-fluid d-none d-xxl-block" style="background-image: url(/images/main_page/about_bg.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-12">
@@ -523,7 +523,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-image: url(/images/main_page/about_bg.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-12">
@@ -548,7 +548,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-lg-block d-xl-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+        <div class="container-fluid d-none d-lg-block d-xl-none" style="background-image: url(/images/main_page/about_bg.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container p-5">
                 <div class="row px-5 py-4">
                     <div class="col-12">
@@ -579,7 +579,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-md-block d-lg-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+        <div class="container-fluid d-none d-md-block d-lg-none" style="background-image: url(/images/main_page/about_bg.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12">
@@ -610,7 +610,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-md-none" style="background-image: url('/images/main_page/about_bg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+        <div class="container-fluid d-md-none" style="background-image: url(/images/main_page/about_bg.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12">
@@ -1816,11 +1816,11 @@
                                         <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
                                             <div class="card-header bg-transparent border-0">
                                                 <div class="row" style="min-height: 50%">
-                                                    <div class="col-4">
+                                                    <div class="col-3">
                                                         <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
-                                                    <div class="col-8">
+                                                    <div class="col-9">
                                                         <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
                                                         <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
                                                     </div>
