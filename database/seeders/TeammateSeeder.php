@@ -22,7 +22,7 @@ class TeammateSeeder extends Seeder
                 'surname_en' => 'Vinogradov',
                 'position_ua' => 'CEO',
                 'position_en' => 'CEO',
-                'image' => 'teammates/Vitaly.png',
+                'image' => 'teammates/Vitaly_1x.png',
             ],
             [
                 'name_ua' => 'Kseniya',
@@ -31,7 +31,7 @@ class TeammateSeeder extends Seeder
                 'surname_en' => 'Kutsenko',
                 'position_ua' => 'Director of Scan to BIM',
                 'position_en' => 'Director of Scan to BIM',
-                'image' => 'teammates/Kseniya.png',
+                'image' => 'teammates/Kseniya_1x.png',
             ],
             [
                 'name_ua' => 'Kirill',
@@ -40,7 +40,7 @@ class TeammateSeeder extends Seeder
                 'surname_en' => 'Obertivich',
                 'position_ua' => 'Head Teacher',
                 'position_en' => 'Head Teacher',
-                'image' => 'teammates/Kirill.png',
+                'image' => 'teammates/Kirill_1x.png',
             ],
             [
                 'name_ua' => 'Anton',
@@ -49,7 +49,7 @@ class TeammateSeeder extends Seeder
                 'surname_en' => 'Yakushenko',
                 'position_ua' => 'Director of Telecommunications Design',
                 'position_en' => 'Director of Telecommunications Design',
-                'image' => 'teammates/Anton.png',
+                'image' => 'teammates/Anton_1x.png',
             ],
         ]);
     }

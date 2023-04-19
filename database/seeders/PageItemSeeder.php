@@ -39,7 +39,7 @@ class PageItemSeeder extends Seeder
             [
                 'page_id' => 1,
                 'name' => 'main_bg_image',
-                'value' => "main_page/background.png"
+                'value' => "main_page/background2.png"
             ],
             [
                 'page_id' => 1,

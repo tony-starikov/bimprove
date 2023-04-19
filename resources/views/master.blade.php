@@ -562,7 +562,7 @@
                     </a>
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-primary btn shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <button class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
                     </button>
 
@@ -815,7 +815,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-lg-none" style="background-color: #9a9a9a">
+    <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #9a9a9a">
         <div class="container">
             <div class="row py-3">
                 <div class="col-6">
@@ -882,6 +882,77 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid d-md-none" style="background-color: #9a9a9a">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-6">
+                    <h2 class="text-white h4 fw-bold pb-2">SOCIAL MEDIA</h2>
+
+                    <div class="row w-100">
+                        <div class="col-3 d-flex align-items-center">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/social/linkedin.svg" alt="linkedin">
+                            </a>
+                        </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/social/instagram.svg" alt="instagram">
+                            </a>
+                        </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/social/facebook.svg" alt="facebook">
+                            </a>
+                        </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <a href="#" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/social/youtube.svg" alt="youtube">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-6">
+                    <h2 class="text-white h4 fw-bold pb-2">CONTACTS</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="fw-semibold text-white">+380668901648</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="fw-semibold text-white">es@bim-prove.com</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row border-bottom border-white border-2 py-3">
+                <div class="col-6">
+                    <h6 class="fw-semibold text-white">SERVICES</h6>
+                    <h6 class="fw-semibold text-white">PORTFOLIO</h6>
+                    <h6 class="fw-semibold text-white">ABOUT</h6>
+                </div>
+                <div class="col-6">
+                    <h6 class="fw-semibold text-white">BLOG</h6>
+                    <h6 class="fw-semibold text-white">PRODUCTS</h6>
+                    <h6 class="fw-semibold text-white">CAREER</h6>
+                </div>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-12 text-center">
+                    <p class="card-text text-white fw-bold h6">
+                        <small>
+                            &copy; Copyright BIMprove company LLC. All rights reserved 2022.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 
@@ -910,29 +981,33 @@
 @endforeach
 
 <!-- Modal START -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-body p-0">
                 <div class="container-fluid h-100">
-                    <div class="container">
-                        <nav class="navbar navbar-expand my-lg-4" style="background-color: #ffffff;">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">
-                                    <img src="/images/logo.png" class="img" height="60"  alt="">
-                                </a>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                        <li class="nav-item  d-flex align-items-center d-lg-none">
-                                            <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                                <img src="/images/menu-close.png" class="img pt-2" width="60" alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
+                    <nav style="background-color: #ffffff;">
+                        <div class="container">
+                            <div class="row py-2">
+                                <div class="col-2 px-0 d-flex justify-content-start align-items-center">
+                                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
+                                        <img src="/images/logo.png" class="img-fluid" style="max-height: 50px"  alt="">
+                                    </a>
+                                </div>
+                                <div class="col-10 px-0 d-flex justify-content-end align-items-center">
+                                    <button class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
+                                    </button>
+
+                                    <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
+                                        <img src="/images/menu-close.png" class="img align-self-center" width="60" alt="">
+                                    </a>
+
+                                    {{--                                        <img src="/images/menu-open.png" class="img align-self-center" width="60px" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">--}}
                                 </div>
                             </div>
-                        </nav>
-                    </div>
+                        </div>
+                    </nav>
 
                     <div class="row" style="background-color: #68d1d3">
                         <div class="col-12">
@@ -948,7 +1023,7 @@
                     <div class="row mt-3">
 
                         @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status === 1)
+                            @if($menuItem->show_status == 1)
 
                                 @switch($menuItem->item_name)
                                     @case('Home')
@@ -1016,6 +1091,19 @@
                                     </div>
                                     @break
 
+                                    @case('Products')
+                                    <div class="col-12 text-center my-2">
+                                        <button data-bs-target="#productsMenu" data-bs-toggle="modal" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
+                                            PRODUCTS
+                                        </button>
+                                        <button data-bs-target="#productsMenu" data-bs-toggle="modal" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                PRODUCTS
+                                            </span>
+                                        </button>
+                                    </div>
+                                    @break
+
                                     {{--                                    @case('Products')--}}
                                     {{--                                    <li class="nav-item dropdown">--}}
                                     {{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
@@ -1053,6 +1141,88 @@
 </div>
 <!-- Modal END -->
 
+
+{{--PRODUCTS MENU--}}
+
+<div class="modal fade" id="productsMenu" tabindex="-1" aria-labelledby="productsMenu" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="container-fluid h-100">
+                    <nav style="background-color: #ffffff;">
+                        <div class="container">
+                            <div class="row py-2">
+                                <div class="col-2 px-0 d-flex justify-content-start align-items-center">
+                                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
+                                        <img src="/images/logo.png" class="img-fluid" style="max-height: 50px"  alt="">
+                                    </a>
+                                </div>
+                                <div class="col-10 px-0 d-flex justify-content-end align-items-center">
+                                    <button class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
+                                    </button>
+
+                                    <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
+                                        <img src="/images/menu-close.png" class="img align-self-center" width="60" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="row" style="background-color: #68d1d3">
+                        <div class="col-12">
+                            <h6 class="text-white text-center display-2 fw-bold my-5 d-md-none">
+                                PRODUCTS
+                            </h6>
+                            <h6 class="text-white text-center display-4 fw-bold my-5 d-none d-md-block">
+                                PRODUCTS
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-12 text-center my-2">
+                            <a href="{{ route('products') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
+                                PLUGINS
+                            </a>
+                            <a href="{{ route('products') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
+                                <span class="my-1 mx-0 h5 fw-bold d-block">
+                                    PLUGINS
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="col-12 text-center my-2">
+                            <a href="{{ route('families') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
+                                FAMILIES
+                            </a>
+                            <a href="{{ route('families') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
+                                <span class="my-1 mx-0 h5 fw-bold d-block">
+                                    FAMILIES
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="col-12 text-center my-2">
+                            <button data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
+                                BACK
+                            </button>
+                            <button data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
+                                <span class="my-1 mx-0 h5 fw-bold d-block">
+                                    BACK
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{--PRODUCTS MENU--}}
+
 <!-- Modal START -->
 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -1061,7 +1231,7 @@
                 <div class="container-fluid min-vh-100">
                     <div class="row">
                         <div class="col-10 col-lg-10 col-xl-11"></div>
-                        <div class="col-2 col-lg-2 col-xl-1">
+                        <div class="col-2 col-lg-2 col-xl-1 d-flex justify-content-end">
                             <button type="button" class="btn border-0" data-bs-dismiss="modal">
                                 <i class="las la-3x la-times text-white"></i>
                             </button>

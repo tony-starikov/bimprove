@@ -992,7 +992,7 @@
                     <div class="row px-5 pb-0">
                         @foreach($achievements as $achievement)
                             @if($achievement->id < 4)
-                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5">
+                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none bg-transparent">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid w-75 bg-transparent">
                                     <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1014,7 +1014,7 @@
                     <div class="row px-5 pb-0">
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3)
-                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5">
+                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid w-75">
                                     <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1048,7 +1048,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1071,7 +1071,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1100,13 +1100,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid" style="background-image: url('/images/bg_achiv_lg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local;">
+            <div class="container-fluid">
                 <div class="container px-5">
                     <div class="row px-5 pb-0">
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1123,13 +1123,13 @@
 
                 </div>
             </div>
-            <div class="container-fluid" style="background-image: url('/images/bg_achiv_lg.png'); background-position: center; background-repeat: no-repeat; background-attachment: local;">
+            <div class="container-fluid">
                 <div class="container px-5">
                     <div class="row px-5 pb-0">
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1158,13 +1158,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid" style="background-image: url('/images/bg_achiv_md.png'); background-position: center; background-repeat: no-repeat; background-attachment: local;">
+            <div class="container-fluid">
                 <div class="container">
                     <div class="row">
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-4 text-center px-5">
+                            <div class="col-4 text-center px-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold small d-md-none">
@@ -1180,13 +1180,13 @@
 
                 </div>
             </div>
-            <div class="container-fluid mt-4" style="background-image: url('/images/bg_achiv_md.png'); background-position: center; background-repeat: no-repeat; background-attachment: local;">
+            <div class="container-fluid mt-4">
                 <div class="container">
                     <div class="row">
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-4 text-center px-5">
+                            <div class="col-4 text-center px-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold small d-md-none">
@@ -1214,13 +1214,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid" style="background-image: url('/images/bg_achiv_sm.png'); background-position: center; background-repeat: no-repeat; background-attachment: local;">
+            <div class="container-fluid">
                 <div class="container">
                     <div class="row">
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-4 text-center px-4">
+                            <div class="col-4 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1235,13 +1235,13 @@
 
                 </div>
             </div>
-            <div class="container-fluid mt-4" style="background-image: url('/images/bg_achiv_sm.png'); background-position: center; background-repeat: no-repeat; background-attachment: local;">
+            <div class="container-fluid mt-4">
                 <div class="container">
                     <div class="row">
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-4 text-center px-4">
+                            <div class="col-4 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1274,7 +1274,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 2) @break @endif
-                            <div class="col-6 text-center px-4">
+                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1295,7 +1295,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 2 or $achievement->id >= 5) @continue @endif
-                            <div class="col-6 text-center px-4">
+                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1316,7 +1316,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id < 5) @continue @endif
-                            <div class="col-6 text-center px-4">
+                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1651,7 +1651,7 @@
 
 {{--    TESTIMONIALS--}}
     <div id="testimonials">
-        <div class="container-fluid d-none d-xxl-block py-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-xxl-block py-5 px-0" style="background: url(/images/testimonials/testimonials_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container px-5">
                 <div class="row p-5">
                     <h2 class="display-5 fw-bold pb-0">
@@ -1700,7 +1700,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none py-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-xl-block d-xxl-none py-5 px-0" style="background: url(/images/testimonials/testimonials_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container px-5">
                 <div class="row p-5">
                     <h2 class="display-5 fw-bold pb-0">
@@ -1749,7 +1749,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-lg-block d-xl-none py-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-lg-block d-xl-none py-5 px-0" style="background: url(/images/testimonials/testimonials_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container px-5">
                 <div class="row p-5">
                     <h2 class="h1 fw-bold pb-0">
@@ -1798,7 +1798,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-md-block d-lg-none py-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-md-block d-lg-none py-5 px-0" style="background: url(/images/testimonials/testimonials_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row pb-3">
                     <h2 class="h1 fw-bold pb-0">
@@ -1815,14 +1815,14 @@
                                     <li class="splide__slide">
                                         <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
                                             <div class="card-header bg-transparent border-0">
-                                                <div class="row" style="min-height: 50%">
+                                                <div class="row d-flex align-items-center" style="min-height: 50%">
                                                     <div class="col-3">
                                                         <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
                                                     <div class="col-9">
-                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
-                                                        <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
+                                                        <h6 class="text-white fw-bold h5 w-100 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-semibold h5 w-100">{{ $testimonial->profession }}</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1847,7 +1847,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-sm-block d-md-none py-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-sm-block d-md-none py-5 px-0" style="background: url(/images/testimonials/testimonials_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row pb-3">
                     <h2 class="h1 fw-bold pb-0">
@@ -1864,13 +1864,13 @@
                                     <li class="splide__slide p-3">
                                         <div class="card h-100 p-2 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
                                             <div class="card-header bg-transparent border-0">
-                                                <div class="row" style="min-height: 50%">
+                                                <div class="row d-flex align-items-center" style="min-height: 50%">
                                                     <div class="col-4">
                                                         <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
                                                     <div class="col-8">
-                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-bold h6 w-100 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
                                                         <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
                                                     </div>
                                                 </div>
@@ -1896,7 +1896,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-sm-none py-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-sm-none py-5 px-0" style="background: url(/images/testimonials/testimonials_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row pb-3">
                     <div class="col-12 px-4">
@@ -1915,13 +1915,13 @@
                                     <li class="splide__slide">
                                         <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
                                             <div class="card-header bg-transparent border-0">
-                                                <div class="row" style="min-height: 50%">
+                                                <div class="row d-flex align-items-center" style="min-height: 50%">
                                                     <div class="col-4">
                                                         <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
                                                     </div>
 
                                                     <div class="col-8">
-                                                        <h6 class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
+                                                        <h6 class="text-white fw-bold h6 w-100 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</h6>
                                                         <h6 class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</h6>
                                                     </div>
                                                 </div>
@@ -1979,7 +1979,6 @@
                                                         <div class="col-12 p-2 px-4">
                                                             <div class="row justify-content-between">
                                                                 <div class="col-7">
-{{--                                                                    <h4 style="font-size: 1.5vw" class="fw-bold">Residential</h4>--}}
                                                                     <h4 style="font-size: 1.2vw" class="fw-bold">Residential</h4>
                                                                     <h4 style="font-size: 1.2vw" class="fw-bold">Building</h4>
                                                                     <h5 style="font-size: 1vw" class="text-secondary fw-bold">Scan to bim</h5>
@@ -1999,11 +1998,11 @@
                                                             <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
 
-                                                            <div class="row">
+                                                            <div class="row d-flex align-items-center">
                                                                 <div class="col-4 d-flex justify-content-center">
                                                                     <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
                                                                 </div>
-                                                                <div class="col-8 px-0">
+                                                                <div class="col-8 px-0 d-flex justify-content-center">
                                                                     <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
                                                                         {{ $work->description }}
                                                                     </h6>
@@ -2059,7 +2058,7 @@
                                                             <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
 
-                                                            <div class="row">
+                                                            <div class="row d-flex align-items-center">
                                                                 <div class="col-4 d-flex justify-content-center">
                                                                     <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
                                                                 </div>
@@ -2127,7 +2126,7 @@
                                                             <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
 
-                                                            <div class="row">
+                                                            <div class="row d-flex align-items-center">
                                                                 <div class="col-4 d-flex justify-content-center">
                                                                     <img src="/images/{{ $work->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
                                                                 </div>
@@ -2186,7 +2185,7 @@
                                                             <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
 
-                                                            <div class="row">
+                                                            <div class="row d-flex align-items-center">
                                                                 <div class="col-4 d-flex justify-content-center">
                                                                     <img src="/images/{{ $work->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
                                                                 </div>
@@ -2254,7 +2253,7 @@
                                                             <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
 
-                                                            <div class="row">
+                                                            <div class="row d-flex align-items-center">
                                                                 <div class="col-4 d-flex justify-content-center">
                                                                     <img src="/images/{{ $work->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
                                                                 </div>
@@ -2313,7 +2312,7 @@
                                                             <div class="row m-0 border-bottom border-3 border-white">
                                                             </div>
 
-                                                            <div class="row">
+                                                            <div class="row d-flex align-items-center">
                                                                 <div class="col-4 d-flex justify-content-center">
                                                                     <img src="/images/{{ $work->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
                                                                 </div>
@@ -2379,7 +2378,7 @@
                                                         <div class="row m-0 border-bottom border-3 border-white">
                                                         </div>
 
-                                                        <div class="row">
+                                                        <div class="row d-flex align-items-center">
                                                             <div class="col-4 d-flex justify-content-center">
                                                                 <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
                                                             </div>
@@ -2444,7 +2443,7 @@
                                                         <div class="row m-0 border-bottom border-3 border-white">
                                                         </div>
 
-                                                        <div class="row">
+                                                        <div class="row d-flex align-items-center">
                                                             <div class="col-4 d-flex justify-content-center">
                                                                 <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
                                                             </div>
@@ -2510,7 +2509,7 @@
                                                         <div class="row m-0 border-bottom border-3 border-white">
                                                         </div>
 
-                                                        <div class="row">
+                                                        <div class="row d-flex align-items-center">
                                                             <div class="col-4 d-flex justify-content-center">
                                                                 <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
                                                             </div>
@@ -2539,7 +2538,7 @@
 
 {{--    TEAM--}}
     <div id="team">
-        <div class="container-fluid d-none d-xxl-block pt-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-xxl-block pt-5 px-0" style="background: url(/images/teammates/team_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container px-5">
                 <div class="row p-5">
                     <h2 class="display-5 fw-bold pb-0">
@@ -2556,7 +2555,7 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide">
                                         <div class="splide__slide__container">
-                                            <div class="card border-0 px-5 h-100" style="background-color: #d4fffb">
+                                            <div class="card border-0 px-5 h-100 bg-transparent">
                                                 <div class="text-center p-4 pt-0">
                                                     <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
@@ -2578,7 +2577,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none pt-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-xl-block d-xxl-none pt-5 px-0" style="background: url(/images/teammates/team_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container px-5">
                 <div class="row p-5">
                     <h2 class="display-5 fw-bold pb-0">
@@ -2595,7 +2594,7 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-3 border-0 h-100" style="background-color: #d4fffb">
+                                            <div class="card p-3 border-0 h-100 bg-transparent">
                                                 <div class="text-center p-2 pt-0">
                                                     <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
@@ -2617,7 +2616,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-lg-block d-xl-none pt-5 px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-lg-block d-xl-none pt-5 px-0" style="background: url(/images/teammates/team_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container px-5">
                 <div class="row p-5">
                     <h2 class="h1 fw-bold pb-0">
@@ -2634,7 +2633,7 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-4 border-0 h-100" style="background-color: #d4fffb">
+                                            <div class="card p-4 border-0 h-100 bg-transparent">
                                                 <div class="text-center p-2 pt-0">
                                                     <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
@@ -2656,7 +2655,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-md-block d-lg-none px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-md-block d-lg-none px-0" style="background: url(/images/teammates/team_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row pt-5 pb-3">
                     <h2 class="h1 fw-bold pb-0">
@@ -2673,7 +2672,7 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-3 border-0 h-100" style="background-color: #d4fffb">
+                                            <div class="card p-3 border-0 h-100 bg-transparent">
                                                 <div class="text-center p-2 pt-0">
                                                     <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
@@ -2695,7 +2694,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-sm-block d-md-none px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-none d-sm-block d-md-none px-0" style="background: url(/images/teammates/team_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row pt-5 pb-3">
                     <h2 class="h1 fw-bold pb-0">
@@ -2712,7 +2711,7 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-3 border-0 h-100" style="background-color: #d4fffb">
+                                            <div class="card p-3 border-0 h-100 bg-transparent">
                                                 <div class="text-center p-2 pt-0">
                                                     <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
@@ -2734,7 +2733,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-sm-none px-0" style="background-color: #d4fffb">
+        <div class="container-fluid d-sm-none px-0" style="background: url(/images/teammates/team_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row pt-5">
                     <h2 class="h1 fw-bold pb-0">
@@ -2751,7 +2750,7 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-5 border-0 h-100" style="background-color: #d4fffb">
+                                            <div class="card p-5 border-0 h-100 bg-transparent">
                                                 <div class="text-center p-2 pt-0">
                                                     <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
                                                 </div>
@@ -2780,7 +2779,7 @@
 
 {{--    CALENDAR--}}
     <div id="calendar">
-        <div class="container-fluid d-none d-xxl-block" style="background-color: #adbec1">
+        <div class="container-fluid d-none d-xxl-block" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-6">
@@ -2803,7 +2802,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background-color: #adbec1">
+        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-6">
@@ -2826,7 +2825,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-lg-block d-xl-none" style="background-color: #adbec1">
+        <div class="container-fluid d-none d-lg-block d-xl-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-6">
@@ -2849,7 +2848,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #adbec1">
+        <div class="container-fluid d-none d-md-block d-lg-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-7">
@@ -2870,7 +2869,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-sm-block d-md-none" style="background-color: #adbec1">
+        <div class="container-fluid d-none d-sm-block d-md-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-12">
@@ -2891,7 +2890,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-sm-none" style="background-color: #adbec1">
+        <div class="container-fluid d-sm-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-12">
