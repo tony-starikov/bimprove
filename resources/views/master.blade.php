@@ -963,22 +963,7 @@
 
 @yield('js')
 
-
-
-@foreach($services as $service)
-    @if($service->video_url)
-        <!-- Modal -->
-        <div class="modal fade" id="{{ $service->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content bg-transparent border-0">
-                    <div class="modal-body w-100 border-0">
-                        <iframe id="{{ $service->slug }}_video" class="video w-100" src="{{ $service->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endif
-@endforeach
+@yield('modals')
 
 <!-- Modal START -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
