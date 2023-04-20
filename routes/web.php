@@ -49,6 +49,10 @@ Route::post('/donate', [DonateController::class, 'index'])->name('donate');
 Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('service');
 Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
 
+
+Route::get('/send', [PageController::class, 'send'])->name('send');
+Route::get('/success', [PageController::class, 'success'])->name('success');
+
 Auth::routes([
     'register' => false,
     'reset' => false,

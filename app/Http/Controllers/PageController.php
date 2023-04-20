@@ -45,4 +45,26 @@ class PageController extends Controller
 
         return view('contact', compact('page_info', 'services', 'menuItems'));
     }
+
+    public function send()
+    {
+        $page_info = Page::where('name', 'contacts')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        return view('send', compact('page_info', 'services', 'menuItems'));
+    }
+
+    public function success()
+    {
+        $page_info = Page::where('name', 'contacts')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        return view('success', compact('page_info', 'services', 'menuItems'));
+    }
 }

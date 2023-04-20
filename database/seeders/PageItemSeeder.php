@@ -54,7 +54,7 @@ class PageItemSeeder extends Seeder
             [
                 'page_id' => 1,
                 'name' => 'about_text',
-                'value' => "In just 7 years, BIM prove LLC has grown from a single Scan to BIM service to a company with 6 independent departments, each dedicated to advancing in its respective field. Each department is focused on growth, but all are aligned in our commitment to providing exceptional, personalized service to our clients. We partner with owners, general contractors, and design firms to streamline the BIM process for projects of all sizes and industries, from small commercial to large industrial."
+                'value' => "In just 7 years, BIMprove LLC has grown from a single Scan to BIM service to a company with 6 independent departments, each dedicated to advancing in its respective field. Each department is focused on growth, but all are aligned in our commitment to providing exceptional, personalized service to our clients. We partner with owners, general contractors, and design firms to streamline the BIM process for projects of all sizes and industries, from small commercial to large industrial."
             ],
             [
                 'page_id' => 1,
