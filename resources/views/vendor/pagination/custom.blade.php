@@ -36,7 +36,7 @@
                             @else
                                 <li class="page-item p-0 m-0 mx-2">
                                     <a class="page-link border-0 p-1 m-0 shadow-none" href="{{ $url }}">
-                                        <img src="/images/pagination/circles/{{ $page }}.svg" class="img-fluid p-0 m-0" style="height: 45px;">
+                                        <img src="/images/pagination/digits/{{ $page }}.svg" class="img-fluid p-0 m-0" style="height: 17px;">
                                     </a>
                                 </li>
                             @endif
