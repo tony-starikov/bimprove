@@ -323,26 +323,21 @@
         <div class="container p-5 pb-0">
             @foreach($families as $family)
                 <div class="row p-5">
-                    <div class="col-5 ps-0">
+                    <div class="col-5 px-0 ps-2">
                         <img class="img-fluid w-100" src="/images/{{ $family->image }}" alt="">
                     </div>
-                    <div class="col-7 ps-5 align-self-stretch position-relative">
+                    <div class="col-7 px-0 ps-4 align-self-stretch position-relative">
                         <div class="row">
-                            <h6 class="display-4 fw-bold">
+                            <h6 class="display-6 fw-bold">
                                 {{ $family->title_en }}
                             </h6>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="text-secondary mt-3">
+                                <p class="text-secondary m-0">
                                     {{ $family->description_en }}
                                 </p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <h4 class="text-secondary mt-3">
-                                Month, Day, Year
-                            </h4>
                         </div>
 
                         <div class="row position-absolute bottom-0">
@@ -373,32 +368,27 @@
         <div class="container p-5 pb-0">
             @foreach($families as $family)
                 <div class="row p-5">
-                    <div class="col-5 ps-0">
+                    <div class="col-5 px-0">
                         <img class="img-fluid w-100" src="/images/{{ $family->image }}" alt="">
                     </div>
-                    <div class="col-7 ps-5 align-self-stretch position-relative">
+                    <div class="col-7 px-0 ps-4 align-self-stretch position-relative">
                         <div class="row">
-                            <h6 class="display-6 fw-bold">
+                            <h6 class="h2 fw-bold">
                                 {{ $family->title_en }}
                             </h6>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="text-secondary mt-3">
+                                <p class="text-secondary m-0">
                                     {{ $family->description_en }}
                                 </p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <h5 class="text-secondary mt-3">
-                                Month, Day, Year
-                            </h5>
                         </div>
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
                                 <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
-                                    <span class="fw-bold h4 d-block my-2 mx-4">DOWNLOAD NOW</span>
+                                    <span class="fw-bold h5 d-block my-1 mx-1">DOWNLOAD NOW</span>
                                 </a>
                             </div>
                         </div>
@@ -422,32 +412,27 @@
         <div class="container p-5 pb-0">
             @foreach($families as $family)
                 <div class="row p-5">
-                    <div class="col-5 ps-0">
+                    <div class="col-5 px-0">
                         <img class="img-fluid w-100" src="/images/{{ $family->image }}" alt="">
                     </div>
-                    <div class="col-7 ps-5 align-self-stretch position-relative">
+                    <div class="col-7 px-0 ps-4 align-self-stretch position-relative">
                         <div class="row">
-                            <h6 class="h2 fw-bold">
+                            <h6 class="h3 mb-1 fw-bold">
                                 {{ $family->title_en }}
                             </h6>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="text-secondary m-0">
+                                <p class="text-secondary small m-0">
                                     {{ $family->description_en }}
                                 </p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <h5 class="text-secondary mt-3">
-                                Month, Day, Year
-                            </h5>
                         </div>
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
                                 <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
-                                    <span class="fw-bold h4 d-block my-2 mx-4">DOWNLOAD NOW</span>
+                                    <span class="fw-bold h6 d-block m-0">DOWNLOAD NOW</span>
                                 </a>
                             </div>
                         </div>
@@ -479,16 +464,13 @@
                                 <h6 class="h3 mt-2 fw-bold">
                                     {{ $family->title_en }}
                                 </h6>
-                                <p class="text-secondary m-0">
+                                <p class="text-secondary m-0 mb-2">
                                     {{ $family->description_en }}
                                 </p>
-                                <h6 class="text-secondary py-2">
-                                    Month, Day, Year
-                                </h6>
                             </div>
                             <div class="card-footer border border-0 bg-transparent p-0">
                                 <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
-                                    <span class="fw-bold h5 d-block my-2 mx-4">DOWNLOAD NOW</span>
+                                    <span class="fw-bold h5 d-block m-1">DOWNLOAD NOW</span>
                                 </a>
                             </div>
                         </div>
@@ -520,12 +502,9 @@
                                 <h6 class="h3 mt-2 fw-bold">
                                     {{ $family->title_en }}
                                 </h6>
-                                <p class="text-secondary m-0">
+                                <p class="text-secondary m-0 mb-2">
                                     {{ $family->description_en }}
                                 </p>
-                                <h6 class="text-secondary py-2">
-                                    Month, Day, Year
-                                </h6>
                             </div>
                             <div class="card-footer border border-0 bg-transparent p-0">
                                 <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
@@ -561,12 +540,9 @@
                                 <h6 class="h3 mt-2 fw-bold">
                                     {{ $family->title_en }}
                                 </h6>
-                                <p class="text-secondary m-0">
+                                <p class="text-secondary m-0 mb-2">
                                     {{ $family->description_en }}
                                 </p>
-                                <h6 class="text-secondary py-2">
-                                    Month, Day, Year
-                                </h6>
                             </div>
                             <div class="card-footer border border-0 bg-transparent p-0">
                                 <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">

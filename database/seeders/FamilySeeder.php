@@ -23,7 +23,7 @@ class FamilySeeder extends Seeder
                 'title_ua' => 'REVIT FAMILY NAME UA',
                 'description_en' => "EN Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                 'description_ua' => "UA Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-                'image' => 'families/family_image' . $i . '.png',
+                'image' => 'families/new_family_image' . $i . '.png',
                 'file' => 'families/M_Desk' . $i . '.zip',
             ];
         }
