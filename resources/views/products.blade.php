@@ -326,19 +326,6 @@
             @endforeach
         </div>
 
-        @foreach($plugins as $plugin)
-            <!-- Modal -->
-                <div class="modal fade" id="{{ $plugin->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl modal-dialog-centered">
-                        <div class="modal-content bg-transparent border-0">
-                            <div class="modal-body w-100 border-0">
-                                <iframe id="{{ $plugin->slug }}_video" class="video w-100" src="{{ $plugin->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        @endforeach
-
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -404,19 +391,6 @@
             @endforeach
         </div>
 
-    @foreach($plugins as $plugin)
-        <!-- Modal -->
-            <div class="modal fade" id="{{ $plugin->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content bg-transparent border-0">
-                        <div class="modal-body w-100 border-0">
-                            <iframe id="{{ $plugin->slug }}_video" class="video w-100" src="{{ $plugin->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -481,19 +455,6 @@
                 </div>
             @endforeach
         </div>
-
-    @foreach($plugins as $plugin)
-        <!-- Modal -->
-            <div class="modal fade" id="{{ $plugin->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content bg-transparent border-0">
-                        <div class="modal-body w-100 border-0">
-                            <iframe id="{{ $plugin->slug }}_video" class="video w-100" src="{{ $plugin->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
 
         <div class="container">
             <div class="row">
@@ -561,19 +522,6 @@
             @endforeach
         </div>
 
-    @foreach($plugins as $plugin)
-        <!-- Modal -->
-            <div class="modal fade" id="{{ $plugin->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content bg-transparent border-0">
-                        <div class="modal-body w-100 border-0">
-                            <iframe id="{{ $plugin->slug }}_video" class="video w-100" src="{{ $plugin->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-
         <div class="container">
             <div class="row p-5">
                 <div class="col-12">
@@ -640,19 +588,6 @@
             @endforeach
         </div>
 
-    @foreach($plugins as $plugin)
-        <!-- Modal -->
-            <div class="modal fade" id="{{ $plugin->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content bg-transparent border-0">
-                        <div class="modal-body w-100 border-0">
-                            <iframe id="{{ $plugin->slug }}_video" class="video w-100" src="{{ $plugin->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-
         <div class="container">
             <div class="row p-5">
                 <div class="col-12">
@@ -718,19 +653,6 @@
                 </div>
             @endforeach
         </div>
-
-    @foreach($plugins as $plugin)
-        <!-- Modal -->
-            <div class="modal fade" id="{{ $plugin->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content bg-transparent border-0">
-                        <div class="modal-body w-100 border-0">
-                            <iframe id="{{ $plugin->slug }}_video" class="video w-100" src="{{ $plugin->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
 
         <div class="container">
             <div class="row p-5">
@@ -812,6 +734,21 @@
 {{--        </div>--}}
 {{--    </div>--}}
 
+@endsection
+
+@section('modals')
+    @foreach($plugins as $plugin)
+        <!-- Modal -->
+        <div class="modal fade" id="{{ $plugin->slug }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body w-100 border-0">
+                        <iframe id="{{ $plugin->slug }}_video" class="video w-100" src="{{ $plugin->video_url }}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endforeach
 @endsection
 
 
