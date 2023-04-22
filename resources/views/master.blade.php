@@ -628,17 +628,32 @@
 
             </div>
 
-            <div class="row mt-4 pb-3 px-5">
-                <div class="col-12 d-flex justify-content-between">
-                    <h4 class="fw-semibold d-inline-block text-white">SERVICES</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">PORTFOLIO</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">ABOUT</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">BLOG</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">PRODUCTS</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">CAREER</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">DONATIONS</h4>
+            <div class="row mt-4 pb-3 px-0 d-flex justify-content-between">
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center">Services</h5>
+                    @foreach($services as $service)
+                        <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
+                    @endforeach
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center">Portfolio</h5>
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center">About</h5>
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center">Blog</h5>
+                </div>
+                <div class="col-2 text-center">
+                    <h5 class="fw-semibold text-white">Team</h5>
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center me-2 pe-1">Products</h5>
+                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
+                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
                 </div>
             </div>
+
             <div class="row px-5">
                 <div class="col-12 px-4">
                     <div class="row pb-3 border-bottom border-white border-2">
@@ -707,17 +722,32 @@
 
             </div>
 
-            <div class="row mt-4 pb-3 px-5">
-                <div class="col-12 d-flex justify-content-between">
-                    <h4 class="fw-semibold d-inline-block text-white">SERVICES</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">PORTFOLIO</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">ABOUT</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">BLOG</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">PRODUCTS</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">CAREER</h4>
-                    <h4 class="fw-semibold d-inline-block text-white">DONATIONS</h4>
+            <div class="row mt-4 pb-3 px-0 d-flex justify-content-between">
+                <div class="col-2">
+                    <h5 class="ps-2 ms-1 fw-semibold text-white text-center">Services</h5>
+                    @foreach($services as $service)
+                        <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
+                    @endforeach
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center">Portfolio</h5>
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center">About</h5>
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center">Blog</h5>
+                </div>
+                <div class="col-2 text-center">
+                    <h5 class="fw-semibold text-white">Team</h5>
+                </div>
+                <div class="col-2">
+                    <h5 class="fw-semibold text-white text-center ps-1">Products</h5>
+                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
+                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
                 </div>
             </div>
+
             <div class="row px-5">
                 <div class="col-12 px-4">
                     <div class="row pb-3 border-bottom border-white border-2">
@@ -796,6 +826,7 @@
                     <h6 class="fw-semibold d-inline-block text-white">DONATIONS</h6>
                 </div>
             </div>
+
             <div class="row px-5">
                 <div class="col-12 px-4">
                     <div class="row pb-3 border-bottom border-white border-2">
