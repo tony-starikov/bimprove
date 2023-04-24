@@ -992,7 +992,7 @@
                     <div class="row px-5 pb-0">
                         @foreach($achievements as $achievement)
                             @if($achievement->id < 4)
-                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none bg-transparent">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid w-75 bg-transparent">
                                     <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1014,7 +1014,7 @@
                     <div class="row px-5 pb-0">
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3)
-                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                                <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                     <img src="images/{{ $achievement->image }}" class="img-fluid w-75">
                                     <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1048,7 +1048,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1071,7 +1071,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="/images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1106,7 +1106,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1129,7 +1129,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-12 col-sm-3 col-md-4 text-center px-5 pb-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid mb-2 d-md-none">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
@@ -1164,7 +1164,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-4 text-center px-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-4 text-center px-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold small d-md-none">
@@ -1186,7 +1186,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-4 text-center px-5" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-4 text-center px-5" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 d-none mb-3 mt-0 d-md-block mx-auto">
                                 <h6 class="fw-bold display-5 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold small d-md-none">
@@ -1220,7 +1220,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 3) @break @endif
-                            <div class="col-4 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-4 text-center px-4" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1241,7 +1241,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 3) @continue @endif
-                            <div class="col-4 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-4 text-center px-4" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-100 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1274,7 +1274,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id > 2) @break @endif
-                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1295,7 +1295,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id <= 2 or $achievement->id >= 5) @continue @endif
-                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">
@@ -1316,7 +1316,7 @@
 
                         @foreach($achievements as $achievement)
                             @if($achievement->id < 5) @continue @endif
-                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_2.png); background-size: cover;">
+                            <div class="col-6 text-center px-4" style="background-image: url(/images/achievements/blur_4.png); background-size: cover;">
                                 <img src="images/{{ $achievement->image }}" class="img-fluid w-75 mb-2 mt-0">
                                 <h6 class="fw-bold h1 m-0">{{ $achievement->title_en }}</h6>
                                 <h6 class="card-title text-dark fw-bold d-md-none">

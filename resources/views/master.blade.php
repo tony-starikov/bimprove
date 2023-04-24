@@ -817,13 +817,12 @@
 
             <div class="row mt-4 pb-3 px-5">
                 <div class="col-12 d-flex justify-content-between">
-                    <h6 class="fw-semibold d-inline-block text-white">SERVICES</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">PORTFOLIO</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">ABOUT</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">BLOG</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">PRODUCTS</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">CAREER</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">DONATIONS</h6>
+                    <h6 class="fw-semibold d-inline-block text-white">Services</h6>
+                    <h6 class="fw-semibold d-inline-block text-white">Portfolio</h6>
+                    <h6 class="fw-semibold d-inline-block text-white">About</h6>
+                    <h6 class="fw-semibold d-inline-block text-white">Blog</h6>
+                    <h6 class="fw-semibold d-inline-block text-white">Products</h6>
+                    <h6 class="fw-semibold d-inline-block text-white">Team</h6>
                 </div>
             </div>
 
@@ -889,14 +888,14 @@
 
             <div class="row border-bottom border-white border-2 py-3">
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">SERVICES</h6>
-                    <h6 class="fw-semibold text-white">PORTFOLIO</h6>
-                    <h6 class="fw-semibold text-white">ABOUT</h6>
+                    <h6 class="fw-semibold text-white">Services</h6>
+                    <h6 class="fw-semibold text-white">Portfolio</h6>
+                    <h6 class="fw-semibold text-white">About</h6>
                 </div>
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">BLOG</h6>
-                    <h6 class="fw-semibold text-white">PRODUCTS</h6>
-                    <h6 class="fw-semibold text-white">CAREER</h6>
+                    <h6 class="fw-semibold text-white">Blog</h6>
+                    <h6 class="fw-semibold text-white">Products</h6>
+                    <h6 class="fw-semibold text-white">Team</h6>
                 </div>
             </div>
 
@@ -960,14 +959,14 @@
 
             <div class="row border-bottom border-white border-2 py-3">
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">SERVICES</h6>
-                    <h6 class="fw-semibold text-white">PORTFOLIO</h6>
-                    <h6 class="fw-semibold text-white">ABOUT</h6>
+                    <h6 class="fw-semibold text-white">Services</h6>
+                    <h6 class="fw-semibold text-white">Portfolio</h6>
+                    <h6 class="fw-semibold text-white">About</h6>
                 </div>
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">BLOG</h6>
-                    <h6 class="fw-semibold text-white">PRODUCTS</h6>
-                    <h6 class="fw-semibold text-white">CAREER</h6>
+                    <h6 class="fw-semibold text-white">Blog</h6>
+                    <h6 class="fw-semibold text-white">Products</h6>
+                    <h6 class="fw-semibold text-white">Team</h6>
                 </div>
             </div>
 
