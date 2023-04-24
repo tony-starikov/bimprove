@@ -628,27 +628,27 @@
 
             </div>
 
-            <div class="row mt-4 pb-3 px-0 d-flex justify-content-between">
+            <div class="row mt-4 pb-2 px-0 d-flex justify-content-between">
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center">Services</h5>
+                    <h5 class="fw-semibold text-white text-center mb-4">Services</h5>
                     @foreach($services as $service)
                         <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
                     @endforeach
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center">Portfolio</h5>
+                    <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center">About</h5>
+                    <h5 class="fw-semibold text-white text-center mb-4">About</h5>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center">Blog</h5>
+                    <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
                 </div>
                 <div class="col-2 text-center">
-                    <h5 class="fw-semibold text-white">Team</h5>
+                    <h5 class="fw-semibold text-white mb-4">Team</h5>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center me-2 pe-1">Products</h5>
+                    <h5 class="fw-semibold text-white text-center me-2 pe-1 mb-4">Products</h5>
                     <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
                     <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
                 </div>
@@ -722,27 +722,27 @@
 
             </div>
 
-            <div class="row mt-4 pb-3 px-0 d-flex justify-content-between">
+            <div class="row mt-4 pb-2 px-0 d-flex justify-content-between">
                 <div class="col-2">
-                    <h5 class="ps-2 ms-1 fw-semibold text-white text-center">Services</h5>
+                    <h5 class="ps-2 ms-1 fw-semibold text-white text-center mb-4">Services</h5>
                     @foreach($services as $service)
                         <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
                     @endforeach
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center">Portfolio</h5>
+                    <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center">About</h5>
+                    <h5 class="fw-semibold text-white text-center mb-4">About</h5>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center">Blog</h5>
+                    <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
                 </div>
                 <div class="col-2 text-center">
-                    <h5 class="fw-semibold text-white">Team</h5>
+                    <h5 class="fw-semibold text-white mb-4">Team</h5>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center ps-1">Products</h5>
+                    <h5 class="fw-semibold text-white text-center ps-1 mb-4">Products</h5>
                     <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
                     <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
                 </div>
@@ -888,14 +888,14 @@
 
             <div class="row border-bottom border-white border-2 py-3">
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">Services</h6>
-                    <h6 class="fw-semibold text-white">Portfolio</h6>
-                    <h6 class="fw-semibold text-white">About</h6>
+                    <h6 class="fw-semibold text-white">SERVICES</h6>
+                    <h6 class="fw-semibold text-white">PORTFOLIO</h6>
+                    <h6 class="fw-semibold text-white">ABOUT</h6>
                 </div>
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">Blog</h6>
-                    <h6 class="fw-semibold text-white">Products</h6>
-                    <h6 class="fw-semibold text-white">Team</h6>
+                    <h6 class="fw-semibold text-white">BLOG</h6>
+                    <h6 class="fw-semibold text-white">PRODUCTS</h6>
+                    <h6 class="fw-semibold text-white">TEAM</h6>
                 </div>
             </div>
 
@@ -959,14 +959,14 @@
 
             <div class="row border-bottom border-white border-2 py-3">
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">Services</h6>
-                    <h6 class="fw-semibold text-white">Portfolio</h6>
-                    <h6 class="fw-semibold text-white">About</h6>
+                    <h6 class="fw-semibold text-white">SERVICES</h6>
+                    <h6 class="fw-semibold text-white">PORTFOLIO</h6>
+                    <h6 class="fw-semibold text-white">ABOUT</h6>
                 </div>
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">Blog</h6>
-                    <h6 class="fw-semibold text-white">Products</h6>
-                    <h6 class="fw-semibold text-white">Team</h6>
+                    <h6 class="fw-semibold text-white">BLOG</h6>
+                    <h6 class="fw-semibold text-white">PRODUCTS</h6>
+                    <h6 class="fw-semibold text-white">TEAM</h6>
                 </div>
             </div>
 
