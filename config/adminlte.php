@@ -366,6 +366,11 @@ return [
             'url'         => 'admin/mainPageItems',
             'icon'        => 'far fa-fw fa-file',
         ],
+        [
+            'text'        => 'Messages',
+            'url'         => 'admin/messages',
+            'icon'        => 'far fa-fw fa-file',
+        ],
 //        [
 //            'text'        => 'pages',
 //            'url'         => 'admin/pages',

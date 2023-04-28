@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminAchievementController;
 use App\Http\Controllers\Admin\AdminFamilyController;
 use App\Http\Controllers\Admin\AdminMainPageItemController;
 use App\Http\Controllers\Admin\AdminMenuItemController;
+use App\Http\Controllers\Admin\AdminMessageController;
 use App\Http\Controllers\Admin\AdminPluginController;
 use App\Http\Controllers\Admin\AdminPostController;
 use App\Http\Controllers\Admin\AdminServiceController;
@@ -12,6 +13,7 @@ use App\Http\Controllers\Admin\AdminTeammateController;
 use App\Http\Controllers\Admin\AdminTestimonialController;
 use App\Http\Controllers\Admin\AdminWorkController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\DonateController;
 use App\Http\Controllers\FamilyController;
@@ -33,7 +35,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'main'])->name('main');
+
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::post('/message', [ContactController::class, 'message'])->name('message');
+
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/blog/subscribe', [PostController::class, 'subscribe'])->name('subscribe');
 Route::get('/post/{post}', [PostController::class, 'show'])->name('post');
@@ -89,5 +94,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('posts', AdminPostController::class);
 
         Route::resource('mainPageItems', AdminMainPageItemController::class);
+
+        Route::resource('messages', AdminMessageController::class);
     });
 });

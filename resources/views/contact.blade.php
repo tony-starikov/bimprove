@@ -11,13 +11,14 @@
                 <div class="col-6 mt-5">
                     <h2 class="text-white display-4 fw-bold pb-2 d-none d-lg-block mt-2">CONTACT US</h2>
 
-                    <form class="text-white footer-form" action="post">
+                    <form method="post" class="text-white footer-form" action="{{ route('message') }}">
+                        @csrf
                         <div class="row mb-5">
                             <div class="col-6">
                                 <input type="text" name="name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput1" placeholder="Name">
                             </div>
                             <div class="col-6">
-                                <input type="text" name="last_name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">
+                                <input type="text" name="surname" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">
                             </div>
                         </div>
                         <div class="mb-5">
@@ -33,11 +34,7 @@
                             <input type="text" name="message" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput6" placeholder="Message">
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold d-lg-none" style="background-color: #6bdcdb">
-                            <span class="fw-bold h6 d-block my-1">SUBMIT</span>
-                        </button>
-
-                        <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold d-none d-lg-block" style="background-color: #6bdcdb">
+                        <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold d-none shadow-none d-lg-block" style="background-color: #6bdcdb">
                             <span class="fw-bold h4 d-block my-1">SUBMIT</span>
                         </button>
 
@@ -63,7 +60,7 @@
                                 <input type="text" name="name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput1" placeholder="Name">
                             </div>
                             <div class="col-6">
-                                <input type="text" name="last_name" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">
+                                <input type="text" name="surname" class="form-control fw-bold shadow-none border-0 border-bottom border-white border-3 text-white rounded-0" id="exampleFormControlInput2" placeholder="Last name">
                             </div>
                         </div>
                         <div class="mb-5">
