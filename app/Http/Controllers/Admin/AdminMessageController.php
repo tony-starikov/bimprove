@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\ExportMessages;
 use App\Http\Controllers\Controller;
 use App\Models\Message;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class AdminMessageController extends Controller
 {
@@ -90,5 +92,10 @@ class AdminMessageController extends Controller
         $message->delete();
 
         return redirect()->route('messages.index');
+    }
+
+    public function exportCSVFile()
+    {
+        return Excel::download(new ExportMessages, 'messages.csv');
     }
 }

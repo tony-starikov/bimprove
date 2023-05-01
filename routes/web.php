@@ -96,5 +96,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('mainPageItems', AdminMainPageItemController::class);
 
         Route::resource('messages', AdminMessageController::class);
+
+        Route::get('export-messages', [AdminMessageController::class, 'exportCSVFile'])->name('export.csv');
     });
 });

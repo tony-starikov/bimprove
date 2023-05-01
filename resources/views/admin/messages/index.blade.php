@@ -10,8 +10,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2 px-0 pb-4">
-{{--                <a class="btn btn-success" type="button" href="{{ route('families.create') }}">ADD NEW</a>--}}
-                <a class="btn btn-success" type="button" href="#">DOWNLOAD ALL CONTACTS</a>
+                <a class="btn btn-success" type="button" href="{{ route('export.csv') }}">DOWNLOAD ALL CONTACTS</a>
             </div>
         </div>
         <div class="row">
