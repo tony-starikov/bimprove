@@ -14,18 +14,18 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        $posts = [];
-
-        for ($i = 1; $i < 11; $i++) {
-            $posts[] = [
-                'id' => $i,
-                'title_ua' => '10 REASONS TO TRANSFER FROM ARCHICAD TO BIM ' . $i . ' UA',
-                'title_en' => '10 REASONS TO TRANSFER FROM ARCHICAD TO BIM ' . $i,
-                'slug' => '10-reasons-to-transfer-from-arhicad-to-bim-' . $i,
-                'image' => 'posts/new-post' . $i . '.png',
-            ];
-        }
-
-        DB::table('posts')->insert($posts);
+//        $posts = [];
+//
+//        for ($i = 1; $i < 11; $i++) {
+//            $posts[] = [
+//                'id' => $i,
+//                'title_ua' => '10 REASONS TO TRANSFER FROM ARCHICAD TO BIM ' . $i . ' UA',
+//                'title_en' => '10 REASONS TO TRANSFER FROM ARCHICAD TO BIM ' . $i,
+//                'slug' => '10-reasons-to-transfer-from-arhicad-to-bim-' . $i,
+//                'image' => 'posts/new-post' . $i . '.png',
+//            ];
+//        }
+//
+//        DB::table('posts')->insert($posts);
     }
 }

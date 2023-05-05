@@ -181,20 +181,6 @@
             aspect-ratio: 16 / 9;
             width: 100%;
         }
-
-        /*input[placeholder]:focus {*/
-        /*    opacity: 1 !important; !* Firefox *!*/
-        /*    color: transparent !important;*/
-        /*    font-size: 1.25rem !important;*/
-        /*    padding-left: 0 !important;*/
-        /*}*/
-
-        /*input:focus::placeholder {*/
-        /*    opacity: 1 !important; !* Firefox *!*/
-        /*    color: transparent !important;*/
-        /*    font-size: 1.25rem !important;*/
-        /*    padding-left: 0 !important;*/
-        /*}*/
     </style>
 </head>
 <body>
@@ -223,18 +209,8 @@
                                     @break
 
                                     @case('Services')
-{{--                                    <li class="nav-item dropdown">--}}
-{{--                                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                                            <span class="h6 fw-bold">SERVICES</span>--}}
-{{--                                        </a>--}}
-{{--                                        <ul class="dropdown-menu">--}}
-{{--                                            @foreach($services as $service)--}}
-{{--                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
-{{--                                            @endforeach--}}
-{{--                                        </ul>--}}
-{{--                                    </li>--}}
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#services">
+                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
                                             <span class="h6 fw-bold">SERVICES</span>
                                         </a>
                                     </li>
@@ -242,7 +218,7 @@
 
                                     @case('Portfolio')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#portfolio">
+                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
                                             <span class="h6 fw-bold">PORTFOLIO</span>
                                         </a>
                                     </li>
@@ -250,7 +226,7 @@
 
                                     @case('About')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#about">
+                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
                                             <span class="h6 fw-bold">ABOUT</span>
                                         </a>
                                     </li>
@@ -276,9 +252,9 @@
                                     </li>
                                     @break
 
-                                    @case('Achievements')
+                                    @case('Team')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#team">
+                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
                                             <span class="h6 fw-bold">TEAM</span>
                                         </a>
                                     </li>
@@ -337,28 +313,15 @@
 
                                     @case('Services')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
                                             <span class="h6 small fw-bold">SERVICES</span>
                                         </a>
                                     </li>
                                     @break
 
-{{--                                    @case('Services')--}}
-{{--                                    <li class="nav-item dropdown">--}}
-{{--                                        <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                                            <span class="h6 small fw-bold">SERVICES</span>--}}
-{{--                                        </a>--}}
-{{--                                        <ul class="dropdown-menu">--}}
-{{--                                            @foreach($services as $service)--}}
-{{--                                                <li><a class="dropdown-item fw-semibold text-uppercase" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
-{{--                                            @endforeach--}}
-{{--                                        </ul>--}}
-{{--                                    </li>--}}
-{{--                                    @break--}}
-
                                     @case('Portfolio')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
                                             <span class="h6 small fw-bold">PORTFOLIO</span>
                                         </a>
                                     </li>
@@ -366,7 +329,7 @@
 
                                     @case('About')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
+                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
                                             <span class="h6 small fw-bold">ABOUT</span>
                                         </a>
                                     </li>
@@ -392,9 +355,9 @@
                                     </li>
                                     @break
 
-                                    @case('Achievements')
+                                    @case('Team')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="#team">
+                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
                                             <span class="h6 small fw-bold">TEAM</span>
                                         </a>
                                     </li>
@@ -414,9 +377,6 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-{{--                    <a class="btn btn-primary small btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">--}}
-{{--                        <span class="fw-bold h6 small d-block m-0">CONTACT&nbsp;US</span>--}}
-{{--                    </a>--}}
                     <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
                         <span class="fw-bold h6 small text-white d-block m-2">CONTACT&nbsp;US</span>
                     </a>
@@ -456,28 +416,15 @@
 
                                     @case('Services')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('main') }}">
+                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
                                             <span class="h6 fw-bold small">SERVICES</span>
                                         </a>
                                     </li>
                                     @break
 
-{{--                                    @case('Services')--}}
-{{--                                    <li class="nav-item dropdown">--}}
-{{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                                            <span class="h6 fw-bold small">SERVICES</span>--}}
-{{--                                        </a>--}}
-{{--                                        <ul class="dropdown-menu">--}}
-{{--                                            @foreach($services as $service)--}}
-{{--                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
-{{--                                            @endforeach--}}
-{{--                                        </ul>--}}
-{{--                                    </li>--}}
-{{--                                    @break--}}
-
                                     @case('Portfolio')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
+                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
                                             <span class="h6 fw-bold small">PORTFOLIO</span>
                                         </a>
                                     </li>
@@ -485,7 +432,7 @@
 
                                     @case('About')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
+                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
                                             <span class="h6 fw-bold small">ABOUT</span>
                                         </a>
                                     </li>
@@ -511,9 +458,9 @@
                                     </li>
                                     @break
 
-                                    @case('Achievements')
+                                    @case('Team')
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="#team">
+                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
                                             <span class="h6 fw-bold small">TEAM</span>
                                         </a>
                                     </li>
@@ -533,9 +480,6 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-{{--                    <button class="btn btn-primary btn shadow-none border-0 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">--}}
-{{--                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>--}}
-{{--                    </button>--}}
                     <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
                         <span class="fw-bold small text-white d-block m-1 mx-2">CONTACT&nbsp;US</span>
                     </a>
@@ -583,23 +527,23 @@
 
                     <div class="row mt-5 w-75">
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/linkedin.svg" alt="linkedin">
+                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/instagram.svg" alt="instagram">
+                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/facebook.svg" alt="facebook">
+                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/youtube.svg" alt="youtube">
+                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
                             </a>
                         </div>
                     </div>
@@ -613,13 +557,13 @@
                     <div class="row mt-5">
                         <div class="col-12">
                             <div class="d-inline-block pe-5 border-end border-2 border-white">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">+380668901648</span>
+                                <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}" class="text-white text-decoration-none">
+                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'phone')->first()->info }}</span>
                                 </a>
                             </div>
                             <div class="d-inline-block ps-5">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">es@bim-prove.com</span>
+                                <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}" class="text-white text-decoration-none">
+                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'email')->first()->info }}</span>
                                 </a>
                             </div>
                         </div>
@@ -630,27 +574,45 @@
 
             <div class="row mt-4 pb-2 px-0 d-flex justify-content-between">
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center mb-4">Services</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
+                        <h5 class="fw-semibold text-white text-center mb-4">Services</h5>
+                    </a>
                     @foreach($services as $service)
-                        <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
+                        <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
+                            <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
+                        </a>
                     @endforeach
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
+                        <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
+                    </a>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center mb-4">About</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
+                        <h5 class="fw-semibold text-white text-center mb-4">About</h5>
+                    </a>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
+                        <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
+                    </a>
                 </div>
                 <div class="col-2 text-center">
-                    <h5 class="fw-semibold text-white mb-4">Team</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
+                        <h5 class="fw-semibold text-white mb-4">Team</h5>
+                    </a>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center me-2 pe-1 mb-4">Products</h5>
-                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
-                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
+                        <h5 class="fw-semibold text-white text-center me-2 pe-1 mb-4">Products</h5>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}">
+                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('families') }}">
+                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
+                    </a>
                 </div>
             </div>
 
@@ -664,7 +626,7 @@
             <div class="row p-5">
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved 2022.
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}.
                     </p>
                 </div>
             </div>
@@ -677,26 +639,25 @@
                 <div class="col-6">
                     <h2 class="text-white h1 fw-bold pb-2 pt-5 mt-5">SOCIAL MEDIA</h2>
 
-
                     <div class="row mt-5 w-75">
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/linkedin.svg" alt="linkedin">
+                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/instagram.svg" alt="instagram">
+                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/facebook.svg" alt="facebook">
+                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/youtube.svg" alt="youtube">
+                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
                             </a>
                         </div>
                     </div>
@@ -707,13 +668,13 @@
                     <div class="row mt-5">
                         <div class="col-12">
                             <div class="d-inline-block pe-2 border-end border-2 border-white">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">+380668901648</span>
+                                <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}" class="text-white text-decoration-none">
+                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'phone')->first()->info }}</span>
                                 </a>
                             </div>
                             <div class="d-inline-block ps-2">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">es@bim-prove.com</span>
+                                <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}" class="text-white text-decoration-none">
+                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'email')->first()->info }}</span>
                                 </a>
                             </div>
                         </div>
@@ -724,41 +685,58 @@
 
             <div class="row mt-4 pb-2 px-0 d-flex justify-content-between">
                 <div class="col-2">
-                    <h5 class="ps-2 ms-1 fw-semibold text-white text-center mb-4">Services</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
+                        <h5 class="ps-2 ms-1 fw-semibold text-white text-center mb-4">Services</h5>
+                    </a>
                     @foreach($services as $service)
-                        <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
+                        <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
+                            <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
+                        </a>
                     @endforeach
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
+                        <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
+                    </a>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center mb-4">About</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
+                        <h5 class="fw-semibold text-white text-center mb-4">About</h5>
+                    </a>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
+                        <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
+                    </a>
                 </div>
                 <div class="col-2 text-center">
-                    <h5 class="fw-semibold text-white mb-4">Team</h5>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
+                        <h5 class="fw-semibold text-white mb-4">Team</h5>
+                    </a>
                 </div>
                 <div class="col-2">
-                    <h5 class="fw-semibold text-white text-center ps-1 mb-4">Products</h5>
-                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
-                    <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
+                        <h5 class="fw-semibold text-white text-center ps-1 mb-4">Products</h5>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}">
+                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('families') }}">
+                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
+                    </a>
                 </div>
             </div>
 
             <div class="row px-5">
                 <div class="col-12 px-4">
                     <div class="row pb-3 border-bottom border-white border-2">
-
                     </div>
                 </div>
             </div>
             <div class="row p-5">
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved 2022.
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}.
                     </p>
                 </div>
             </div>
@@ -773,23 +751,23 @@
 
                     <div class="row mt-5 w-75">
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/linkedin.svg" alt="linkedin">
+                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/instagram.svg" alt="instagram">
+                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/facebook.svg" alt="facebook">
+                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/social/youtube.svg" alt="youtube">
+                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
                             </a>
                         </div>
                     </div>
@@ -800,13 +778,13 @@
                     <div class="row mt-5">
                         <div class="col-12">
                             <div class="row">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h5">+380668901648</span>
+                                <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}" class="text-white text-decoration-none">
+                                    <span class="fw-semibold h5">{{ $contacts->where('name', 'phone')->first()->info }}</span>
                                 </a>
                             </div>
                             <div class="row mt-3">
-                                <a href="#" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h5">es@bim-prove.com</span>
+                                <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}" class="text-white text-decoration-none">
+                                    <span class="fw-semibold h5">{{ $contacts->where('name', 'email')->first()->info }}</span>
                                 </a>
                             </div>
                         </div>
@@ -817,12 +795,24 @@
 
             <div class="row mt-4 pb-3 px-5">
                 <div class="col-12 d-flex justify-content-between">
-                    <h6 class="fw-semibold d-inline-block text-white">Services</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">Portfolio</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">About</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">Blog</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">Products</h6>
-                    <h6 class="fw-semibold d-inline-block text-white">Team</h6>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
+                        <h6 class="fw-semibold d-inline-block text-white">Services</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
+                        <h6 class="fw-semibold d-inline-block text-white">Portfolio</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
+                        <h6 class="fw-semibold d-inline-block text-white">About</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
+                        <h6 class="fw-semibold d-inline-block text-white">Blog</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
+                        <h6 class="fw-semibold d-inline-block text-white">Products</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
+                        <h6 class="fw-semibold d-inline-block text-white">Team</h6>
+                    </a>
                 </div>
             </div>
 
@@ -836,7 +826,7 @@
             <div class="row p-5">
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved 2022.
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}.
                     </p>
                 </div>
             </div>
@@ -851,23 +841,23 @@
 
                     <div class="row w-100">
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/linkedin.svg" alt="linkedin">
+                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/instagram.svg" alt="instagram">
+                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/facebook.svg" alt="facebook">
+                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/youtube.svg" alt="youtube">
+                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
                             </a>
                         </div>
                     </div>
@@ -878,9 +868,11 @@
                     <h2 class="text-white h4 fw-bold pb-2">CONTACTS</h2>
                     <div class="row">
                         <div class="col-12">
-                            <span style="font-size: 2.2vw;" class="fw-semibold text-white d-sm-none">+380668901648 | es@bim-prove.com</span>
-                            <span style="font-size: 2vw;" class="fw-semibold text-white d-none d-sm-block d-md-none">+380668901648 | es@bim-prove.com</span>
-                            <span style="font-size: 1.8vw;" class="fw-semibold text-white d-none d-md-block">+380668901648 | es@bim-prove.com</span>
+                            <span style="font-size: 1.8vw;" class="fw-semibold text-white d-none d-md-block">
+                                <a class="text-decoration-none text-white" href="tel:{{ $contacts->where('name', 'phone')->first()->info }}">{{ $contacts->where('name', 'phone')->first()->info }}</a>
+                                |
+                                <a class="text-decoration-none text-white" href="mailto:{{ $contacts->where('name', 'email')->first()->info }}">{{ $contacts->where('name', 'email')->first()->info }}</a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -888,14 +880,26 @@
 
             <div class="row border-bottom border-white border-2 py-3">
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">SERVICES</h6>
-                    <h6 class="fw-semibold text-white">PORTFOLIO</h6>
-                    <h6 class="fw-semibold text-white">ABOUT</h6>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
+                        <h6 class="fw-semibold text-white">SERVICES</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
+                        <h6 class="fw-semibold text-white">PORTFOLIO</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
+                        <h6 class="fw-semibold text-white">ABOUT</h6>
+                    </a>
                 </div>
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">BLOG</h6>
-                    <h6 class="fw-semibold text-white">PRODUCTS</h6>
-                    <h6 class="fw-semibold text-white">TEAM</h6>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
+                        <h6 class="fw-semibold text-white">BLOG</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
+                        <h6 class="fw-semibold text-white">PRODUCTS</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
+                        <h6 class="fw-semibold text-white">TEAM</h6>
+                    </a>
                 </div>
             </div>
 
@@ -903,7 +907,7 @@
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
                         <small>
-                            &copy; Copyright BIMprove company LLC. All rights reserved 2022.
+                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}.
                         </small>
                     </p>
                 </div>
@@ -919,23 +923,23 @@
 
                     <div class="row w-100">
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/linkedin.svg" alt="linkedin">
+                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/instagram.svg" alt="instagram">
+                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/facebook.svg" alt="facebook">
+                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
                             </a>
                         </div>
                         <div class="col-3 d-flex align-items-center">
-                            <a href="#" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/social/youtube.svg" alt="youtube">
+                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
+                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
                             </a>
                         </div>
                     </div>
@@ -946,12 +950,16 @@
                     <h2 class="text-white h4 fw-bold pb-2">CONTACTS</h2>
                     <div class="row">
                         <div class="col-12">
-                            <h6 class="fw-semibold text-white">+380668901648</h6>
+                            <a class="text-decoration-none" href="tel:{{ $contacts->where('name', 'phone')->first()->info }}">
+                                <h6 class="fw-semibold text-white">{{ $contacts->where('name', 'phone')->first()->info }}</h6>
+                            </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <h6 class="fw-semibold text-white">es@bim-prove.com</h6>
+                            <a class="text-decoration-none" href="mailto:{{ $contacts->where('name', 'email')->first()->info }}">
+                                <h6 class="fw-semibold text-white">{{ $contacts->where('name', 'email')->first()->info }}</h6>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -959,14 +967,26 @@
 
             <div class="row border-bottom border-white border-2 py-3">
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">SERVICES</h6>
-                    <h6 class="fw-semibold text-white">PORTFOLIO</h6>
-                    <h6 class="fw-semibold text-white">ABOUT</h6>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
+                        <h6 class="fw-semibold text-white">SERVICES</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
+                        <h6 class="fw-semibold text-white">PORTFOLIO</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
+                        <h6 class="fw-semibold text-white">ABOUT</h6>
+                    </a>
                 </div>
                 <div class="col-6">
-                    <h6 class="fw-semibold text-white">BLOG</h6>
-                    <h6 class="fw-semibold text-white">PRODUCTS</h6>
-                    <h6 class="fw-semibold text-white">TEAM</h6>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
+                        <h6 class="fw-semibold text-white">BLOG</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
+                        <h6 class="fw-semibold text-white">PRODUCTS</h6>
+                    </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
+                        <h6 class="fw-semibold text-white">TEAM</h6>
+                    </a>
                 </div>
             </div>
 
@@ -974,7 +994,7 @@
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
                         <small>
-                            &copy; Copyright BIMprove company LLC. All rights reserved 2022.
+                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}.
                         </small>
                     </p>
                 </div>
@@ -1015,8 +1035,6 @@
                                     <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
                                         <img src="/images/menu-close.png" class="img align-self-center" width="60" alt="">
                                     </a>
-
-                                    {{--                                        <img src="/images/menu-open.png" class="img align-self-center" width="60px" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">--}}
                                 </div>
                             </div>
                         </div>
@@ -1041,10 +1059,10 @@
                                 @switch($menuItem->item_name)
                                     @case('Home')
                                     <div class="col-12 text-center my-2">
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                        <a href="{{ route('main') }}" data-bs-dismiss="exampleModal" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
                                             HOME
                                         </a>
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                        <a href="{{ route('main') }}" data-bs-dismiss="exampleModal" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
                                             <span class="my-1 mx-0 h5 fw-bold d-block">
                                                 HOME
                                             </span>
@@ -1052,25 +1070,25 @@
                                     </div>
                                     @break
 
-                                    {{--                                    @case('Services')--}}
-                                    {{--                                    <li class="nav-item dropdown">--}}
-                                    {{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-                                    {{--                                            <span class="h6 fw-bold small">SERVICES</span>--}}
-                                    {{--                                        </a>--}}
-                                    {{--                                        <ul class="dropdown-menu">--}}
-                                    {{--                                            @foreach($services as $service)--}}
-                                    {{--                                                <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('service', [$service->slug]) }}">{{ $service->title_en }}</a></li>--}}
-                                    {{--                                            @endforeach--}}
-                                    {{--                                        </ul>--}}
-                                    {{--                                    </li>--}}
-                                    {{--                                    @break--}}
+                                    @case('Services')
+                                    <div class="col-12 text-center my-2">
+                                        <a data-bs-dismiss="exampleModal" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            SERVICES
+                                        </a>
+                                        <a data-bs-dismiss="exampleModal" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                SERVICES
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
 
                                     @case('Portfolio')
                                     <div class="col-12 text-center my-2">
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                        <a @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
                                             PORTFOLIO
                                         </a>
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                        <a @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
                                             <span class="my-1 mx-0 h5 fw-bold d-block">
                                                 PORTFOLIO
                                             </span>
@@ -1080,10 +1098,10 @@
 
                                     @case('About')
                                     <div class="col-12 text-center my-2">
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                        <a @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
                                             ABOUT
                                         </a>
-                                        <a href="{{ route('main') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                        <a @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
                                             <span class="my-1 mx-0 h5 fw-bold d-block">
                                                 ABOUT
                                             </span>
@@ -1117,30 +1135,31 @@
                                     </div>
                                     @break
 
-                                    {{--                                    @case('Products')--}}
-                                    {{--                                    <li class="nav-item dropdown">--}}
-                                    {{--                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-                                    {{--                                            <span class="h6 fw-bold small">PRODUCTS</span>--}}
-                                    {{--                                        </a>--}}
-                                    {{--                                        <ul class="dropdown-menu">--}}
-                                    {{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('products') }}">PLUGINS</a></li>--}}
-                                    {{--                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('families') }}">FAMILIES</a></li>--}}
-                                    {{--                                        </ul>--}}
-                                    {{--                                    </li>--}}
-                                    {{--                                    @break--}}
+                                    @case('Team')
+                                    <div class="col-12 text-center my-2">
+                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            TEAM
+                                        </a>
+                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                TEAM
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
 
-                                    {{--                                    @case('Career')--}}
-                                    {{--                                    <div class="col-12 text-center my-2">--}}
-                                    {{--                                        <a href="#" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">--}}
-                                    {{--                                            CAREER--}}
-                                    {{--                                        </a>--}}
-                                    {{--                                        <a href="#" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">--}}
-                                    {{--                                            <span class="my-1 mx-0 h5 fw-bold d-block">--}}
-                                    {{--                                                CAREER--}}
-                                    {{--                                            </span>--}}
-                                    {{--                                        </a>--}}
-                                    {{--                                    </div>--}}
-                                    {{--                                    @break--}}
+                                    @case('Career')
+                                    <div class="col-12 text-center my-2">
+                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                            CAREER
+                                        </a>
+                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                            <span class="my-1 mx-0 h5 fw-bold d-block">
+                                                CAREER
+                                            </span>
+                                        </a>
+                                    </div>
+                                    @break
                                 @endswitch
 
                             @endif

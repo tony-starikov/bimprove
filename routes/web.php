@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminAchievementController;
+use App\Http\Controllers\Admin\AdminContactController;
 use App\Http\Controllers\Admin\AdminFamilyController;
 use App\Http\Controllers\Admin\AdminMainPageItemController;
 use App\Http\Controllers\Admin\AdminMenuItemController;
@@ -96,6 +97,8 @@ Route::middleware('auth')->group(function () {
         Route::resource('mainPageItems', AdminMainPageItemController::class);
 
         Route::resource('messages', AdminMessageController::class);
+
+        Route::resource('contacts', AdminContactController::class);
 
         Route::get('export-messages', [AdminMessageController::class, 'exportCSVFile'])->name('export.csv');
     });

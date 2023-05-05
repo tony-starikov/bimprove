@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Service;
@@ -39,6 +40,8 @@ class DonateController extends Controller
 
         $services = Service::all();
 
-        return view('donate', compact('page_info', 'donate', 'countries', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('donate', compact('page_info', 'donate', 'countries', 'services', 'menuItems', 'contacts'));
     }
 }

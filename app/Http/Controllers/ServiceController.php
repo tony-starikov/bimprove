@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -16,7 +17,9 @@ class ServiceController extends Controller
 
         $menuItems = MenuItem::all();
 
-        return view('service', compact('service', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('service', compact('service', 'services', 'menuItems', 'contacts'));
     }
 
     public function downloadService($slug)

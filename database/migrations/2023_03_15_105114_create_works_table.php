@@ -15,12 +15,13 @@ class CreateWorksTable extends Migration
     {
         Schema::create('works', function (Blueprint $table) {
             $table->id();
-            $table->text('title')->nullable();
+            $table->text('title_first')->nullable();
+            $table->text('title_second')->nullable();
             $table->text('subtitle')->nullable();
+            $table->text('disciplines')->nullable();
             $table->text('parameter_1')->nullable();
             $table->text('parameter_2')->nullable();
             $table->text('parameter_3')->nullable();
-            $table->text('parameter_4')->nullable();
             $table->text('description')->nullable();
             $table->text('image')->nullable();
             $table->text('image_small')->nullable();

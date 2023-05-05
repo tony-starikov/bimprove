@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Achievement;
+use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
@@ -32,7 +33,9 @@ class PageController extends Controller
 
         $works = Work::all();
 
-        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems', 'testimonials', 'works'));
+        $contacts = Contact::all();
+
+        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems', 'testimonials', 'works', 'contacts'));
     }
 
     public function contact()
@@ -43,7 +46,9 @@ class PageController extends Controller
 
         $services = Service::all();
 
-        return view('contact', compact('page_info', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('contact', compact('page_info', 'services', 'menuItems', 'contacts'));
     }
 
     public function send()
@@ -54,7 +59,9 @@ class PageController extends Controller
 
         $services = Service::all();
 
-        return view('send', compact('page_info', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('send', compact('page_info', 'services', 'menuItems', 'contacts'));
     }
 
     public function success()
@@ -65,6 +72,8 @@ class PageController extends Controller
 
         $services = Service::all();
 
-        return view('success', compact('page_info', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('success', compact('page_info', 'services', 'menuItems', 'contacts'));
     }
 }

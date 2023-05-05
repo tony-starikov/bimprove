@@ -40,7 +40,7 @@ class MenuItemSeeder extends Seeder
                 'show_status' => '1',
             ],
             [
-                'item_name' => 'Achievements',
+                'item_name' => 'Team',
                 'show_status' => '1',
             ],
             [

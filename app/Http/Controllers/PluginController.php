@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Plugin;
@@ -25,7 +26,9 @@ class PluginController extends Controller
 
         $menuItems = MenuItem::all();
 
-        return view('products', compact('page_info', 'plugins', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('products', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts'));
     }
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\Family;
 use App\Models\MenuItem;
 use App\Models\Page;
@@ -25,7 +26,9 @@ class FamilyController extends Controller
 
         $menuItems = MenuItem::all();
 
-        return view('families', compact('page_info', 'families', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('families', compact('page_info', 'families', 'services', 'menuItems', 'contacts'));
     }
 
     /**

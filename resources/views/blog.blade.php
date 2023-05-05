@@ -12,12 +12,7 @@
             <div class="row px-5 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE BLOG
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
                         Discover the BIM world together with us! Our specialists write interesting articles on different BIM topics every week. Leave your feedback about our articles and subscribe to the blog!
@@ -42,12 +37,7 @@
             <div class="row px-5 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE BLOG
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
                         Discover the BIM world together with us! Our specialists write interesting articles on different BIM topics every week. Leave your feedback about our articles and subscribe to the blog!
@@ -74,12 +64,7 @@
             <div class="row px-0 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE BLOG
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
                         Discover the BIM world together with us! Our specialists write interesting articles on different BIM topics every week. Leave your feedback about our articles and subscribe to the blog!
@@ -106,12 +91,7 @@
             <div class="row px-0 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE BLOG
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
                         Discover the BIM world together with us! Our specialists write interesting articles on different BIM topics every week. Leave your feedback about our articles and subscribe to the blog!
@@ -138,12 +118,7 @@
             <div class="row px-0 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE BLOG
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
                         Discover the BIM world together with us! Our specialists write interesting articles on different BIM topics every week. Leave your feedback about our articles and subscribe to the blog!

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
@@ -25,7 +26,9 @@ class PostController extends Controller
 
         $services = Service::all();
 
-        return view('blog', compact('page_info', 'posts', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('blog', compact('page_info', 'posts', 'services', 'menuItems', 'contacts'));
     }
 
     /**
@@ -40,7 +43,9 @@ class PostController extends Controller
 
         $menuItems = MenuItem::all();
 
-        return view('post', compact('post', 'services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('post', compact('post', 'services', 'menuItems', 'contacts'));
     }
 
     /**
@@ -55,6 +60,8 @@ class PostController extends Controller
 
         $menuItems = MenuItem::all();
 
-        return view('subscribe', compact ('services', 'menuItems'));
+        $contacts = Contact::all();
+
+        return view('subscribe', compact ('services', 'menuItems', 'contacts'));
     }
 }

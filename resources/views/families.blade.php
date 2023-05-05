@@ -5,68 +5,16 @@
 {{--@section('description', $page_info->description)--}}
 
 @section('main')
-
-{{--    <div class="d-none d-xxl-block container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">--}}
-
-{{--        <div class="container p-5">--}}
-{{--            <div class="row px-5 mt-2">--}}
-{{--                <div class="col-12 px-0 mt-5 order-first">--}}
-{{--                    <h1 class="text-white display-5 fw-bold mt-5">--}}
-{{--                        BIMPROVE FAMILIES GALLERY <span class="d-inline-block d-sm-none">M</span>--}}
-{{--                        <span class="d-none d-sm-inline-block d-md-none">SM</span>--}}
-{{--                        <span class="d-none d-md-inline-block d-lg-none">MD</span>--}}
-{{--                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>--}}
-{{--                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>--}}
-{{--                        <span class="d-none d-xxl-inline-block">XXL</span>--}}
-{{--                    </h1>--}}
-{{--                    <h4 class="text-white fw-bold pb-2">--}}
-{{--                        We are a team of specialists with experience in implementing BIM-technologies. We believe that BIM is not a future - BIM is today, BIM is right now. Our main goal is the most effective application of BIM technologies at all stages of project development. We always look at the project tasks through the lenses of engineering perception, which allows us to be one step ahead.--}}
-{{--                    </h4>--}}
-{{--                </div>--}}
-
-{{--                <div class="col-12 col-md-9">--}}
-
-{{--                    <div class="row pb-5">--}}
-{{--                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">--}}
-{{--                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="#" role="button">--}}
-{{--                                <span class="fw-bold h4 d-block my-1">CONTACT US</span>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">--}}
-{{--                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('products') }}" role="button">--}}
-{{--                                <span class="fw-bold h4 d-block my-1">REVIT PLUGINS</span>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">--}}
-{{--                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #34888e" href="{{ route('families') }}" role="button">--}}
-{{--                                <span class="fw-bold h4 d-block my-1">REVIT FAMILIES</span>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
-
-
-
     <div class="d-none d-xxl-block container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
 
         <div class="container p-5">
             <div class="row px-5 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE FAMILIES GALLERY
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
-                        We are a team of specialists with experience in implementing BIM-technologies. We believe that BIM is not a future - BIM is today, BIM is right now. Our main goal is the most effective application of BIM technologies at all stages of project development. We always look at the project tasks through the lenses of engineering perception, which allows us to be one step ahead.
+                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
                     </h4>
                 </div>
 
@@ -101,15 +49,10 @@
             <div class="row px-5 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE FAMILIES GALLERY
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
-                        We are a team of specialists with experience in implementing BIM-technologies. We believe that BIM is not a future - BIM is today, BIM is right now. Our main goal is the most effective application of BIM technologies at all stages of project development. We always look at the project tasks through the lenses of engineering perception, which allows us to be one step ahead.
+                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
                     </h4>
                 </div>
 
@@ -144,15 +87,10 @@
             <div class="row px-5 mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE FAMILIES GALLERY
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
-                        We are a team of specialists with experience in implementing BIM-technologies. We believe that BIM is not a future - BIM is today, BIM is right now. Our main goal is the most effective application of BIM technologies at all stages of project development. We always look at the project tasks through the lenses of engineering perception, which allows us to be one step ahead.
+                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
                     </h4>
                 </div>
 
@@ -187,15 +125,10 @@
             <div class="row mt-2">
                 <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE FAMILIES GALLERY
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
-                        We are a team of specialists with experience in implementing BIM-technologies. We believe that BIM is not a future - BIM is today, BIM is right now. Our main goal is the most effective application of BIM technologies at all stages of project development. We always look at the project tasks through the lenses of engineering perception, which allows us to be one step ahead.
+                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
                     </h4>
                 </div>
 
@@ -230,15 +163,10 @@
             <div class="row">
                 <div class="col-12 px-0 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE FAMILIES GALLERY
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
-                        We are a team of specialists with experience in implementing BIM-technologies. We believe that BIM is not a future - BIM is today, BIM is right now. Our main goal is the most effective application of BIM technologies at all stages of project development. We always look at the project tasks through the lenses of engineering perception, which allows us to be one step ahead.
+                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
                     </h4>
                 </div>
 
@@ -273,15 +201,10 @@
             <div class="row">
                 <div class="col-12 px-0 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+                        BIMPROVE FAMILIES GALLERY
                     </h1>
                     <h4 class="text-white fw-bold pb-2">
-                        We are a team of specialists with experience in implementing BIM-technologies. We believe that BIM is not a future - BIM is today, BIM is right now. Our main goal is the most effective application of BIM technologies at all stages of project development. We always look at the project tasks through the lenses of engineering perception, which allows us to be one step ahead.
+                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
                     </h4>
                 </div>
 

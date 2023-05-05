@@ -12,12 +12,12 @@
                     <h1 class="d-none">Bimprove</h1>
                     <h2 class="text-white fw-bold mt-5 display-5">
                         {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                        <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
+{{--                        <span class="d-inline-block d-sm-none">M</span>--}}
+{{--                        <span class="d-none d-sm-inline-block d-md-none">SM</span>--}}
+{{--                        <span class="d-none d-md-inline-block d-lg-none">MD</span>--}}
+{{--                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>--}}
+{{--                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>--}}
+{{--                        <span class="d-none d-xxl-inline-block">XXL</span>--}}
                     </h2>
                     <h2 class="text-white h1 fw-semibold">
                         <small>
@@ -93,12 +93,6 @@
                     <h1 class="d-none">Bimprove</h1>
                     <h2 class="text-white fw-bold mt-5 h1">
                         {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                        <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
                     </h2>
                     <h2 class="text-white h2 fw-semibold" style="width: 80%">
                         <small>
@@ -174,12 +168,6 @@
                     <h1 class="d-none">Bimprove</h1>
                     <h2 class="text-white fw-bold mt-5 h1">
                         {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                        <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
                     </h2>
                     <h2 class="text-white h2 fw-semibold w-100">
                         <small>
@@ -255,12 +243,6 @@
                     <h1 class="d-none">Bimprove</h1>
                     <h2 class="text-white fw-bold mt-5 h2">
                         {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                        <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
                     </h2>
                     <h2 class="text-white h4 fw-semibold">
                         <small>
@@ -335,12 +317,6 @@
                     <h1 class="d-none">Bimprove</h1>
                     <h2 class="text-white fw-bold mt-5 h2">
                         {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                        <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
                     </h2>
                     <h2 class="text-white h4 fw-semibold">
                         <small>
@@ -415,12 +391,6 @@
                     <h1 class="d-none">Bimprove</h1>
                     <h2 class="text-white fw-bold mt-5 h2">
                         {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                        <span class="d-inline-block d-sm-none">M</span>
-                        <span class="d-none d-sm-inline-block d-md-none">SM</span>
-                        <span class="d-none d-md-inline-block d-lg-none">MD</span>
-                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>
-                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>
-                        <span class="d-none d-xxl-inline-block">XXL</span>
                     </h2>
                     <h2 class="text-white h4 fw-semibold">
                         <small>
@@ -1967,54 +1937,55 @@
                     <section id="splide7" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                @foreach($works as $work)
-                                    <li class="splide__slide px-3">
-                                        <div class="splide__slide__container">
-                                            <div class="portfolio-container">
-                                                <div class="card border-0 text-bg-dark">
-                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
-                                                </div>
-                                                <div class="overlay">
-                                                    <div class="row m-0 text-white">
-                                                        <div class="col-12 p-2 px-4">
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Residential</h4>
-                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Building</h4>
-                                                                    <h5 style="font-size: 1vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                @for($i = 0; $i < $works->count() ; $i ++)
+                                    @if($i >= ($works->count() / 2)) @continue @endif
+                                        <li class="splide__slide px-3">
+                                            <div class="splide__slide__container">
+                                                <div class="portfolio-container">
+                                                    <div class="card border-0 text-bg-dark">
+                                                        <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="row m-0 text-white">
+                                                            <div class="col-12 p-2 px-4">
+                                                                <div class="row justify-content-between">
+                                                                    <div class="col-7">
+                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_first }}</h4>
+                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_second }}</h4>
+                                                                        <h5 style="font-size: 1vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
+                                                                    </div>
+                                                                    <div class="col-5 mt-2">
+                                                                        <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
+                                                                        <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
+                                                                        <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col-5 mt-2">
-                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">LOD: 300</h5>
-                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Area: 38950m2</h5>
-                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Time: 55h</h5>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <h5 style="font-size: 1vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h5 style="font-size: 1vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
-                                                                </div>
-                                                            </div>
 
-                                                            <div class="row m-0 border-bottom border-3 border-white">
-                                                            </div>
-
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-4 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                                <div class="row m-0 border-bottom border-3 border-white">
                                                                 </div>
-                                                                <div class="col-8 px-0 d-flex justify-content-center">
-                                                                    <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
-                                                                        {{ $work->description }}
-                                                                    </h6>
+
+                                                                <div class="row d-flex align-items-center">
+                                                                    <div class="col-4 d-flex justify-content-center">
+                                                                        <img src="/images/{{ $works[$i]->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                                    </div>
+                                                                    <div class="col-8 px-0 d-flex justify-content-center">
+                                                                        <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
+                                                                            {{ $works[$i]->description }}
+                                                                        </h6>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                @endforeach
+                                        </li>
+                                @endfor
                             </ul>
                         </div>
                     </section>
@@ -2026,55 +1997,55 @@
                     <section id="splide8" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                @foreach($works as $work)
-                                    <li class="splide__slide px-3">
-                                        <div class="splide__slide__container">
-                                            <div class="portfolio-container">
-                                                <div class="card border-0 text-bg-dark">
-                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
-                                                </div>
-                                                <div class="overlay">
-                                                    <div class="row m-0 text-white">
-                                                        <div class="col-12 p-2 px-4">
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    {{--                                                                    <h4 style="font-size: 1.5vw" class="fw-bold">Residential</h4>--}}
-                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Residential</h4>
-                                                                    <h4 style="font-size: 1.2vw" class="fw-bold">Building</h4>
-                                                                    <h5 style="font-size: 1vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                @for($i = 0; $i < $works->count() ; $i ++)
+                                    @if($i < ($works->count() / 2)) @continue @endif
+                                        <li class="splide__slide px-3">
+                                            <div class="splide__slide__container">
+                                                <div class="portfolio-container">
+                                                    <div class="card border-0 text-bg-dark">
+                                                        <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="row m-0 text-white">
+                                                            <div class="col-12 p-2 px-4">
+                                                                <div class="row justify-content-between">
+                                                                    <div class="col-7">
+                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_first }}</h4>
+                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_second }}</h4>
+                                                                        <h5 style="font-size: 1vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
+                                                                    </div>
+                                                                    <div class="col-5 mt-2">
+                                                                        <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
+                                                                        <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
+                                                                        <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col-5 mt-2">
-                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">LOD: 300</h5>
-                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Area: 38950m2</h5>
-                                                                    <h5 style="font-size: 0.9vw" class="fw-bold">Time: 55h</h5>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <h5 style="font-size: 1vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h5 style="font-size: 1vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
-                                                                </div>
-                                                            </div>
 
-                                                            <div class="row m-0 border-bottom border-3 border-white">
-                                                            </div>
-
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-4 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                                <div class="row m-0 border-bottom border-3 border-white">
                                                                 </div>
-                                                                <div class="col-8 px-0">
-                                                                    <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
-                                                                        {{ $work->description }}
-                                                                    </h6>
+
+                                                                <div class="row d-flex align-items-center">
+                                                                    <div class="col-4 d-flex justify-content-center">
+                                                                        <img src="/images/{{ $works[$i]->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                                    </div>
+                                                                    <div class="col-8 px-0 d-flex justify-content-center">
+                                                                        <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
+                                                                            {{ $works[$i]->description }}
+                                                                        </h6>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                @endforeach
+                                        </li>
+                                @endfor
                             </ul>
                         </div>
                     </section>
@@ -2095,54 +2066,55 @@
                     <section id="splide9" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                @foreach($works as $work)
-                                    <li class="splide__slide px-3">
-                                        <div class="splide__slide__container">
-                                            <div class="portfolio-container">
-                                                <div class="card border-0 text-bg-dark">
-                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
-                                                </div>
-                                                <div class="overlay">
-                                                    <div class="row m-0 text-white">
-                                                        <div class="col-12 p-2 px-4">
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Residential</h4>
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Building</h4>
-                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                @for($i = 0; $i < $works->count() ; $i ++)
+                                    @if($i >= ($works->count() / 2)) @continue @endif
+                                        <li class="splide__slide px-3">
+                                            <div class="splide__slide__container">
+                                                <div class="portfolio-container">
+                                                    <div class="card border-0 text-bg-dark">
+                                                        <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="row m-0 text-white">
+                                                            <div class="col-12 p-2 px-4">
+                                                                <div class="row justify-content-between">
+                                                                    <div class="col-7">
+                                                                        <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_first }}</h4>
+                                                                        <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_second }}</h4>
+                                                                        <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
+                                                                    </div>
+                                                                    <div class="col-5 mt-2">
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col-5 mt-2">
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">LOD: 300</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Area: 38950m2</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Time: 55h</h5>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <h5 style="font-size: 1.3vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h5 style="font-size: 1.3vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
-                                                                </div>
-                                                            </div>
 
-                                                            <div class="row m-0 border-bottom border-3 border-white">
-                                                            </div>
-
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-4 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
+                                                                <div class="row m-0 border-bottom border-3 border-white">
                                                                 </div>
-                                                                <div class="col-8 px-0">
-                                                                    <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
-                                                                        {{ $work->description }}
-                                                                    </h6>
+
+                                                                <div class="row d-flex align-items-center">
+                                                                    <div class="col-4 d-flex justify-content-center">
+                                                                        <img src="/images/{{ $works[$i]->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
+                                                                    </div>
+                                                                    <div class="col-8 px-0">
+                                                                        <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
+                                                                            {{ $works[$i]->description }}
+                                                                        </h6>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                @endforeach
+                                        </li>
+                                @endfor
                             </ul>
                         </div>
                     </section>
@@ -2154,31 +2126,32 @@
                     <section id="splide10" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                @foreach($works as $work)
+                                @for($i = 0; $i < $works->count() ; $i ++)
+                                    @if($i < ($works->count() / 2)) @continue @endif
                                     <li class="splide__slide px-3">
                                         <div class="splide__slide__container">
                                             <div class="portfolio-container">
                                                 <div class="card border-0 text-bg-dark">
-                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
+                                                    <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
                                                 </div>
                                                 <div class="overlay">
                                                     <div class="row m-0 text-white">
                                                         <div class="col-12 p-2 px-4">
                                                             <div class="row justify-content-between">
                                                                 <div class="col-7">
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Residential</h4>
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">Building</h4>
-                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">Scan to bim</h5>
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_first }}</h4>
+                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_second }}</h4>
+                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
                                                                 </div>
                                                                 <div class="col-5 mt-2">
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">LOD: 300</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Area: 38950m2</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">Time: 55h</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
+                                                                    <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 style="font-size: 1.3vw" class="fw-bold">Arhitecture, Structure, MEPF</h5>
+                                                                    <h5 style="font-size: 1.3vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
                                                                 </div>
                                                             </div>
 
@@ -2187,11 +2160,11 @@
 
                                                             <div class="row d-flex align-items-center">
                                                                 <div class="col-4 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
+                                                                    <img src="/images/{{ $works[$i]->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
                                                                 </div>
                                                                 <div class="col-8 px-0">
                                                                     <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
-                                                                        {{ $work->description }}
+                                                                        {{ $works[$i]->description }}
                                                                     </h6>
                                                                 </div>
                                                             </div>
@@ -2201,7 +2174,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                @endforeach
+                                @endfor
                             </ul>
                         </div>
                     </section>
@@ -2222,54 +2195,55 @@
                     <section id="splide11" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                @foreach($works as $work)
-                                    <li class="splide__slide px-3">
-                                        <div class="splide__slide__container">
-                                            <div class="portfolio-container">
-                                                <div class="card border-0 text-bg-dark">
-                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
-                                                </div>
-                                                <div class="overlay">
-                                                    <div class="row m-0 text-white">
-                                                        <div class="col-12 p-2 px-4">
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Residential</h4>
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Building</h4>
-                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
+                                @for($i = 0; $i < $works->count() ; $i ++)
+                                    @if($i >= ($works->count() / 2)) @continue @endif
+                                        <li class="splide__slide px-3">
+                                            <div class="splide__slide__container">
+                                                <div class="portfolio-container">
+                                                    <div class="card border-0 text-bg-dark">
+                                                        <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="row m-0 text-white">
+                                                            <div class="col-12 p-2 px-4">
+                                                                <div class="row justify-content-between">
+                                                                    <div class="col-7">
+                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_first }}</h4>
+                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_second }}</h4>
+                                                                        <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">{{ $works[$i]->subtitle }}</h5>
+                                                                    </div>
+                                                                    <div class="col-5 mt-2">
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_1 }}</h5>
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_2 }}</h5>
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_3 }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col-5 mt-2">
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">LOD: 300</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Time: 55h</h5>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <h5 style="font-size: 1.3vw" class="fw-bold mb-1">{{ $works[$i]->disciplines }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h5 style="font-size: 1.3vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
-                                                                </div>
-                                                            </div>
 
-                                                            <div class="row m-0 border-bottom border-3 border-white">
-                                                            </div>
-
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-4 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
+                                                                <div class="row m-0 border-bottom border-3 border-white">
                                                                 </div>
-                                                                <div class="col-8 ps-0">
-                                                                    <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
-                                                                        {{ $work->description }}
-                                                                    </h6>
+
+                                                                <div class="row d-flex align-items-center">
+                                                                    <div class="col-4 d-flex justify-content-center">
+                                                                        <img src="/images/{{ $works[$i]->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
+                                                                    </div>
+                                                                    <div class="col-8 ps-0">
+                                                                        <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
+                                                                            {{ $works[$i]->description }}
+                                                                        </h6>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                @endforeach
+                                        </li>
+                                @endfor
                             </ul>
                         </div>
                     </section>
@@ -2281,54 +2255,55 @@
                     <section id="splide12" class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                @foreach($works as $work)
-                                    <li class="splide__slide px-3">
-                                        <div class="splide__slide__container">
-                                            <div class="portfolio-container">
-                                                <div class="card border-0 text-bg-dark">
-                                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
-                                                </div>
-                                                <div class="overlay">
-                                                    <div class="row m-0 text-white">
-                                                        <div class="col-12 p-2 px-4">
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Residential</h4>
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold mb-1">Building</h4>
-                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
+                                @for($i = 0; $i < $works->count() ; $i ++)
+                                    @if($i < ($works->count() / 2)) @continue @endif
+                                        <li class="splide__slide px-3">
+                                            <div class="splide__slide__container">
+                                                <div class="portfolio-container">
+                                                    <div class="card border-0 text-bg-dark">
+                                                        <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="row m-0 text-white">
+                                                            <div class="col-12 p-2 px-4">
+                                                                <div class="row justify-content-between">
+                                                                    <div class="col-7">
+                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_first }}</h4>
+                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_second }}</h4>
+                                                                        <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">{{ $works[$i]->subtitle }}</h5>
+                                                                    </div>
+                                                                    <div class="col-5 mt-2">
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_1 }}</h5>
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_2 }}</h5>
+                                                                        <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_3 }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col-5 mt-2">
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">LOD: 300</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
-                                                                    <h5 style="font-size: 1.2vw" class="fw-bold mb-1">Time: 55h</h5>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <h5 style="font-size: 1.3vw" class="fw-bold mb-1">{{ $works[$i]->disciplines }}</h5>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h5 style="font-size: 1.3vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
-                                                                </div>
-                                                            </div>
 
-                                                            <div class="row m-0 border-bottom border-3 border-white">
-                                                            </div>
-
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-4 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $work->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
+                                                                <div class="row m-0 border-bottom border-3 border-white">
                                                                 </div>
-                                                                <div class="col-8 ps-0">
-                                                                    <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
-                                                                        {{ $work->description }}
-                                                                    </h6>
+
+                                                                <div class="row d-flex align-items-center">
+                                                                    <div class="col-4 d-flex justify-content-center">
+                                                                        <img src="/images/{{ $works[$i]->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
+                                                                    </div>
+                                                                    <div class="col-8 ps-0">
+                                                                        <h6 style="font-size: 1.2vw" class="mt-2 text-secondary">
+                                                                            {{ $works[$i]->description }}
+                                                                        </h6>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                @endforeach
+                                        </li>
+                                @endfor
                             </ul>
                         </div>
                     </section>
@@ -2352,26 +2327,26 @@
                                 @foreach($works as $work)
                                     <li class="splide__slide px-3">
                                         <div class="splide__slide__container">
-                                            <div class="card border-0" style="background-color: #6bdddb;">
+                                            <div class="card h-100 border-0" style="background-color: #6bdddb;">
                                                 <img src="/images/{{ $work->image }}" class="card-img" alt="...">
 
                                                 <div class="row m-0 text-white">
                                                     <div class="col-12 p-2 px-4">
                                                         <div class="row justify-content-between">
                                                             <div class="col-7">
-                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">Residential</h4>
-                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">Building</h4>
-                                                                <h5 style="font-size: 2vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
+                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">{{ $work->title_first }}</h4>
+                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">{{ $work->title_second }}</h4>
+                                                                <h5 style="font-size: 2vw" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
                                                             </div>
                                                             <div class="col-5 mt-2">
-                                                                <h5 style="font-size: 2.2vw" class="fw-bold mb-1">LOD: 300</h5>
-                                                                <h5 style="font-size: 2.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
-                                                                <h5 style="font-size: 2.2vw" class="fw-bold mb-1">Time: 55h</h5>
+                                                                <h5 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $work->parameter_1 }}</h5>
+                                                                <h5 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $work->parameter_2 }}</h5>
+                                                                <h5 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $work->parameter_3 }}</h5>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <h5 style="font-size: 2vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
+                                                                <h5 style="font-size: 2vw" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
                                                             </div>
                                                         </div>
 
@@ -2417,26 +2392,26 @@
                                 @foreach($works as $work)
                                     <li class="splide__slide px-3">
                                         <div class="splide__slide__container">
-                                            <div class="card border-0" style="background-color: #6bdddb;">
+                                            <div class="card h-100 border-0" style="background-color: #6bdddb;">
                                                 <img src="/images/{{ $work->image }}" class="card-img" alt="...">
 
                                                 <div class="row m-0 text-white">
                                                     <div class="col-12 p-2 px-4">
                                                         <div class="row justify-content-between">
                                                             <div class="col-7">
-                                                                <h4 style="font-size: 3.5vw" class="fw-bold mb-1">Residential</h4>
-                                                                <h4 style="font-size: 3.5vw" class="fw-bold mb-1">Building</h4>
-                                                                <h5 style="font-size: 3vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
+                                                                <h4 style="font-size: 3vw" class="fw-bold mb-1">{{ $work->title_first }}</h4>
+                                                                <h4 style="font-size: 3vw" class="fw-bold mb-1">{{ $work->title_second }}</h4>
+                                                                <h5 style="font-size: 2.7vw" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
                                                             </div>
                                                             <div class="col-5 mt-2">
-                                                                <h5 style="font-size: 2.8vw" class="fw-bold mb-1">LOD: 300</h5>
-                                                                <h5 style="font-size: 2.8vw" class="fw-bold mb-1">Area: 38950m2</h5>
-                                                                <h5 style="font-size: 2.8vw" class="fw-bold mb-1">Time: 55h</h5>
+                                                                <h5 style="font-size: 2.3vw" class="fw-bold mb-1">{{ $work->parameter_1 }}</h5>
+                                                                <h5 style="font-size: 2.3vw" class="fw-bold mb-1">{{ $work->parameter_2 }}</h5>
+                                                                <h5 style="font-size: 2.3vw" class="fw-bold mb-1">{{ $work->parameter_3 }}</h5>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <h5 style="font-size: 3vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
+                                                                <h5 style="font-size: 3vw" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
                                                             </div>
                                                         </div>
 
@@ -2448,7 +2423,7 @@
                                                                 <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
                                                             </div>
                                                             <div class="col-8 ps-0">
-                                                                <h6 style="font-size: 2.5vw" class="mt-2 text-secondary">
+                                                                <h6 style="font-size: 2.3vw" class="mt-2 text-secondary">
                                                                     {{ $work->description }}
                                                                 </h6>
                                                             </div>
@@ -2490,19 +2465,19 @@
                                                     <div class="col-12 p-2 px-4">
                                                         <div class="row justify-content-between">
                                                             <div class="col-7">
-                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">Residential</h4>
-                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">Building</h4>
-                                                                <h5 style="font-size: 3.8vw" class="text-secondary fw-bold mb-1">Scan to bim</h5>
+                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">{{ $work->title_first }}</h4>
+                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">{{ $work->title_second }}</h4>
+                                                                <h5 style="font-size: 3.8vw" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
                                                             </div>
                                                             <div class="col-5 mt-2">
-                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">LOD: 300</h5>
-                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">Area: 38950m2</h5>
-                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">Time: 55h</h5>
+                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">{{ $work->parameter_1 }}</h5>
+                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">{{ $work->parameter_2 }}</h5>
+                                                                <h5 style="font-size: 3.2vw" class="fw-bold mb-1">{{ $work->parameter_3 }}</h5>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <h5 style="font-size: 3.8vw" class="fw-bold mb-1">Arhitecture, Structure, MEPF</h5>
+                                                                <h5 style="font-size: 3.8vw" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
                                                             </div>
                                                         </div>
 
@@ -2555,18 +2530,20 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide">
                                         <div class="splide__slide__container">
-                                            <div class="card border-0 px-5 h-100 bg-transparent">
-                                                <div class="text-center p-4 pt-0">
-                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                            <a class="p-0 m-0 text-decoration-none" target="_blank" href="{{ $teammate->linkedin_url }}">
+                                                <div class="card border-0 px-5 h-100 bg-transparent">
+                                                    <div class="text-center p-4 pt-0">
+                                                        <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="card-body pb-0 px-3">
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->name_en }}</h2>
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->surname_en }}</h2>
+                                                        <h5 class="card-title text-dark">
+                                                            {{ $teammate->position_en }}
+                                                        </h5>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body pb-0 px-3">
-                                                    <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
-                                                    <h2 class="fw-bold">{{ $teammate->surname_en }}</h2>
-                                                    <h5 class="card-title text-dark">
-                                                        {{ $teammate->position_en }}
-                                                    </h5>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </li>
                                 @endforeach
@@ -2594,18 +2571,20 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-3 border-0 h-100 bg-transparent">
-                                                <div class="text-center p-2 pt-0">
-                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                            <a class="p-0 m-0 text-decoration-none" target="_blank" href="{{ $teammate->linkedin_url }}">
+                                                <div class="card p-3 border-0 h-100 bg-transparent">
+                                                    <div class="text-center p-2 pt-0">
+                                                        <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="card-body pb-0">
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->name_en }}</h2>
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->surname_en }}</h2>
+                                                        <h5 class="card-title text-dark">
+                                                            {{ $teammate->position_en }}
+                                                        </h5>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body pb-0">
-                                                    <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
-                                                    <h2 class="fw-bold">{{ $teammate->surname_en }}</h2>
-                                                    <h5 class="card-title text-dark">
-                                                        {{ $teammate->position_en }}
-                                                    </h5>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </li>
                                 @endforeach
@@ -2633,18 +2612,20 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-4 border-0 h-100 bg-transparent">
-                                                <div class="text-center p-2 pt-0">
-                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                            <a class="p-0 m-0 text-decoration-none" target="_blank" href="{{ $teammate->linkedin_url }}">
+                                                <div class="card p-4 border-0 h-100 bg-transparent">
+                                                    <div class="text-center p-2 pt-0">
+                                                        <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="card-body pb-0">
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->name_en }}</h2>
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->surname_en }}</h2>
+                                                        <h5 class="card-title text-dark">
+                                                            {{ $teammate->position_en }}
+                                                        </h5>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body pb-0">
-                                                    <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
-                                                    <h2 class="fw-bold">{{ $teammate->surname_en }}</h2>
-                                                    <h5 class="card-title text-dark">
-                                                        {{ $teammate->position_en }}
-                                                    </h5>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </li>
                                 @endforeach
@@ -2672,18 +2653,20 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-3 border-0 h-100 bg-transparent">
-                                                <div class="text-center p-2 pt-0">
-                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                            <a class="p-0 m-0 text-decoration-none" target="_blank" href="{{ $teammate->linkedin_url }}">
+                                                <div class="card p-3 border-0 h-100 bg-transparent">
+                                                    <div class="text-center p-2 pt-0">
+                                                        <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="card-body pb-0">
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->name_en }}</h2>
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->surname_en }}</h2>
+                                                        <h5 class="card-title text-dark">
+                                                            {{ $teammate->position_en }}
+                                                        </h5>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body pb-0">
-                                                    <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
-                                                    <h2 class="fw-bold">{{ $teammate->surname_en }}</h2>
-                                                    <h5 class="card-title text-dark">
-                                                        {{ $teammate->position_en }}
-                                                    </h5>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </li>
                                 @endforeach
@@ -2711,18 +2694,20 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-3 border-0 h-100 bg-transparent">
-                                                <div class="text-center p-2 pt-0">
-                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                            <a class="p-0 m-0 text-decoration-none" target="_blank" href="{{ $teammate->linkedin_url }}">
+                                                <div class="card p-3 border-0 h-100 bg-transparent">
+                                                    <div class="text-center p-2 pt-0">
+                                                        <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="card-body pb-0">
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->name_en }}</h2>
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->surname_en }}</h2>
+                                                        <h5 class="card-title text-dark">
+                                                            {{ $teammate->position_en }}
+                                                        </h5>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body pb-0">
-                                                    <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
-                                                    <h2 class="fw-bold">{{ $teammate->surname_en }}</h2>
-                                                    <h5 class="card-title text-dark">
-                                                        {{ $teammate->position_en }}
-                                                    </h5>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </li>
                                 @endforeach
@@ -2750,18 +2735,20 @@
                                 @foreach($teammates as $teammate)
                                     <li class="splide__slide px-1">
                                         <div class="splide__slide__container">
-                                            <div class="card p-5 border-0 h-100 bg-transparent">
-                                                <div class="text-center p-2 pt-0">
-                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                            <a class="p-0 m-0 text-decoration-none" target="_blank" href="{{ $teammate->linkedin_url }}">
+                                                <div class="card p-5 border-0 h-100 bg-transparent">
+                                                    <div class="text-center p-2 pt-0">
+                                                        <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                                    </div>
+                                                    <div class="card-body pb-0">
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->name_en }}</h2>
+                                                        <h2 class="fw-bold text-dark">{{ $teammate->surname_en }}</h2>
+                                                        <h5 class="card-title text-dark">
+                                                            {{ $teammate->position_en }}
+                                                        </h5>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body pb-0">
-                                                    <h2 class="fw-bold">{{ $teammate->name_en }}</h2>
-                                                    <h2 class="fw-bold">{{ $teammate->surname_en }}</h2>
-                                                    <h5 class="card-title text-dark">
-                                                        {{ $teammate->position_en }}
-                                                    </h5>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </li>
                                 @endforeach
@@ -3072,8 +3059,6 @@
         @endforeach
 
     </script>
-
-{{--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>--}}
 @endsection
 
 @section('modals')

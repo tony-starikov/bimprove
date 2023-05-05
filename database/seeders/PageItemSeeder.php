@@ -29,12 +29,12 @@ class PageItemSeeder extends Seeder
             [
                 'page_id' => 1,
                 'name' => 'video_mp4',
-                'value' => "video/video.mp4"
+                'value' => "video/BIMprove_video_1.mp4"
             ],
             [
                 'page_id' => 1,
                 'name' => 'video_webm',
-                'value' => "video/video.webm"
+                'value' => "video/BIMprove_video_1.webm"
             ],
             [
                 'page_id' => 1,
