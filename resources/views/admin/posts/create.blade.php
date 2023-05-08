@@ -41,14 +41,15 @@
                         <input class="form-control" type="file" name="image" id="image">
                     </div>
 
-                    @php
-                        $config = [
-                            "height" => "800",
-                            "styleTags" => ['p', 'h6'],
-                        ];
-                    @endphp
+{{--                    @php--}}
+{{--                        $config = [--}}
+{{--                            "height" => "800",--}}
+{{--                            "styleTags" => ['p', 'h6'],--}}
+{{--                        ];--}}
+{{--                    @endphp--}}
 
-                    <x-adminlte-text-editor name="content" :config="$config"></x-adminlte-text-editor>
+{{--                    <x-adminlte-text-editor name="content" :config="$config"></x-adminlte-text-editor>--}}
+                    <x-adminlte-text-editor name="content"></x-adminlte-text-editor>
 
                     <button type="submit" class="btn btn-success">ADD</button>
                 </form>
