@@ -29,7 +29,7 @@
 
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif !important;
         }
         .cards-wrapper {
             display: flex;
@@ -556,12 +556,12 @@
                     <h2 class="text-white display-6 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block w-50">CONTACTS</h2>
                     <div class="row mt-5">
                         <div class="col-12">
-                            <div class="d-inline-block pe-5 border-end border-2 border-white">
+                            <div class="d-inline-block pe-3 border-end border-2 border-white">
                                 <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}" class="text-white text-decoration-none">
                                     <span class="fw-semibold h4">{{ $contacts->where('name', 'phone')->first()->info }}</span>
                                 </a>
                             </div>
-                            <div class="d-inline-block ps-5">
+                            <div class="d-inline-block ps-3">
                                 <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}" class="text-white text-decoration-none">
                                     <span class="fw-semibold h4">{{ $contacts->where('name', 'email')->first()->info }}</span>
                                 </a>
@@ -868,11 +868,14 @@
                     <h2 class="text-white h4 fw-bold pb-2">CONTACTS</h2>
                     <div class="row">
                         <div class="col-12">
-                            <span style="font-size: 1.8vw;" class="fw-semibold text-white d-none d-md-block">
-                                <a class="text-decoration-none text-white" href="tel:{{ $contacts->where('name', 'phone')->first()->info }}">{{ $contacts->where('name', 'phone')->first()->info }}</a>
-                                |
-                                <a class="text-decoration-none text-white" href="mailto:{{ $contacts->where('name', 'email')->first()->info }}">{{ $contacts->where('name', 'email')->first()->info }}</a>
-                            </span>
+                            <div class="row">
+                                <a style="font-size: 1.8vw;" class="text-decoration-none fw-semibold text-white" href="tel:{{ $contacts->where('name', 'phone')->first()->info }}">{{ $contacts->where('name', 'phone')->first()->info }}</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row mt-2">
+                                <a style="font-size: 1.8vw;" class="text-decoration-none fw-semibold text-white" href="mailto:{{ $contacts->where('name', 'email')->first()->info }}">{{ $contacts->where('name', 'email')->first()->info }}</a>
+                            </div>
                         </div>
                     </div>
                 </div>

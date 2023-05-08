@@ -130,8 +130,10 @@ class AdminPostController extends Controller
 
         $images = unserialize($post->notes_images);
 
-        foreach ($images as $imageName) {
-            Storage::disk('public')->delete($imageName);
+        if (is_array($images)) {
+            foreach ($images as $imageName) {
+                Storage::disk('public')->delete($imageName);
+            }
         }
 
         $post->delete();

@@ -48,7 +48,7 @@ class ContactSeeder extends Seeder
             [
                 'id' => 6,
                 'name' => 'email',
-                'info' => 'es@bim-prove.com',
+                'info' => ' info@bim-prove.com',
                 'image' => '',
             ],
         ]);

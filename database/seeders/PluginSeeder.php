@@ -41,8 +41,8 @@ class PluginSeeder extends Seeder
                 'description_ua' => "
                     Automatic join all elements of selected categories within the active view. This process eliminates overlapping or intersecting elements.
                 ",
-                'video_url' => 'https://youtu.be/PkCfyuYJ6PM',
-                'image' => 'plugins/1.png',
+                'video_url' => 'https://www.youtube.com/embed/PkCfyuYJ6PM',
+                'image' => 'plugins/AutoJoinInView.jpg',
                 'logo' => 'plugins/AutoJoinInView.png',
                 'file' => 'plugins/AutoJoinInView_D2.6.1_R21.zip',
                 'slug' => 'AutoJoinInView'
@@ -56,8 +56,8 @@ class PluginSeeder extends Seeder
                 'description_ua' => "
                     Isolating columns in the active view that are not placed on the grids' intersection. This script can help architects, engineers, and other professionals.
                 ",
-                'video_url' => 'https://youtu.be/wzEeTXwmarU',
-                'image' => 'plugins/2.png',
+                'video_url' => 'https://www.youtube.com/embed/wzEeTXwmarU',
+                'image' => 'plugins/ColumnsToGridsIntersection.jpg',
                 'logo' => 'plugins/ColumnsToGridsIntersection.png',
                 'file' => 'plugins/ColumnsToGridsIntersection_D2.6.1_R21.zip',
                 'slug' => 'ColumnsToGridsIntersection'
@@ -71,8 +71,8 @@ class PluginSeeder extends Seeder
                 'description_ua' => "
                     Automate the process of relocating MEP elements with a selected distance. This script can help architects, engineers, and other professionals.
                 ",
-                'video_url' => 'https://youtu.be/1MO65376abU',
-                'image' => 'plugins/3.png',
+                'video_url' => 'https://www.youtube.com/embed/1MO65376abU',
+                'image' => 'plugins/AlignMEP.jpg',
                 'logo' => 'plugins/AlignMEP.png',
                 'file' => 'plugins/AlignMEP_D2.6.1_R21.zip',
                 'slug' => 'AlignMEP'

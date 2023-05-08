@@ -80,7 +80,7 @@ class WorkSeeder extends Seeder
                 'parameter_1' => 'LOD: 300',
                 'parameter_2' => 'Area: 2100m2',
                 'parameter_3' => 'Floors: 6',
-                'description' => "3D model of residential building in Kharkiv, Ukraine. It was our conceptual project of new 6 floors building in old historical city area. First two floors must be commercial, after residential floors with flats. In the top floor we have modeled big penthouse flat.
+                'description' => "3D model of residential building in Kharkiv, Ukraine. It was our conceptual project of new building in old historical city area. First two floors must be commercial, after residential floors with flats. In the top floor we have modeled big penthouse flat. We produced Architecture model, some renders and drawings for presentation.
                 ",
                 'image' => 'works/Kontorska_1x.png',
                 'image_small' => 'works/Kontorska_small.png',
@@ -94,7 +94,7 @@ class WorkSeeder extends Seeder
                 'parameter_1' => 'LOD: 350',
                 'parameter_2' => 'Area: 1400m2',
                 'parameter_3' => 'Floors: 6',
-                'description' => "The main idea of shape is to allow sunbeams access for neighbor building and make as much office area as it possible, because of the high price of earth. Lot of office have their own big open terraces. We produced Architecture model, some renders and drawings for presentation.
+                'description' => "The main idea of shape is to allow sunbeams access for neighbor building and make as much office area as it possible, because of the high price of earth. Lot of office have their own big open terraces.
                 ",
                 'image' => 'works/Office_1x.png',
                 'image_small' => 'works/Office_small.png',
@@ -117,7 +117,7 @@ class WorkSeeder extends Seeder
                 'id' => 8,
                 'title_first' => 'Rooftop',
                 'title_second' => ' ',
-                'subtitle' => ' ',
+                'subtitle' => 'Telecommunication design',
                 'disciplines' => ' ',
                 'parameter_1' => 'LOD building: 300',
                 'parameter_2' => 'LOD equipment: 500',

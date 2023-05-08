@@ -16,9 +16,9 @@ class ServicesSeeder extends Seeder
     {
         DB::table('services')->insert([
             [
-                'title_ua' => 'MEP Coordination',
-                'title_en' => 'MEP Coordination',
-                'description_ua' => 'Projects development from scratch using BIM technologies on all stages of production.',
+                'title_ua' => 'MEP Coordination & Digital Fabrication',
+                'title_en' => 'MEP Coordination & Digital Fabrication',
+                'description_ua' => 'Projects development from scratch using BIM technologies at all stages of production.',
                 'description_en' => 'Projects development from scratch using BIM technologies on all stages of production.',
                 'image' => 'service/MEP_coordination_3.png',
                 'slug' => 'mep_coordination',
@@ -36,8 +36,8 @@ class ServicesSeeder extends Seeder
             [
                 'title_ua' => 'Scan to BIM',
                 'title_en' => 'Scan to BIM',
-                'description_ua' => 'Creation of quality BIM model by the point clouds according to customers requirements.',
-                'description_en' => 'Creation of quality BIM model by the point clouds according to customers requirements.',
+                'description_ua' => 'Creation of a quality BIM model by the point clouds according to customers requirements with excellent accuracy.',
+                'description_en' => 'Creation of a quality BIM model by the point clouds according to customers requirements with excellent accuracy.',
                 'image' => 'service/Scan_to_BIM_3.png',
                 'slug' => 'scan_to_bim',
                 'presentation' => 'presentations/scan_to_bim.pdf',
@@ -45,8 +45,8 @@ class ServicesSeeder extends Seeder
             [
                 'title_ua' => 'BIM modeling',
                 'title_en' => 'BIM modeling',
-                'description_ua' => 'Development of BIM models and visualizations, providing of project documentation.',
-                'description_en' => 'Development of BIM models and visualizations, providing of project documentation.',
+                'description_ua' => 'Development of BIM models and visualizations, providing project documentation.',
+                'description_en' => 'Development of BIM models and visualizations, providing project documentation.',
                 'image' => 'service/Modeling_3.png',
                 'slug' => 'bim_modeling',
                 'presentation' => 'presentations/bim_modeling.pdf',
@@ -63,8 +63,8 @@ class ServicesSeeder extends Seeder
             [
                 'title_ua' => 'Software development',
                 'title_en' => 'Software development',
-                'description_ua' => 'Projects development from scratch. using BIM technologies on all stages of production.',
-                'description_en' => 'Projects development from scratch. using BIM technologies on all stages of production.',
+                'description_ua' => 'Development of Dynamo Scripts and Add-Ins for Revit.',
+                'description_en' => 'Development of Dynamo Scripts and Add-Ins for Revit.',
                 'image' => 'service/Software_development_3.png',
                 'slug' => 'software_development',
                 'presentation' => 'presentations/software_development.pdf',

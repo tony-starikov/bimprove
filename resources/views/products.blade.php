@@ -253,12 +253,9 @@
                                 <img class="img-fluid w-100" src="/images/{{ $plugin->logo }}" alt="">
                             </div>
                             <div class="col-7 position-relative">
-                                <h6 class="h2 fw-bold">
+                                <h6 class="h2 pe-4 fw-bold">
                                     {{ $plugin->title_en }}
                                 </h6>
-{{--                                <h6 class="text-secondary position-absolute bottom-0">--}}
-{{--                                    Month, Day, Year--}}
-{{--                                </h6>--}}
                             </div>
                         </div>
 
@@ -318,7 +315,7 @@
                                 <img class="img-fluid w-100" src="/images/{{ $plugin->logo }}" alt="">
                             </div>
                             <div class="col-9 position-relative">
-                                <h6 class="h2 fw-bold">
+                                <h6 class="h2 fw-bold pe-4">
                                     {{ $plugin->title_en }}
                                 </h6>
 {{--                                <h6 class="text-secondary mb-0">--}}
@@ -383,7 +380,7 @@
                                 <img class="img-fluid w-100" src="/images/{{ $plugin->logo }}" alt="">
                             </div>
                             <div class="col-10 position-relative">
-                                <h6 class="h5 fw-bold">
+                                <h6 class="h5 pe-4 fw-bold">
                                     {{ $plugin->title_en }}
                                 </h6>
 {{--                                <h6 class="text-secondary mb-0">--}}

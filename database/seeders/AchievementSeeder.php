@@ -18,8 +18,8 @@ class AchievementSeeder extends Seeder
             [
                 'title_ua' => '60+',
                 'title_en' => '60+',
-                'subtitle_ua' => 'SATISFIED CUSTOMERS',
-                'subtitle_en' => 'SATISFIED CUSTOMERS',
+                'subtitle_ua' => 'CONTENTED CUSTOMERS',
+                'subtitle_en' => 'CONTENTED CUSTOMERS',
                 'image' => 'achievements/achievement_1.png',
             ],
             [
@@ -46,8 +46,8 @@ class AchievementSeeder extends Seeder
             [
                 'title_ua' => '35+',
                 'title_en' => '35+',
-                'subtitle_ua' => 'SKILLED WORKERS',
-                'subtitle_en' => 'SKILLED WORKERS',
+                'subtitle_ua' => 'SKILLED EMPLOYEES',
+                'subtitle_en' => 'SKILLED EMPLOYEES',
                 'image' => 'achievements/achievement_5.png',
             ],
             [
