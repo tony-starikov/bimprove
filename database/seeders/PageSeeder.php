@@ -87,6 +87,14 @@ class PageSeeder extends Seeder
                 'description_ua' => 'We are a 3D BIM Modeling Services Company providing Revit Modeling Services to architectural, engineering, ...',
                 'description_en' => 'We are a 3D BIM Modeling Services Company providing Revit Modeling Services to architectural, engineering, ...',
             ],
+            [
+                'id' => 10,
+                'name' => 'policy',
+                'title_ua' => 'Revit Modeling Services | Bimprove Company',
+                'title_en' => 'Revit Modeling Services | Bimprove Company',
+                'description_ua' => 'We are a 3D BIM Modeling Services Company providing Revit Modeling Services to architectural, engineering, ...',
+                'description_en' => 'We are a 3D BIM Modeling Services Company providing Revit Modeling Services to architectural, engineering, ...',
+            ],
         ]);
 
         if (env('DB_CONNECTION') == 'pgsql'){

@@ -59,6 +59,8 @@ Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])
 Route::get('/send', [PageController::class, 'send'])->name('send');
 Route::get('/success', [PageController::class, 'success'])->name('success');
 
+Route::get('/policy', [PageController::class, 'policy'])->name('policy');
+
 Auth::routes([
     'register' => false,
     'reset' => false,

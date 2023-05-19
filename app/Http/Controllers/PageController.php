@@ -76,4 +76,17 @@ class PageController extends Controller
 
         return view('success', compact('page_info', 'services', 'menuItems', 'contacts'));
     }
+
+    public function policy()
+    {
+        $page_info = Page::where('name', 'policy')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        return view('policy', compact('page_info', 'services', 'menuItems', 'contacts'));
+    }
 }

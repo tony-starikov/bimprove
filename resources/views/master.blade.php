@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+
     <title>Main</title>
 {{--    <title>@yield('title')</title>--}}
 
@@ -191,7 +193,7 @@
             <div class="row py-2 px-5">
                 <div class="col-1 px-0 d-flex justify-content-start align-items-center">
                     <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/logo.png" class="img-fluid"  alt="">
+                        <img src="/images/bim_prove.png" class="img-fluid"  alt="">
                     </a>
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
@@ -294,7 +296,7 @@
             <div class="row py-2 px-5">
                 <div class="col-1 px-0 d-flex justify-content-start align-items-center">
                     <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/logo.png" class="img-fluid"  alt="">
+                        <img src="/images/bim_prove.png" class="img-fluid"  alt="">
                     </a>
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
@@ -397,7 +399,7 @@
             <div class="row py-2 px-5">
                 <div class="col-1 px-0 d-flex justify-content-start align-items-center">
                     <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/logo.png" class="img-fluid"  alt="">
+                        <img src="/images/bim_prove.png" class="img-fluid"  alt="">
                     </a>
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-center align-items-center">
@@ -500,7 +502,7 @@
             <div class="row py-2">
                 <div class="col-2 px-0 d-flex justify-content-start align-items-center">
                     <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/logo.png" class="img-fluid" style="max-height: 50px"  alt="">
+                        <img src="/images/bim_prove.png" class="img-fluid" style="max-height: 50px"  alt="">
                     </a>
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-end align-items-center">
@@ -626,7 +628,7 @@
             <div class="row p-5">
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}.
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                     </p>
                 </div>
             </div>
@@ -736,7 +738,7 @@
             <div class="row p-5">
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}.
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                     </p>
                 </div>
             </div>
@@ -826,7 +828,7 @@
             <div class="row p-5">
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}.
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                     </p>
                 </div>
             </div>
@@ -910,7 +912,7 @@
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
                         <small>
-                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}.
+                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                         </small>
                     </p>
                 </div>
@@ -997,7 +999,7 @@
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
                         <small>
-                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}.
+                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                         </small>
                     </p>
                 </div>
@@ -1027,7 +1029,7 @@
                             <div class="row py-2">
                                 <div class="col-2 px-0 d-flex justify-content-start align-items-center">
                                     <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                                        <img src="/images/logo.png" class="img-fluid" style="max-height: 50px"  alt="">
+                                        <img src="/images/bim_prove.png" class="img-fluid" style="max-height: 50px"  alt="">
                                     </a>
                                 </div>
                                 <div class="col-10 px-0 d-flex justify-content-end align-items-center">
@@ -1189,7 +1191,7 @@
                             <div class="row py-2">
                                 <div class="col-2 px-0 d-flex justify-content-start align-items-center">
                                     <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                                        <img src="/images/logo.png" class="img-fluid" style="max-height: 50px"  alt="">
+                                        <img src="/images/bim_prove.png" class="img-fluid" style="max-height: 50px"  alt="">
                                     </a>
                                 </div>
                                 <div class="col-10 px-0 d-flex justify-content-end align-items-center">

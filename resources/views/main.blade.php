@@ -3106,7 +3106,7 @@
                             </div>
                             <div class="col-12 col-xl-6">
                                 <!-- Calendly inline widget begin -->
-                                <div class="calendly-inline-widget w-100" data-url="https://calendly.com/tony-starikov-1992/30min" style="height: 800px;"></div>
+                                <div class="calendly-inline-widget w-100" data-url="https://calendly.com/bimprove/30min" style="min-width:320px;height:700px;"></div>
                                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                                 <!-- Calendly inline widget end -->
                             </div>

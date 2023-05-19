@@ -32,7 +32,7 @@ class TeammateSeeder extends Seeder
                 'surname_en' => 'Kutsenko',
                 'position_ua' => 'Director of Scan to BIM',
                 'position_en' => 'Director of Scan to BIM',
-                'image' => 'teammates/Kseniya_1x.png',
+                'image' => 'teammates/Kseniya_1x_2.png',
                 'linkedin_url' => 'https://www.linkedin.com/in/kseniya-kutsenko-0ab737216/',
             ],
             [

@@ -14,20 +14,31 @@ class FamilySeeder extends Seeder
      */
     public function run()
     {
-//        $families = [];
-//
-//        for ($i = 1; $i < 11; $i++) {
-//            $families[] = [
-//                'id' => $i,
-//                'title_en' => 'REVIT FAMILY NAME EN',
-//                'title_ua' => 'REVIT FAMILY NAME UA',
-//                'description_en' => "EN Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-//                'description_ua' => "UA Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-//                'image' => 'families/new_family_image' . $i . '.png',
-//                'file' => 'families/M_Desk' . $i . '.zip',
-//            ];
-//        }
-//
-//        DB::table('families')->insert($families);
+        DB::table('families')->insert([
+            [
+                'title_en' => 'Communication Device LineArray',
+                'title_ua' => 'Communication Device LineArray',
+                'description_en' => "",
+                'description_ua' => "",
+                'image' => 'families/communication_device_line_array.jpg',
+                'file' => 'families/communication_device_line_array.zip',
+            ],
+            [
+                'title_en' => 'Furniture Audience Seatings',
+                'title_ua' => 'Furniture Audience Seatings',
+                'description_en' => "",
+                'description_ua' => "",
+                'image' => 'families/furniture_audience_seatings.jpg',
+                'file' => 'families/furniture_audience_seatings.zip',
+            ],
+            [
+                'title_en' => 'Smoke Detector',
+                'title_ua' => 'Smoke Detector',
+                'description_en' => "",
+                'description_ua' => "",
+                'image' => 'families/smoke_detector.jpg',
+                'file' => 'families/smoke_detector.zip',
+            ],
+        ]);
     }
 }
