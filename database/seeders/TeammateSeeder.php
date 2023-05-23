@@ -42,7 +42,7 @@ class TeammateSeeder extends Seeder
                 'surname_en' => 'Obertivich',
                 'position_ua' => 'Head Teacher',
                 'position_en' => 'Head Teacher',
-                'image' => 'teammates/Kirill_1x.png',
+                'image' => 'teammates/Kirill_1x_2.png',
                 'linkedin_url' => 'https://www.linkedin.com/in/kirill-o-2557a3132/',
             ],
             [

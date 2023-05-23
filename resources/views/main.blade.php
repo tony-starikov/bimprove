@@ -3079,7 +3079,7 @@
 
 
     <!-- Modal START -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal fade w-100 h-100" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content h-100" style="background-color: #b5c5c8;">
                 <div class="modal-body h-100 p-0">
@@ -3087,12 +3087,12 @@
                         <div class="row">
                             <div class="col-10 col-lg-10 col-xl-11"></div>
                             <div class="col-2 col-lg-2 col-xl-1 d-flex justify-content-end">
-                                <button type="button" class="btn border-0" data-bs-dismiss="modal">
+                                <button type="button" class="btn border-0 pe-0" data-bs-dismiss="modal">
                                     <i class="las la-3x la-times text-white"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="row p-5 py-0">
+                        <div class="row p-0 py-0 p-xl-5">
                             <div class="col-12 col-xl-6 align-self-stretch">
                                 <h4 class="fw-bold text-white display-6 w-100 lh-1">
                                     Meet at a time that is convenient for you.
@@ -3106,7 +3106,7 @@
                             </div>
                             <div class="col-12 col-xl-6">
                                 <!-- Calendly inline widget begin -->
-                                <div class="calendly-inline-widget w-100" data-url="https://calendly.com/bimprove/30min" style="min-width:320px;height:700px;"></div>
+                                <div class="calendly-inline-widget w-100" data-url="https://calendly.com/bimprove/30min" style="height:700px;"></div>
                                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                                 <!-- Calendly inline widget end -->
                             </div>
