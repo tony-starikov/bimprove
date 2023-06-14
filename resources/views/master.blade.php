@@ -185,8 +185,8 @@
         }
 
         #video {
-            width: 100vw;
-            min-height: 100vh;
+            width: 100%;
+            height: 100vh;
             object-fit: cover;
             position: absolute;
             top: 0;
@@ -1269,6 +1269,5 @@
     </div>
 </div>
 {{--PRODUCTS MENU--}}
-
 </body>
 </html>

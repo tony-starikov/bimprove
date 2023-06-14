@@ -36,16 +36,6 @@ class TeammateSeeder extends Seeder
                 'linkedin_url' => 'https://www.linkedin.com/in/kseniya-kutsenko-0ab737216/',
             ],
             [
-                'name_ua' => 'Kirill',
-                'name_en' => 'Kirill',
-                'surname_ua' => 'Obertivich',
-                'surname_en' => 'Obertivich',
-                'position_ua' => 'Head Teacher',
-                'position_en' => 'Head Teacher',
-                'image' => 'teammates/Kirill_1x_2.png',
-                'linkedin_url' => 'https://www.linkedin.com/in/kirill-o-2557a3132/',
-            ],
-            [
                 'name_ua' => 'Anton',
                 'name_en' => 'Anton',
                 'surname_ua' => 'Yakushenko',
