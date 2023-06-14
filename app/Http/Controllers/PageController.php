@@ -51,17 +51,27 @@ class PageController extends Controller
         return view('contact', compact('page_info', 'services', 'menuItems', 'contacts'));
     }
 
-    public function send()
+    public function test()
     {
-        $page_info = Page::where('name', 'contacts')->first();
+        $page_info = Page::where('name', 'main')->first();
 
         $menuItems = MenuItem::all();
 
         $services = Service::all();
 
+        $achievements = Achievement::all();
+
+        $stars = Star::all();
+
+        $teammates = Teammate::all();
+
+        $testimonials = Testimonial::all();
+
+        $works = Work::all();
+
         $contacts = Contact::all();
 
-        return view('send', compact('page_info', 'services', 'menuItems', 'contacts'));
+        return view('test', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems', 'testimonials', 'works', 'contacts'));
     }
 
     public function success()

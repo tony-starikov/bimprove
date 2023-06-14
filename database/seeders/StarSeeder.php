@@ -22,6 +22,7 @@ class StarSeeder extends Seeder
                 'description_en' => 'Elevate your business with high-quality services.',
                 'image' => 'stars/star_image_1.png',
                 'image_small' => 'stars/small_star_image_1.svg',
+                'image_big' => 'stars/big_quality.png',
             ],
             [
                 'title_ua' => 'Communication with project manager 24/7',
@@ -30,6 +31,7 @@ class StarSeeder extends Seeder
                 'description_en' => 'Benefit from constant communication with a dedicated project manager available 24/7',
                 'image' => 'stars/star_image_2.png',
                 'image_small' => 'stars/small_star_image_2.svg',
+                'image_big' => 'stars/big_communication.png',
             ],
             [
                 'title_ua' => 'Non-standard tasks solutions',
@@ -38,6 +40,7 @@ class StarSeeder extends Seeder
                 'description_en' => 'Rely on us for creative solutions to unique and challenging tasks',
                 'image' => 'stars/star_image_3.png',
                 'image_small' => 'stars/small_star_image_3.svg',
+                'image_big' => 'stars/big_solutions.png',
             ],
             [
                 'title_ua' => 'Quick project adjustment by the comments',
@@ -46,6 +49,7 @@ class StarSeeder extends Seeder
                 'description_en' => 'Enjoy quick and seamless adjustments based on feedback.',
                 'image' => 'stars/star_image_4.png',
                 'image_small' => 'stars/small_star_image_4.svg',
+                'image_big' => 'stars/big_adjustment.png',
             ],
             [
                 'title_ua' => 'Help in work process organization',
@@ -54,6 +58,7 @@ class StarSeeder extends Seeder
                 'description_en' => 'Benefit from our expertise in streamlining the work process for optimal organization.',
                 'image' => 'stars/star_image_5.png',
                 'image_small' => 'stars/small_star_image_5.svg',
+                'image_big' => 'stars/big_help.png',
             ],
             [
                 'title_ua' => 'Contact',
@@ -62,6 +67,7 @@ class StarSeeder extends Seeder
                 'description_en' => 'Contact',
                 'image' => ' ',
                 'image_small' => ' ',
+                'image_big' => ' ',
             ],
         ]);
     }

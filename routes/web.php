@@ -56,7 +56,7 @@ Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('
 Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
 
 
-Route::get('/send', [PageController::class, 'send'])->name('send');
+Route::get('/test', [PageController::class, 'test'])->name('test');
 Route::get('/success', [PageController::class, 'success'])->name('success');
 
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');

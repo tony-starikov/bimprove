@@ -183,6 +183,16 @@
             aspect-ratio: 16 / 9;
             width: 100%;
         }
+
+        #video {
+            width: 100vw;
+            min-height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -100;
+        }
     </style>
 </head>
 <body>
