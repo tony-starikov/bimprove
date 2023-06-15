@@ -16,8 +16,8 @@ class TeammateSeeder extends Seeder
     {
         DB::table('teammates')->insert([
             [
-                'name_ua' => 'Vitaly',
-                'name_en' => 'Vitaly',
+                'name_ua' => 'Vitaliy',
+                'name_en' => 'Vitaliy',
                 'surname_ua' => 'Vinogradov',
                 'surname_en' => 'Vinogradov',
                 'position_ua' => 'CEO',
