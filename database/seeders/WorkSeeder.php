@@ -66,7 +66,7 @@ class WorkSeeder extends Seeder
                 'parameter_1' => 'LOD: 300',
                 'parameter_2' => 'Area: 7340m2',
                 'parameter_3' => ' ',
-                'description' => "3D model of part of hypermarket. The model was created in two weeks with a team of 2 modelers and 1 Project Manager. As the final result, a customer received a detailed 3D model with designed views and sheets.
+                'description' => "3D model of part of hypermarket. The model was created in two weeks with a team of 2 modelers and 1 Project Manager. As the final result, a customer received a detailed 3D model with designed views.
                 ",
                 'image' => 'works/Hypermarket_1x.png',
                 'image_small' => 'works/Hypermarket_small.png',
@@ -80,7 +80,7 @@ class WorkSeeder extends Seeder
                 'parameter_1' => 'LOD: 300',
                 'parameter_2' => 'Area: 2100m2',
                 'parameter_3' => 'Floors: 6',
-                'description' => "3D model of residential building in Kharkiv, Ukraine. It was our conceptual project of new building in old historical city area. First two floors must be commercial, after residential floors with flats. In the top floor we have modeled big penthouse flat. We produced Architecture model, some renders and drawings for presentation.
+                'description' => "3D model of residential building in Kharkiv, Ukraine. It was our conceptual project of building in old historical city area. First two floors must be commercial, after residential floors with flats. In the top floor we have modeled big penthouse flat.
                 ",
                 'image' => 'works/Kontorska_1x.png',
                 'image_small' => 'works/Kontorska_small.png',
@@ -117,7 +117,7 @@ class WorkSeeder extends Seeder
                 'id' => 8,
                 'title_first' => 'Rooftop',
                 'title_second' => ' ',
-                'subtitle' => 'Telecommunication design',
+                'subtitle' => 'Telecom design',
                 'disciplines' => ' ',
                 'parameter_1' => 'LOD building: 300',
                 'parameter_2' => 'LOD equipment: 500',

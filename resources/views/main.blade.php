@@ -1950,11 +1950,11 @@
                                                             <div class="col-12 p-2 px-4">
                                                                 <div class="row justify-content-between">
                                                                     <div class="col-7">
-                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_first }}</h4>
-                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_second }}</h4>
-                                                                        <h5 style="font-size: 1vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
+                                                                        <h4 style="font-size: 1.2vw; min-height: 1.2vw;" class="fw-bold">{{ $works[$i]->title_first }}</h4>
+                                                                        <h4 style="font-size: 1.2vw; min-height: 1.2vw;" class="fw-bold">{{ $works[$i]->title_second }}</h4>
+                                                                        <h5 style="font-size: 1vw; min-height: 1vw;" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
                                                                     </div>
-                                                                    <div class="col-5 mt-2">
+                                                                    <div class="col-5 ps-0 mt-2">
                                                                         <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
                                                                         <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
                                                                         <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
@@ -1962,7 +1962,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-12">
-                                                                        <h5 style="font-size: 1vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
+                                                                        <h5 style="font-size: 1vw; min-height: 1vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
                                                                     </div>
                                                                 </div>
 
@@ -2010,11 +2010,11 @@
                                                             <div class="col-12 p-2 px-4">
                                                                 <div class="row justify-content-between">
                                                                     <div class="col-7">
-                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_first }}</h4>
-                                                                        <h4 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->title_second }}</h4>
-                                                                        <h5 style="font-size: 1vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
+                                                                        <h4 style="font-size: 1.2vw; min-height: 1.2vw;" class="fw-bold">{{ $works[$i]->title_first }}</h4>
+                                                                        <h4 style="font-size: 1.2vw; min-height: 1.2vw;" class="fw-bold">{{ $works[$i]->title_second }}</h4>
+                                                                        <h5 style="font-size: 1vw; min-height: 1vw;" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
                                                                     </div>
-                                                                    <div class="col-5 mt-2">
+                                                                    <div class="col-5 ps-0 mt-2">
                                                                         <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
                                                                         <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
                                                                         <h5 style="font-size: 0.9vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
@@ -2022,7 +2022,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-12">
-                                                                        <h5 style="font-size: 1vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
+                                                                        <h5 style="font-size: 1vw; min-height: 1vw;" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
                                                                     </div>
                                                                 </div>
 
@@ -2079,11 +2079,11 @@
                                                             <div class="col-12 p-2 px-4">
                                                                 <div class="row justify-content-between">
                                                                     <div class="col-7">
-                                                                        <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_first }}</h4>
-                                                                        <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_second }}</h4>
-                                                                        <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
+                                                                        <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold">{{ $works[$i]->title_first }}</h4>
+                                                                        <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold">{{ $works[$i]->title_second }}</h4>
+                                                                        <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
                                                                     </div>
-                                                                    <div class="col-5 mt-2">
+                                                                    <div class="col-5 ps-0 mt-2">
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
@@ -2091,7 +2091,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-12">
-                                                                        <h5 style="font-size: 1.3vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
+                                                                        <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
                                                                     </div>
                                                                 </div>
 
@@ -2139,11 +2139,11 @@
                                                         <div class="col-12 p-2 px-4">
                                                             <div class="row justify-content-between">
                                                                 <div class="col-7">
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_first }}</h4>
-                                                                    <h4 style="font-size: 1.8vw" class="fw-bold">{{ $works[$i]->ttile_second }}</h4>
-                                                                    <h5 style="font-size: 1.3vw" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
+                                                                    <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold">{{ $works[$i]->title_first }}</h4>
+                                                                    <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold">{{ $works[$i]->title_second }}</h4>
+                                                                    <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="text-secondary fw-bold">{{ $works[$i]->subtitle }}</h5>
                                                                 </div>
-                                                                <div class="col-5 mt-2">
+                                                                <div class="col-5 ps-0 mt-2">
                                                                     <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_1 }}</h5>
                                                                     <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_2 }}</h5>
                                                                     <h5 style="font-size: 1.2vw" class="fw-bold">{{ $works[$i]->parameter_3 }}</h5>
@@ -2151,7 +2151,7 @@
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <h5 style="font-size: 1.3vw" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
+                                                                    <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold">{{ $works[$i]->disciplines }}</h5>
                                                                 </div>
                                                             </div>
 
@@ -2208,11 +2208,11 @@
                                                             <div class="col-12 p-2 px-4">
                                                                 <div class="row justify-content-between">
                                                                     <div class="col-7">
-                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_first }}</h4>
-                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_second }}</h4>
-                                                                        <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">{{ $works[$i]->subtitle }}</h5>
+                                                                        <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold mb-1">{{ $works[$i]->title_first }}</h4>
+                                                                        <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold mb-1">{{ $works[$i]->title_second }}</h4>
+                                                                        <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="text-secondary fw-bold mb-1">{{ $works[$i]->subtitle }}</h5>
                                                                     </div>
-                                                                    <div class="col-5 mt-2">
+                                                                    <div class="col-5 ps-0 mt-2">
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_1 }}</h5>
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_2 }}</h5>
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_3 }}</h5>
@@ -2220,7 +2220,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-12">
-                                                                        <h5 style="font-size: 1.3vw" class="fw-bold mb-1">{{ $works[$i]->disciplines }}</h5>
+                                                                        <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold mb-1">{{ $works[$i]->disciplines }}</h5>
                                                                     </div>
                                                                 </div>
 
@@ -2268,11 +2268,11 @@
                                                             <div class="col-12 p-2 px-4">
                                                                 <div class="row justify-content-between">
                                                                     <div class="col-7">
-                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_first }}</h4>
-                                                                        <h4 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $works[$i]->ttile_second }}</h4>
-                                                                        <h5 style="font-size: 1.3vw" class="text-secondary fw-bold mb-1">{{ $works[$i]->subtitle }}</h5>
+                                                                        <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold mb-1">{{ $works[$i]->title_first }}</h4>
+                                                                        <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold mb-1">{{ $works[$i]->title_second }}</h4>
+                                                                        <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="text-secondary fw-bold mb-1">{{ $works[$i]->subtitle }}</h5>
                                                                     </div>
-                                                                    <div class="col-5 mt-2">
+                                                                    <div class="col-5 ps-0 mt-2">
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_1 }}</h5>
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_2 }}</h5>
                                                                         <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $works[$i]->parameter_3 }}</h5>
@@ -2280,7 +2280,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-12">
-                                                                        <h5 style="font-size: 1.3vw" class="fw-bold mb-1">{{ $works[$i]->disciplines }}</h5>
+                                                                        <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold mb-1">{{ $works[$i]->disciplines }}</h5>
                                                                     </div>
                                                                 </div>
 
@@ -2334,11 +2334,11 @@
                                                     <div class="col-12 p-2 px-4">
                                                         <div class="row justify-content-between">
                                                             <div class="col-7">
-                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">{{ $work->title_first }}</h4>
-                                                                <h4 style="font-size: 2.5vw" class="fw-bold mb-1">{{ $work->title_second }}</h4>
-                                                                <h5 style="font-size: 2vw" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
+                                                                <h4 style="font-size: 2.5vw; min-height: 3vw;" class="fw-bold mb-1">{{ $work->title_first }}</h4>
+                                                                <h4 style="font-size: 2.5vw; min-height: 3vw;" class="fw-bold mb-1">{{ $work->title_second }}</h4>
+                                                                <h5 style="font-size: 2vw; min-height: 2.5vw;" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
                                                             </div>
-                                                            <div class="col-5 mt-2">
+                                                            <div class="col-5 ps-0 mt-2">
                                                                 <h5 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $work->parameter_1 }}</h5>
                                                                 <h5 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $work->parameter_2 }}</h5>
                                                                 <h5 style="font-size: 1.8vw" class="fw-bold mb-1">{{ $work->parameter_3 }}</h5>
@@ -2346,7 +2346,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <h5 style="font-size: 2vw" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
+                                                                <h5 style="font-size: 2vw; min-height: 2.5vw;" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
                                                             </div>
                                                         </div>
 
@@ -2355,10 +2355,10 @@
 
                                                         <div class="row d-flex align-items-center">
                                                             <div class="col-4 d-flex justify-content-center">
-                                                                <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
+                                                                <img src="/images/{{ $work->image_small }}" class="img-fluid w-100 mt-2" alt="...">
                                                             </div>
                                                             <div class="col-8 ps-0">
-                                                                <h6 style="font-size: 1.8vw" class="mt-2 text-secondary">
+                                                                <h6 style="font-size: 1.8vw;min-height: 140px;" class="mt-2 text-secondary">
                                                                     {{ $work->description }}
                                                                 </h6>
                                                             </div>
@@ -2399,9 +2399,9 @@
                                                     <div class="col-12 p-2 px-4">
                                                         <div class="row justify-content-between">
                                                             <div class="col-7">
-                                                                <h4 style="font-size: 3vw" class="fw-bold mb-1">{{ $work->title_first }}</h4>
-                                                                <h4 style="font-size: 3vw" class="fw-bold mb-1">{{ $work->title_second }}</h4>
-                                                                <h5 style="font-size: 2.7vw" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
+                                                                <h4 style="font-size: 3vw; min-height: 3.5vw;" class="fw-bold mb-1">{{ $work->title_first }}</h4>
+                                                                <h4 style="font-size: 3vw; min-height: 3.5vw;" class="fw-bold mb-1">{{ $work->title_second }}</h4>
+                                                                <h5 style="font-size: 2.7vw; min-height: 3.2vw;" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
                                                             </div>
                                                             <div class="col-5 mt-2">
                                                                 <h5 style="font-size: 2.3vw" class="fw-bold mb-1">{{ $work->parameter_1 }}</h5>
@@ -2411,7 +2411,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <h5 style="font-size: 3vw" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
+                                                                <h5 style="font-size: 3vw; min-height: 3.5vw;" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
                                                             </div>
                                                         </div>
 
@@ -2423,7 +2423,7 @@
                                                                 <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
                                                             </div>
                                                             <div class="col-8 ps-0">
-                                                                <h6 style="font-size: 2.3vw" class="mt-2 text-secondary">
+                                                                <h6 style="font-size: 2.3vw; min-height: 140px;" class="mt-2 text-secondary">
                                                                     {{ $work->description }}
                                                                 </h6>
                                                             </div>
@@ -2465,9 +2465,9 @@
                                                     <div class="col-12 p-2 px-4">
                                                         <div class="row justify-content-between">
                                                             <div class="col-7">
-                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">{{ $work->title_first }}</h4>
-                                                                <h4 style="font-size: 4.5vw" class="fw-bold mb-1">{{ $work->title_second }}</h4>
-                                                                <h5 style="font-size: 3.8vw" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
+                                                                <h4 style="font-size: 4.5vw; min-height: 5.2vw;" class="fw-bold mb-1">{{ $work->title_first }}</h4>
+                                                                <h4 style="font-size: 4.5vw; min-height: 5.2vw;" class="fw-bold mb-1">{{ $work->title_second }}</h4>
+                                                                <h5 style="font-size: 3.8vw; min-height: 4.4vw;" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
                                                             </div>
                                                             <div class="col-5 mt-2">
                                                                 <h5 style="font-size: 3.2vw" class="fw-bold mb-1">{{ $work->parameter_1 }}</h5>
@@ -2477,7 +2477,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <h5 style="font-size: 3.8vw" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
+                                                                <h5 style="font-size: 3.8vw; min-height: 4.4vw;" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
                                                             </div>
                                                         </div>
 
@@ -2489,7 +2489,7 @@
                                                                 <img src="/images/{{ $work->image_small }}" class="img-fluid mt-2" alt="...">
                                                             </div>
                                                             <div class="col-8 ps-0">
-                                                                <h6 style="font-size: 3vw" class="mt-2 text-secondary">
+                                                                <h6 style="font-size: 3vw; min-height: 130px;" class="mt-2 text-secondary">
                                                                     {{ $work->description }}
                                                                 </h6>
                                                             </div>
